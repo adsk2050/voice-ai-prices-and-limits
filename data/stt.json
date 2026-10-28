@@ -1,0 +1,302 @@
+[
+  {
+    "id": "sarvam/saaras/batch-with-diarization/business",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch-with-diarization",
+    "plan": "business",
+    "price": {
+      "amount": "0.47",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/batch-with-diarization/growth",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch-with-diarization",
+    "plan": "growth",
+    "price": {
+      "amount": "0.50",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/batch-with-diarization/pay-as-you-go",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch-with-diarization",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "0.59",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/batch-with-diarization/pro",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch-with-diarization",
+    "plan": "pro",
+    "price": {
+      "amount": "0.54",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/batch/business",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch",
+    "plan": "business",
+    "price": {
+      "amount": "0.38",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/batch/growth",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch",
+    "plan": "growth",
+    "price": {
+      "amount": "0.41",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/batch/pay-as-you-go",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "0.49",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/batch/pro",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "batch",
+    "plan": "pro",
+    "price": {
+      "amount": "0.45",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/real-time/business",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "real-time",
+    "plan": "business",
+    "price": {
+      "amount": "0.38",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/real-time/growth",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "real-time",
+    "plan": "growth",
+    "price": {
+      "amount": "0.41",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/real-time/pay-as-you-go",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "real-time",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "0.49",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/saaras/real-time/pro",
+    "category": "stt",
+    "provider": "sarvam",
+    "product": "saaras",
+    "mode": "real-time",
+    "plan": "pro",
+    "price": {
+      "amount": "0.45",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  }
+]

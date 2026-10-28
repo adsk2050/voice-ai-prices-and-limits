@@ -1,0 +1,40 @@
+name: Update prices
+
+on:
+  schedule:
+    - cron: "30 3 * * *" # daily, 09:00 IST
+  workflow_dispatch:
+    inputs:
+      providers:
+        description: "Providers to scrape, space-separated (empty = all)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync
+      - name: Scrape
+        id: scrape
+        # A failed scraper still lets the others' changes through; the
+        # job is marked failed afterwards so the breakage is seen.
+        continue-on-error: true
+        run: uv run voice-prices update ${{ github.event.inputs.providers }}
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: prices/update
+          title: "Price update"
+          commit-message: "data: price update"
+          body-path: changes.md
+          add-paths: data/*.json
+      - if: steps.scrape.outcome == 'failure'
+        run: |
+          cat changes.md
+          exit 1

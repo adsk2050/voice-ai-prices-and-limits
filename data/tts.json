@@ -1,0 +1,702 @@
+[
+  {
+    "id": "sarvam/bulbul-v3/real-time/business",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "real-time",
+    "plan": "business",
+    "price": {
+      "amount": "2.60",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/real-time/growth",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "real-time",
+    "plan": "growth",
+    "price": {
+      "amount": "2.70",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/real-time/pay-as-you-go",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "real-time",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "3.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/real-time/pro",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "real-time",
+    "plan": "pro",
+    "price": {
+      "amount": "2.85",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/streaming/business",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "streaming",
+    "plan": "business",
+    "price": {
+      "amount": "2.60",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/streaming/growth",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "streaming",
+    "plan": "growth",
+    "price": {
+      "amount": "2.70",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/streaming/pay-as-you-go",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "streaming",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "3.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/streaming/pro",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "streaming",
+    "plan": "pro",
+    "price": {
+      "amount": "2.85",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/websocket/business",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "websocket",
+    "plan": "business",
+    "price": {
+      "amount": "2.60",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/websocket/growth",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "websocket",
+    "plan": "growth",
+    "price": {
+      "amount": "2.70",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/websocket/pay-as-you-go",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "websocket",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "3.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v3/websocket/pro",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v3",
+    "mode": "websocket",
+    "plan": "pro",
+    "price": {
+      "amount": "2.85",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/real-time/business",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "real-time",
+    "plan": "business",
+    "price": {
+      "amount": "0.80",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/real-time/growth",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "real-time",
+    "plan": "growth",
+    "price": {
+      "amount": "0.85",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/real-time/pay-as-you-go",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "real-time",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "1.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/real-time/pro",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "real-time",
+    "plan": "pro",
+    "price": {
+      "amount": "0.925",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/streaming/business",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "streaming",
+    "plan": "business",
+    "price": {
+      "amount": "0.80",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/streaming/growth",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "streaming",
+    "plan": "growth",
+    "price": {
+      "amount": "0.85",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/streaming/pay-as-you-go",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "streaming",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "1.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/streaming/pro",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "streaming",
+    "plan": "pro",
+    "price": {
+      "amount": "0.925",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/websocket/business",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "websocket",
+    "plan": "business",
+    "price": {
+      "amount": "0.80",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/websocket/growth",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "websocket",
+    "plan": "growth",
+    "price": {
+      "amount": "0.85",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/websocket/pay-as-you-go",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "websocket",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "1.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/bulbul-v4-flash/websocket/pro",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "bulbul-v4-flash",
+    "mode": "websocket",
+    "plan": "pro",
+    "price": {
+      "amount": "0.925",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/voice-cloning/real-time/business",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "voice-cloning",
+    "mode": "real-time",
+    "plan": "business",
+    "price": {
+      "amount": "2.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "199999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/voice-cloning/real-time/growth",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "voice-cloning",
+    "mode": "real-time",
+    "plan": "growth",
+    "price": {
+      "amount": "2.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "49999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/voice-cloning/real-time/pay-as-you-go",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "voice-cloning",
+    "mode": "real-time",
+    "plan": "pay-as-you-go",
+    "price": {
+      "amount": "2.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "0",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  },
+  {
+    "id": "sarvam/voice-cloning/real-time/pro",
+    "category": "tts",
+    "provider": "sarvam",
+    "product": "voice-cloning",
+    "mode": "real-time",
+    "plan": "pro",
+    "price": {
+      "amount": "2.00",
+      "currency": "INR",
+      "per": 1000,
+      "unit": "character"
+    },
+    "plan_fee": {
+      "amount": "9999",
+      "currency": "INR",
+      "period": "month"
+    },
+    "tax_included": false,
+    "limits": null,
+    "source_url": "https://www.sarvam.ai/api-pricing",
+    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+    "checked_at": "2026-10-28",
+    "since": "2026-10-28"
+  }
+]
