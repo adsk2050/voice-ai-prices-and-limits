@@ -205,12 +205,11 @@ rows. The reason says what would unlock them; `sign-in-required` and
 | exotel | Telephony | contact-sales: Plans page with 'Talk to Sales' and custom plans; no per-minute price in the page text. | https://exotel.com/pricing/ | 2026-10-28 |
 | gnani | Speech-to-text, Text-to-speech | sign-in-required: The public page offers demos and custom plans only; prices are shown inside the signed-in dashboard. | https://www.gnani.ai/pricing | 2026-10-28 |
 | hume | Text-to-speech | rendered-by-javascript: Pricing page text has no prices. | https://www.hume.ai/pricing | 2026-10-28 |
-| knowlarity | Telephony | no-public-price: /pricing returns 404; no pricing page found. | https://www.knowlarity.com/pricing | 2026-10-28 |
 | murf | Text-to-speech | rendered-by-javascript: The page returns almost no text without a browser. | https://murf.ai/api/pricing | 2026-10-28 |
 | ozonetel | Telephony | blocked: Times out or redirects with an empty body for automated fetches. | https://ozonetel.com/pricing/ | 2026-10-28 |
 | playht | Text-to-speech | fetch-failed: The site's TLS certificate chain is incomplete, so a standard HTTPS client refuses it. | https://playht.com/pricing/ | 2026-10-28 |
-| reverie | Speech-to-text, Text-to-speech | no-public-price: /pricing returns 404; no pricing page found. | https://reverieinc.com/pricing/ | 2026-10-28 |
-| tatatele | Telephony | no-public-price: Smartflo pricing URLs return 404; no pricing page found. | https://smartflo.tatateleservices.com/pricing | 2026-10-28 |
+| reverie | Speech-to-text, Text-to-speech | pricing-page-not-found: /pricing returns 404 and the homepage links to no pricing page. | https://reverieinc.com/pricing/ | 2026-10-28 |
+| tatatele | Telephony | pricing-page-not-found: Smartflo /pricing returns 404; the homepage links only to Microsoft 365 plan pricing. | https://www.tatateleservices.com/ | 2026-10-28 |
 | vobiz | Telephony | contact-sales: The pricing data marks India {code:"IN", contactSalesOnly:true}; extra capacity is priced per account in the console. | https://www.vobiz.ai/pricing/?country=IN | 2026-10-28 |
 | vonage | Telephony | rendered-by-javascript: Per-minute prices load by country selector; not in the page text. | https://www.vonage.com/communications-apis/voice/pricing/ | 2026-10-28 |
 <!-- not-public:end -->

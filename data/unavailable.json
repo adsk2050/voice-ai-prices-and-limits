@@ -52,16 +52,6 @@
   },
   {
     "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "/pricing returns 404; no pricing page found.",
-    "provider": "knowlarity",
-    "reason": "no-public-price",
-    "url": "https://www.knowlarity.com/pricing"
-  },
-  {
-    "categories": [
       "tts"
     ],
     "checked_at": "2026-10-28",
@@ -96,9 +86,9 @@
       "tts"
     ],
     "checked_at": "2026-10-28",
-    "evidence": "/pricing returns 404; no pricing page found.",
+    "evidence": "/pricing returns 404 and the homepage links to no pricing page.",
     "provider": "reverie",
-    "reason": "no-public-price",
+    "reason": "pricing-page-not-found",
     "url": "https://reverieinc.com/pricing/"
   },
   {
@@ -106,10 +96,10 @@
       "telephony"
     ],
     "checked_at": "2026-10-28",
-    "evidence": "Smartflo pricing URLs return 404; no pricing page found.",
+    "evidence": "Smartflo /pricing returns 404; the homepage links only to Microsoft 365 plan pricing.",
     "provider": "tatatele",
-    "reason": "no-public-price",
-    "url": "https://smartflo.tatateleservices.com/pricing"
+    "reason": "pricing-page-not-found",
+    "url": "https://www.tatateleservices.com/"
   },
   {
     "categories": [

@@ -126,7 +126,9 @@ class Checked(_Model):
 Reason = Literal[
     "contact-sales",  # the page says to ask for a quote
     "sign-in-required",  # prices only inside an account
-    "no-public-price",  # no price published anywhere we found
+    "no-public-price",  # the site was searched; no price is published
+    "pricing-page-not-found",  # not found at the URL tried, nor linked
+    # from the homepage; the site was not searched further
     "rendered-by-javascript",  # prices exist but not in any fetchable text
     "blocked",  # the site refuses automated fetches
     "fetch-failed",  # the page cannot be fetched (bad certificate, timeout)
