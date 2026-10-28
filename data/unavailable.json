@@ -75,7 +75,7 @@
       "tts"
     ],
     "checked_at": "2026-10-28",
-    "evidence": "The site's TLS certificate chain is incomplete, so a standard HTTPS client refuses it.",
+    "evidence": "The site's certificate chain is incomplete, and with that skipped the server disconnects without a response.",
     "provider": "playht",
     "reason": "fetch-failed",
     "url": "https://playht.com/pricing/"
@@ -90,6 +90,16 @@
     "provider": "reverie",
     "reason": "pricing-page-not-found",
     "url": "https://reverieinc.com/pricing/"
+  },
+  {
+    "categories": [
+      "agent"
+    ],
+    "checked_at": "2026-10-28",
+    "evidence": "The pricing page text holds almost no prices; plans load in the browser.",
+    "provider": "synthflow",
+    "reason": "rendered-by-javascript",
+    "url": "https://synthflow.ai/pricing"
   },
   {
     "categories": [

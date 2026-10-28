@@ -207,8 +207,9 @@ rows. The reason says what would unlock them; `sign-in-required` and
 | hume | Text-to-speech | rendered-by-javascript: Pricing page text has no prices. | https://www.hume.ai/pricing | 2026-10-28 |
 | murf | Text-to-speech | rendered-by-javascript: The page returns almost no text without a browser. | https://murf.ai/api/pricing | 2026-10-28 |
 | ozonetel | Telephony | blocked: Times out or redirects with an empty body for automated fetches. | https://ozonetel.com/pricing/ | 2026-10-28 |
-| playht | Text-to-speech | fetch-failed: The site's TLS certificate chain is incomplete, so a standard HTTPS client refuses it. | https://playht.com/pricing/ | 2026-10-28 |
+| playht | Text-to-speech | fetch-failed: The site's certificate chain is incomplete, and with that skipped the server disconnects without a response. | https://playht.com/pricing/ | 2026-10-28 |
 | reverie | Speech-to-text, Text-to-speech | pricing-page-not-found: /pricing returns 404 and the homepage links to no pricing page. | https://reverieinc.com/pricing/ | 2026-10-28 |
+| synthflow | Voice agent | rendered-by-javascript: The pricing page text holds almost no prices; plans load in the browser. | https://synthflow.ai/pricing | 2026-10-28 |
 | tatatele | Telephony | pricing-page-not-found: Smartflo /pricing returns 404; the homepage links only to Microsoft 365 plan pricing. | https://www.tatateleservices.com/ | 2026-10-28 |
 | vobiz | Telephony | contact-sales: The pricing data marks India {code:"IN", contactSalesOnly:true}; extra capacity is priced per account in the console. | https://www.vobiz.ai/pricing/?country=IN | 2026-10-28 |
 | vonage | Telephony | rendered-by-javascript: Per-minute prices load by country selector; not in the page text. | https://www.vonage.com/communications-apis/voice/pricing/ | 2026-10-28 |
