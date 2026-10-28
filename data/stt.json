@@ -1,2810 +1,2940 @@
-[
-  {
-    "category": "stt",
-    "evidence": "Dictation API New Finished text from a single spoken utterance, ready to go straight into whatever your user is writing. Built on Universal-3.5 Pro across 32 languages, with clips up to 120 seconds per request. The verbatim transcript comes back alongside it. $0.62 /hr",
-    "id": "assemblyai/dictation-api/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.62",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
+{
+  "rows": [
+    {
+      "category": "stt",
+      "evidence": "Dictation API New Finished text from a single spoken utterance, ready to go straight into whatever your user is writing. Built on Universal-3.5 Pro across 32 languages, with clips up to 120 seconds per request. The verbatim transcript comes back alongside it. $0.62 /hr",
+      "id": "assemblyai/dictation-api/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.62",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "dictation-api",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
     },
-    "product": "dictation-api",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Sync API New Universal-3.5 Pro accuracy delivered in a single call. Process up to 2 minutes per request, get results back in ~134 ms (p50). Includes per-word timing and confidence across 18 languages. $0.30 /hr",
-    "id": "assemblyai/sync-api/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.30",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
+    {
+      "category": "stt",
+      "evidence": "Sync API New Universal-3.5 Pro accuracy delivered in a single call. Process up to 2 minutes per request, get results back in ~134 ms (p50). Includes per-word timing and confidence across 18 languages. $0.30 /hr",
+      "id": "assemblyai/sync-api/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.30",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "sync-api",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
     },
-    "product": "sync-api",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Universal-2 Our highly accurate speech-to-text model trained on over 12.5 million hours of audio data. Supports 99 languages. Exceptional accuracy at a lower price. $0.15 /hr",
-    "id": "assemblyai/universal-2/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.15",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
+    {
+      "category": "stt",
+      "evidence": "Universal-2 Our highly accurate speech-to-text model trained on over 12.5 million hours of audio data. Supports 99 languages. Exceptional accuracy at a lower price. $0.15 /hr",
+      "id": "assemblyai/universal-2/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.15",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "universal-2",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
     },
-    "product": "universal-2",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Universal-3.5 Pro The most accurate async speech-to-text model that transcribes every conversation exactly as it's heard – works across 18 languages, with native code switching and our most accurate speaker diarization yet. $0.21 /hr",
-    "id": "assemblyai/universal-3.5-pro/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.21",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
+    {
+      "category": "stt",
+      "evidence": "Universal-3.5 Pro The most accurate async speech-to-text model that transcribes every conversation exactly as it's heard – works across 18 languages, with native code switching and our most accurate speaker diarization yet. $0.21 /hr",
+      "id": "assemblyai/universal-3.5-pro/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.21",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "universal-3.5-pro",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
     },
-    "product": "universal-3.5-pro",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Universal-3.6 Pro Realtime New The most accurate realtime model for high-quality voice agents with built-in context carryover and conversation memory. Supports 32 languages with self-correcting speaker labels, voice isolation, and keyterm prompting. $0.45 /hr",
-    "id": "assemblyai/universal-3.6-pro-realtime/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.45",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
+    {
+      "category": "stt",
+      "evidence": "Universal-3.6 Pro Realtime New The most accurate realtime model for high-quality voice agents with built-in context carryover and conversation memory. Supports 32 languages with self-correcting speaker labels, voice isolation, and keyterm prompting. $0.45 /hr",
+      "id": "assemblyai/universal-3.6-pro-realtime/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.45",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "universal-3.6-pro-realtime",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
     },
-    "product": "universal-3.6-pro-realtime",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Universal-Streaming Multilingual Multilingual transcription at the speed and cost of Universal-Streaming. Supports English, Spanish, German, French, Portuguese, and Italian. $0.15 /hr",
-    "id": "assemblyai/universal-streaming-multilingual/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.15",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
+    {
+      "category": "stt",
+      "evidence": "Universal-Streaming Multilingual Multilingual transcription at the speed and cost of Universal-Streaming. Supports English, Spanish, German, French, Portuguese, and Italian. $0.15 /hr",
+      "id": "assemblyai/universal-streaming-multilingual/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.15",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "universal-streaming-multilingual",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
     },
-    "product": "universal-streaming-multilingual",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Universal-Streaming High-quality realtime model for English only transcription. Purpose-built for production voice applications with reliable accuracy, low latency, and cost-effectiveness. $0.15 /hr",
-    "id": "assemblyai/universal-streaming/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.15",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
+    {
+      "category": "stt",
+      "evidence": "Universal-Streaming High-quality realtime model for English only transcription. Purpose-built for production voice applications with reliable accuracy, low latency, and cost-effectiveness. $0.15 /hr",
+      "id": "assemblyai/universal-streaming/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.15",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "universal-streaming",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
     },
-    "product": "universal-streaming",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Tier 1 (T1) pricing of $0.0300/minute applies to the first 250,000 minutes",
-    "id": "aws/call-analytics/any/pay-as-you-go/0-250000",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0300",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
+    {
+      "category": "stt",
+      "evidence": "Tier 1 (T1) pricing of $0.0300/minute applies to the first 250,000 minutes",
+      "id": "aws/call-analytics/any/pay-as-you-go/0-250000",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0300",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "call-analytics",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 250000.0,
+        "min": 0.0,
+        "unit": "minute"
+      }
     },
-    "product": "call-analytics",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null,
-    "volume": {
-      "max": 250000.0,
-      "min": 0.0,
-      "unit": "minute"
+    {
+      "category": "stt",
+      "evidence": "Tier 3 pricing of $0.0138/minute (54% discount to T1 pricing) applies to the next 4,000,000 minutes",
+      "id": "aws/call-analytics/any/pay-as-you-go/1000000-5000000",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0138",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "call-analytics",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 5000000.0,
+        "min": 1000000.0,
+        "unit": "minute"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "Tier 2 pricing of $0.0186/minute (38% discount to T1 pricing) applies to the next 750,000 minutes",
+      "id": "aws/call-analytics/any/pay-as-you-go/250000-1000000",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0186",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "call-analytics",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 1000000.0,
+        "min": 250000.0,
+        "unit": "minute"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "Tier 1 (T1) content redaction pricing of $0.0024 applies to the first 250,000 minutes",
+      "id": "aws/content-redaction/any/pay-as-you-go/0-250000",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0024",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "content-redaction",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 250000.0,
+        "min": 0.0,
+        "unit": "minute"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "Tier 3 content redaction pricing of $0.00102/minute (58% discount to T1 pricing) applies to the next 4,000,000 minutes",
+      "id": "aws/content-redaction/any/pay-as-you-go/1000000-5000000",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.00102",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "content-redaction",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 5000000.0,
+        "min": 1000000.0,
+        "unit": "minute"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "Tier 2 content redaction pricing of $0.0015 (38% discount to T1 pricing) applies to the next 750,000 minutes",
+      "id": "aws/content-redaction/any/pay-as-you-go/250000-1000000",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "content-redaction",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 1000000.0,
+        "min": 250000.0,
+        "unit": "minute"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch transcription is priced at $0.006 per minute",
+      "id": "aws/transcribe/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.006",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "transcribe",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Streaming transcription is priced at $0.01 per minute",
+      "id": "aws/transcribe/streaming/pay-as-you-go",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.01",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "transcribe",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/transcribe/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Fast Transcription Speech To Text: 0.36 USD per 1 Hour (eastus)",
+      "id": "azure/fast-transcription/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.36",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "fast-transcription",
+      "provider": "azure",
+      "since": "2026-10-28",
+      "source_url": "https://prices.azure.com/api/retail/prices",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "S1 Speech to Text Batch: 0.18 USD per 1 Hour (eastus)",
+      "id": "azure/speech-to-text/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.18",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "speech-to-text",
+      "provider": "azure",
+      "since": "2026-10-28",
+      "source_url": "https://prices.azure.com/api/retail/prices",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "S1 Speech To Text: 1.0 USD per 1 Hour (eastus)",
+      "id": "azure/speech-to-text/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "1",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "speech-to-text",
+      "provider": "azure",
+      "since": "2026-10-28",
+      "source_url": "https://prices.azure.com/api/retail/prices",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "One hour of audio is only $0.39 on the Scale plan.",
+      "id": "cartesia/ink-2/any/scale",
+      "limits": {
+        "concurrent": 60,
+        "evidence": "Concurrent requests 8 12 20 60",
+        "source_url": "https://cartesia.ai/pricing"
+      },
+      "mode": "any",
+      "plan": "scale",
+      "plan_fee": {
+        "amount": "299",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.39",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "ink-2",
+      "provider": "cartesia",
+      "since": "2026-10-28",
+      "source_url": "https://cartesia.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
+      "id": "deepgram/flux-english/streaming/growth",
+      "limits": {
+        "concurrent": 225,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0057",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "flux-english",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
+      "id": "deepgram/flux-english/streaming/pay-as-you-go",
+      "limits": {
+        "concurrent": 150,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0065",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "flux-english",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
+      "id": "deepgram/flux-multilingual/streaming/growth",
+      "limits": {
+        "concurrent": 225,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0068",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "flux-multilingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
+      "id": "deepgram/flux-multilingual/streaming/pay-as-you-go",
+      "limits": {
+        "concurrent": 150,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0078",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "flux-multilingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
+      "id": "deepgram/nova-3-monolingual/batch/growth",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "batch",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0036",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-monolingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
+      "id": "deepgram/nova-3-monolingual/batch/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0043",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-monolingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
+      "id": "deepgram/nova-3-monolingual/streaming/growth",
+      "limits": {
+        "concurrent": 225,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0042",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-monolingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
+      "id": "deepgram/nova-3-monolingual/streaming/pay-as-you-go",
+      "limits": {
+        "concurrent": 150,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0048",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-monolingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
+      "id": "deepgram/nova-3-multilingual/batch/growth",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "batch",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0043",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-multilingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
+      "id": "deepgram/nova-3-multilingual/batch/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0052",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-multilingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
+      "id": "deepgram/nova-3-multilingual/streaming/growth",
+      "limits": {
+        "concurrent": 225,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0050",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-multilingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
+      "id": "deepgram/nova-3-multilingual/streaming/pay-as-you-go",
+      "limits": {
+        "concurrent": 150,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "streaming",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0058",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "nova-3-multilingual",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Whisper Large $0.0048/min $0.0048/min",
+      "id": "deepgram/whisper-large/batch/growth",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "batch",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0048",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "whisper-large",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Whisper Large $0.0048/min $0.0048/min",
+      "id": "deepgram/whisper-large/batch/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "source_url": "https://deepgram.com/pricing"
+      },
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0048",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "whisper-large",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Scribe v2 Medical Speech to Text $0.22 Price per hour",
+      "id": "elevenlabs/scribe-v2-medical/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.22",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "scribe-v2-medical",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Scribe v2 Realtime Speech to Text $0.39 Price per hour",
+      "id": "elevenlabs/scribe-v2-realtime/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.39",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "scribe-v2-realtime",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Scribe v2 Speech to Text $0.22 Price per hour",
+      "id": "elevenlabs/scribe-v2/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.22",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "scribe-v2",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Real-time rate 0.68€/hr (0.0113€/min)",
+      "id": "gladia/real-time-speech-to-text/real-time/self-serve",
+      "limits": {
+        "concurrent": 30,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "real-time",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.68",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "real-time-speech-to-text",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "0 - 100 hours 0.27€/hr 0.16€/hr",
+      "id": "gladia/solaria-1/batch/self-serve/0-100",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.27",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-1",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 100.0,
+        "min": 0.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "100 - 500 hours 0.26€/hr 0.15€/hr",
+      "id": "gladia/solaria-1/batch/self-serve/100-500",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.26",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-1",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 500.0,
+        "min": 100.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "10,000+ hours 0.21€/hr 0.12€/hr",
+      "id": "gladia/solaria-1/batch/self-serve/10000-up",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.21",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-1",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "min": 10000.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "2,000 - 5,000 hours 0.23€/hr 0.13€/hr",
+      "id": "gladia/solaria-1/batch/self-serve/2000-5000",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.23",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-1",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 5000.0,
+        "min": 2000.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "500 - 2,000 hours 0.24€/hr 0.14€/hr",
+      "id": "gladia/solaria-1/batch/self-serve/500-2000",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.24",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-1",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 2000.0,
+        "min": 500.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "5,000 - 10,000 hours 0.22€/hr 0.13€/hr",
+      "id": "gladia/solaria-1/batch/self-serve/5000-10000",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.22",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-1",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 10000.0,
+        "min": 5000.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "0 - 100 hours 0.27€/hr 0.16€/hr",
+      "id": "gladia/solaria-3/batch/self-serve/0-100",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.16",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-3",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 100.0,
+        "min": 0.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "100 - 500 hours 0.26€/hr 0.15€/hr",
+      "id": "gladia/solaria-3/batch/self-serve/100-500",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.15",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-3",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 500.0,
+        "min": 100.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "10,000+ hours 0.21€/hr 0.12€/hr",
+      "id": "gladia/solaria-3/batch/self-serve/10000-up",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.12",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-3",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "min": 10000.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "2,000 - 5,000 hours 0.23€/hr 0.13€/hr",
+      "id": "gladia/solaria-3/batch/self-serve/2000-5000",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.13",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-3",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 5000.0,
+        "min": 2000.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "500 - 2,000 hours 0.24€/hr 0.14€/hr",
+      "id": "gladia/solaria-3/batch/self-serve/500-2000",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.14",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-3",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 2000.0,
+        "min": 500.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "5,000 - 10,000 hours 0.22€/hr 0.13€/hr",
+      "id": "gladia/solaria-3/batch/self-serve/5000-10000",
+      "limits": {
+        "concurrent": 25,
+        "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+        "source_url": "https://www.gladia.io/pricing"
+      },
+      "mode": "batch",
+      "plan": "self-serve",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.13",
+        "currency": "EUR",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "solaria-3",
+      "provider": "gladia",
+      "since": "2026-10-28",
+      "source_url": "https://www.gladia.io/pricing",
+      "status": "ok",
+      "tax_included": null,
+      "volume": {
+        "max": 10000.0,
+        "min": 5000.0,
+        "unit": "hour"
+      }
+    },
+    {
+      "category": "stt",
+      "evidence": "$0.0027 / 1 minute, per 1 month / account",
+      "id": "google/dynamic-batch-recognition/batch/gemini-enterprise-flexible-savings-plan-1-year",
+      "limits": null,
+      "mode": "batch",
+      "plan": "gemini-enterprise-flexible-savings-plan-1-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0027",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "dynamic-batch-recognition",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "$0.0024 / 1 minute, per 1 month / account",
+      "id": "google/dynamic-batch-recognition/batch/gemini-enterprise-flexible-savings-plan-3-year",
+      "limits": null,
+      "mode": "batch",
+      "plan": "gemini-enterprise-flexible-savings-plan-3-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0024",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "dynamic-batch-recognition",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "$0.003 / 1 minute, per 1 month / account",
+      "id": "google/dynamic-batch-recognition/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.003",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "dynamic-batch-recognition",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0702 / 1 minute, per 1 month / account",
+      "id": "google/medical-conversation/any/gemini-enterprise-flexible-savings-plan-1-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-1-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0702",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "medical-conversation",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0624 / 1 minute, per 1 month / account",
+      "id": "google/medical-conversation/any/gemini-enterprise-flexible-savings-plan-3-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-3-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0624",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "medical-conversation",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.078 / 1 minute, per 1 month / account",
+      "id": "google/medical-conversation/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.078",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "medical-conversation",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0702 / 1 minute, per 1 month / account",
+      "id": "google/medical-dictation/any/gemini-enterprise-flexible-savings-plan-1-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-1-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0702",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "medical-dictation",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0624 / 1 minute, per 1 month / account",
+      "id": "google/medical-dictation/any/gemini-enterprise-flexible-savings-plan-3-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-3-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0624",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "medical-dictation",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.078 / 1 minute, per 1 month / account",
+      "id": "google/medical-dictation/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.078",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "medical-dictation",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "0 minute to 500,000 minute $0.0144 / 1 minute, per 1 month / account",
+      "id": "google/recognition/any/gemini-enterprise-flexible-savings-plan-1-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-1-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0144",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "recognition",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "0 minute to 500,000 minute $0.0128 / 1 minute, per 1 month / account",
+      "id": "google/recognition/any/gemini-enterprise-flexible-savings-plan-3-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-3-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0128",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "recognition",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "0 minute to 500,000 minute $0.016 / 1 minute, per 1 month / account",
+      "id": "google/recognition/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.016",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "recognition",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0144 / 1 minute, per 1 month / account",
+      "id": "google/speech-recognition-with-data-logging/any/gemini-enterprise-flexible-savings-plan-1-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-1-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0144",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "speech-recognition-with-data-logging",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0128 / 1 minute, per 1 month / account",
+      "id": "google/speech-recognition-with-data-logging/any/gemini-enterprise-flexible-savings-plan-3-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-3-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0128",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "speech-recognition-with-data-logging",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.016 / 1 minute, per 1 month / account",
+      "id": "google/speech-recognition-with-data-logging/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.016",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "speech-recognition-with-data-logging",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0216 / 1 minute, per 1 month / account",
+      "id": "google/speech-recognition-without-data-logging/any/gemini-enterprise-flexible-savings-plan-1-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-1-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0216",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "speech-recognition-without-data-logging",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.0192 / 1 minute, per 1 month / account",
+      "id": "google/speech-recognition-without-data-logging/any/gemini-enterprise-flexible-savings-plan-3-year",
+      "limits": null,
+      "mode": "any",
+      "plan": "gemini-enterprise-flexible-savings-plan-3-year",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0192",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "speech-recognition-without-data-logging",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "60 minute and above $0.024 / 1 minute, per 1 month / account",
+      "id": "google/speech-recognition-without-data-logging/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.024",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "speech-recognition-without-data-logging",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/speech-to-text/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "STT 1 $0.15 $0.10/hr",
+      "id": "inworld/stt-1/any/builder",
+      "limits": null,
+      "mode": "any",
+      "plan": "builder",
+      "plan_fee": {
+        "amount": "100",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.10",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "stt-1",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "STT 1 $0.15 $0.10/hr",
+      "id": "inworld/stt-1/any/creator",
+      "limits": null,
+      "mode": "any",
+      "plan": "creator",
+      "plan_fee": {
+        "amount": "25",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.10",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "stt-1",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "STT 1 $0.15 $0.10/hr",
+      "id": "inworld/stt-1/any/developer",
+      "limits": null,
+      "mode": "any",
+      "plan": "developer",
+      "plan_fee": {
+        "amount": "300",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.10",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "stt-1",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "STT 1 $0.15 $0.10/hr",
+      "id": "inworld/stt-1/any/growth",
+      "limits": null,
+      "mode": "any",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "1500",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.10",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "stt-1",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "STT 1 $0.15/hr",
+      "id": "inworld/stt-1/any/on-demand",
+      "limits": null,
+      "mode": "any",
+      "plan": "on-demand",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.15",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "stt-1",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "gpt-4o-mini-transcribe Transcription $1.25 $5.00 $0.003 / minute",
+      "id": "openai/gpt-4o-mini-transcribe/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.003",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "gpt-4o-mini-transcribe",
+      "provider": "openai",
+      "since": "2026-10-28",
+      "source_url": "https://platform.openai.com/docs/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "gpt-4o-transcribe Transcription $2.50 $10.00 $0.006 / minute",
+      "id": "openai/gpt-4o-transcribe/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.006",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "gpt-4o-transcribe",
+      "provider": "openai",
+      "since": "2026-10-28",
+      "source_url": "https://platform.openai.com/docs/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "gpt-live-transcribe Live transcription - - $0.017 / minute",
+      "id": "openai/gpt-live-transcribe/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.017",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "gpt-live-transcribe",
+      "provider": "openai",
+      "since": "2026-10-28",
+      "source_url": "https://platform.openai.com/docs/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "gpt-realtime-whisper Live transcription - - $0.017 / minute",
+      "id": "openai/gpt-realtime-whisper/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.017",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "gpt-realtime-whisper",
+      "provider": "openai",
+      "since": "2026-10-28",
+      "source_url": "https://platform.openai.com/docs/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "gpt-transcribe Transcription - - $0.0045 / minute",
+      "id": "openai/gpt-transcribe/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0045",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "gpt-transcribe",
+      "provider": "openai",
+      "since": "2026-10-28",
+      "source_url": "https://platform.openai.com/docs/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Human Transcription $1.99 per minute Rounded up to the nearest second, 15 second minimum",
+      "id": "revai/human/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "1.99",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "human",
+      "provider": "revai",
+      "since": "2026-10-28",
+      "source_url": "https://www.rev.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Reverb Foreign Language Transcription $0.30 per hour Languages: Spanish, French, Chinese, Portuguese, and 53 more. Rounded up to the nearest second, 15 second minimum",
+      "id": "revai/reverb-foreign-language/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.30",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "reverb-foreign-language",
+      "provider": "revai",
+      "since": "2026-10-28",
+      "source_url": "https://www.rev.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Reverb Transcription $0.20 per hour Languages: English Rounded up to the nearest second, 15 second minimum",
+      "id": "revai/reverb/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.20",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "reverb",
+      "provider": "revai",
+      "since": "2026-10-28",
+      "source_url": "https://www.rev.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Whisper Large Transcription $0.005 per minute Languages: English Rounded up to the nearest second, 15 second minimum",
+      "id": "revai/whisper-large/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.005",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "whisper-large",
+      "provider": "revai",
+      "since": "2026-10-28",
+      "source_url": "https://www.rev.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "error": "scraper failed on 2026-10-28",
+      "evidence": "Rime STT $0.002 / min from Nov 20 Free until Nov 19",
+      "id": "rime/rime-stt/any/pay-as-you-go",
+      "limits": {
+        "concurrent": 10,
+        "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
+        "source_url": "https://www.rime.ai/pricing"
+      },
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.002",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "rime-stt",
+      "provider": "rime",
+      "since": "2026-10-28",
+      "source_url": "https://www.rime.ai/pricing",
+      "status": "failed",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+      "id": "sarvam/saaras/batch-with-diarization/business",
+      "limits": null,
+      "mode": "batch-with-diarization",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.47",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+      "id": "sarvam/saaras/batch-with-diarization/growth",
+      "limits": null,
+      "mode": "batch-with-diarization",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.50",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+      "id": "sarvam/saaras/batch-with-diarization/pay-as-you-go",
+      "limits": null,
+      "mode": "batch-with-diarization",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.59",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
+      "id": "sarvam/saaras/batch-with-diarization/pro",
+      "limits": null,
+      "mode": "batch-with-diarization",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.54",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/batch/business",
+      "limits": null,
+      "mode": "batch",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.38",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/batch/growth",
+      "limits": null,
+      "mode": "batch",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.41",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.49",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/batch/pro",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.45",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/real-time/business",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.38",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/real-time/growth",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.41",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.49",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
+      "id": "sarvam/saaras/real-time/pro",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.45",
+        "currency": "INR",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "saaras",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Pulse Pro (Pre-Recorded) ~$0.0035/minute",
+      "id": "smallestai/pulse-pro/batch/pay-as-you-go",
+      "limits": {
+        "concurrent": 100,
+        "evidence": "Concurrency for STT 100 concurrent streams",
+        "source_url": "https://smallest.ai/pricing/models"
+      },
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0035",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "pulse-pro",
+      "provider": "smallestai",
+      "since": "2026-10-28",
+      "source_url": "https://smallest.ai/pricing/models",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Pulse (Pre-Recorded) ~$0.003/minute",
+      "id": "smallestai/pulse/batch/pay-as-you-go",
+      "limits": {
+        "concurrent": 100,
+        "evidence": "Concurrency for STT 100 concurrent streams",
+        "source_url": "https://smallest.ai/pricing/models"
+      },
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.003",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "pulse",
+      "provider": "smallestai",
+      "since": "2026-10-28",
+      "source_url": "https://smallest.ai/pricing/models",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Pulse (Realtime) ~$0.004/minute",
+      "id": "smallestai/pulse/real-time/pay-as-you-go",
+      "limits": {
+        "concurrent": 100,
+        "evidence": "Concurrency for STT 100 concurrent streams",
+        "source_url": "https://smallest.ai/pricing/models"
+      },
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.004",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "pulse",
+      "provider": "smallestai",
+      "since": "2026-10-28",
+      "source_url": "https://smallest.ai/pricing/models",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Input audio tokens Duration of audio or streaming session $1.50 per 1M tokens $2.00 per 1M tokens",
+      "id": "soniox/stt-input-audio-tokens/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "1.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "stt-input-audio-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Input audio tokens Duration of audio or streaming session $1.50 per 1M tokens $2.00 per 1M tokens",
+      "id": "soniox/stt-input-audio-tokens/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "2.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "stt-input-audio-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Input text tokens Custom instructions or context you provide $3.50 per 1M tokens $4.00 per 1M tokens",
+      "id": "soniox/stt-input-text-tokens/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "3.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "stt-input-text-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Input text tokens Custom instructions or context you provide $3.50 per 1M tokens $4.00 per 1M tokens",
+      "id": "soniox/stt-input-text-tokens/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "4.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "stt-input-text-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Output text tokens Transcription and optionally translation or other text returned by the model $3.50 per 1M tokens $4.00 per 1M tokens",
+      "id": "soniox/stt-output-text-tokens/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "3.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "stt-output-text-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Output text tokens Transcription and optionally translation or other text returned by the model $3.50 per 1M tokens $4.00 per 1M tokens",
+      "id": "soniox/stt-output-text-tokens/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "4.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "stt-output-text-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Speech-to-Text is $0.10/hour for async (file uploads) and $0.12/hour for real-time (streaming)",
+      "id": "soniox/stt/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.10",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "stt",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Speech-to-Text is $0.10/hour for async (file uploads) and $0.12/hour for real-time (streaming)",
+      "id": "soniox/stt/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.12",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "stt",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Enhanced $0.38 / hr",
+      "id": "speechmatics/enhanced/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.38",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "enhanced",
+      "provider": "speechmatics",
+      "since": "2026-10-28",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Melia 1 $0.12 / hr",
+      "id": "speechmatics/melia-1/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.12",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "melia-1",
+      "provider": "speechmatics",
+      "since": "2026-10-28",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Oak 1 Medical $0.15 / hr",
+      "id": "speechmatics/oak-1-medical/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.15",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "oak-1-medical",
+      "provider": "speechmatics",
+      "since": "2026-10-28",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Standard $0.23 / hr",
+      "id": "speechmatics/standard/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.23",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "standard",
+      "provider": "speechmatics",
+      "since": "2026-10-28",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "AssemblyAI STT $0.005 per minute",
+      "id": "telnyx/assemblyai-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.005",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "assemblyai-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Azure STT $0.027 per minute",
+      "id": "telnyx/azure-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.027",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "azure-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Basira STT $0.007 per minute",
+      "id": "telnyx/basira-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.007",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "basira-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Cohere Arabic STT $0.0015 per minute",
+      "id": "telnyx/cohere-arabic-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "cohere-arabic-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Deepgram Flux STT $0.005 per minute",
+      "id": "telnyx/deepgram-flux-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.005",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "deepgram-flux-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Deepgram Nova 2 STT $0.005 per minute",
+      "id": "telnyx/deepgram-nova-2-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.005",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "deepgram-nova-2-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Deepgram Nova 3 STT $0.005 per minute",
+      "id": "telnyx/deepgram-nova-3-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.005",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "deepgram-nova-3-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Google STT $0.017 per minute",
+      "id": "telnyx/google-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.017",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "google-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Grok (xAI) STT $0.0033 per minute",
+      "id": "telnyx/grok-xai-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0033",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "grok-xai-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Humain STT $0.007 per minute",
+      "id": "telnyx/humain-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.007",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "humain-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Parakeet STT $0.0015 per minute",
+      "id": "telnyx/parakeet-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "parakeet-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Soniox STT $0.002 per minute",
+      "id": "telnyx/soniox-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.002",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "soniox-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Speechmatics STT $0.0035 per minute",
+      "id": "telnyx/speechmatics-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0035",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "speechmatics-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Telnyx STT $0.015 per minute",
+      "id": "telnyx/telnyx-stt/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "telnyx-stt",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Transcription $0.0500 / min Answering",
+      "id": "twilio/call-recording-transcription/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0500",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "call-recording-transcription",
+      "provider": "twilio",
+      "since": "2026-10-28",
+      "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Batch Transcription $0.024 / min",
+      "id": "twilio/conversation-intelligence-transcription/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.024",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "conversation-intelligence-transcription",
+      "provider": "twilio",
+      "since": "2026-10-28",
+      "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Streaming (Real-Time) Transcription $0.027 / min",
+      "id": "twilio/conversation-intelligence-transcription/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.027",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "conversation-intelligence-transcription",
+      "provider": "twilio",
+      "since": "2026-10-28",
+      "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
+      "status": "ok",
+      "tax_included": null
     }
-  },
-  {
-    "category": "stt",
-    "evidence": "Tier 3 pricing of $0.0138/minute (54% discount to T1 pricing) applies to the next 4,000,000 minutes",
-    "id": "aws/call-analytics/any/pay-as-you-go/1000000-5000000",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0138",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "call-analytics",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null,
-    "volume": {
-      "max": 5000000.0,
-      "min": 1000000.0,
-      "unit": "minute"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "Tier 2 pricing of $0.0186/minute (38% discount to T1 pricing) applies to the next 750,000 minutes",
-    "id": "aws/call-analytics/any/pay-as-you-go/250000-1000000",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0186",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "call-analytics",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null,
-    "volume": {
-      "max": 1000000.0,
-      "min": 250000.0,
-      "unit": "minute"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "Tier 1 (T1) content redaction pricing of $0.0024 applies to the first 250,000 minutes",
-    "id": "aws/content-redaction/any/pay-as-you-go/0-250000",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0024",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "content-redaction",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null,
-    "volume": {
-      "max": 250000.0,
-      "min": 0.0,
-      "unit": "minute"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "Tier 3 content redaction pricing of $0.00102/minute (58% discount to T1 pricing) applies to the next 4,000,000 minutes",
-    "id": "aws/content-redaction/any/pay-as-you-go/1000000-5000000",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.00102",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "content-redaction",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null,
-    "volume": {
-      "max": 5000000.0,
-      "min": 1000000.0,
-      "unit": "minute"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "Tier 2 content redaction pricing of $0.0015 (38% discount to T1 pricing) applies to the next 750,000 minutes",
-    "id": "aws/content-redaction/any/pay-as-you-go/250000-1000000",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "content-redaction",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null,
-    "volume": {
-      "max": 1000000.0,
-      "min": 250000.0,
-      "unit": "minute"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch transcription is priced at $0.006 per minute",
-    "id": "aws/transcribe/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.006",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "transcribe",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Streaming transcription is priced at $0.01 per minute",
-    "id": "aws/transcribe/streaming/pay-as-you-go",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.01",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "transcribe",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/transcribe/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Fast Transcription Speech To Text: 0.36 USD per 1 Hour (eastus)",
-    "id": "azure/fast-transcription/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.36",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "fast-transcription",
-    "provider": "azure",
-    "since": "2026-10-28",
-    "source_url": "https://prices.azure.com/api/retail/prices",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "S1 Speech to Text Batch: 0.18 USD per 1 Hour (eastus)",
-    "id": "azure/speech-to-text/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.18",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "speech-to-text",
-    "provider": "azure",
-    "since": "2026-10-28",
-    "source_url": "https://prices.azure.com/api/retail/prices",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "S1 Speech To Text: 1.0 USD per 1 Hour (eastus)",
-    "id": "azure/speech-to-text/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "1",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "speech-to-text",
-    "provider": "azure",
-    "since": "2026-10-28",
-    "source_url": "https://prices.azure.com/api/retail/prices",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "One hour of audio is only $0.39 on the Scale plan.",
-    "id": "cartesia/ink-2/any/scale",
-    "limits": {
-      "concurrent": 60,
-      "evidence": "Concurrent requests 8 12 20 60",
-      "source_url": "https://cartesia.ai/pricing"
-    },
-    "mode": "any",
-    "plan": "scale",
-    "plan_fee": {
-      "amount": "299",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.39",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "ink-2",
-    "provider": "cartesia",
-    "since": "2026-10-28",
-    "source_url": "https://cartesia.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
-    "id": "deepgram/flux-english/streaming/growth",
-    "limits": {
-      "concurrent": 225,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0057",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "flux-english",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
-    "id": "deepgram/flux-english/streaming/pay-as-you-go",
-    "limits": {
-      "concurrent": 150,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0065",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "flux-english",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
-    "id": "deepgram/flux-multilingual/streaming/growth",
-    "limits": {
-      "concurrent": 225,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0068",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "flux-multilingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
-    "id": "deepgram/flux-multilingual/streaming/pay-as-you-go",
-    "limits": {
-      "concurrent": 150,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0078",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "flux-multilingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
-    "id": "deepgram/nova-3-monolingual/batch/growth",
-    "limits": {
-      "concurrent": 50,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "batch",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0036",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-monolingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
-    "id": "deepgram/nova-3-monolingual/batch/pay-as-you-go",
-    "limits": {
-      "concurrent": 50,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0043",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-monolingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
-    "id": "deepgram/nova-3-monolingual/streaming/growth",
-    "limits": {
-      "concurrent": 225,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0042",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-monolingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
-    "id": "deepgram/nova-3-monolingual/streaming/pay-as-you-go",
-    "limits": {
-      "concurrent": 150,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0048",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-monolingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
-    "id": "deepgram/nova-3-multilingual/batch/growth",
-    "limits": {
-      "concurrent": 50,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "batch",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0043",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-multilingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
-    "id": "deepgram/nova-3-multilingual/batch/pay-as-you-go",
-    "limits": {
-      "concurrent": 50,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0052",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-multilingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
-    "id": "deepgram/nova-3-multilingual/streaming/growth",
-    "limits": {
-      "concurrent": 225,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0050",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-multilingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
-    "id": "deepgram/nova-3-multilingual/streaming/pay-as-you-go",
-    "limits": {
-      "concurrent": 150,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "streaming",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0058",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "nova-3-multilingual",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Whisper Large $0.0048/min $0.0048/min",
-    "id": "deepgram/whisper-large/batch/growth",
-    "limits": {
-      "concurrent": 50,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "batch",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0048",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "whisper-large",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Whisper Large $0.0048/min $0.0048/min",
-    "id": "deepgram/whisper-large/batch/pay-as-you-go",
-    "limits": {
-      "concurrent": 50,
-      "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-      "source_url": "https://deepgram.com/pricing"
-    },
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0048",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "whisper-large",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Scribe v2 Medical Speech to Text $0.22 Price per hour",
-    "id": "elevenlabs/scribe-v2-medical/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.22",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "scribe-v2-medical",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Scribe v2 Realtime Speech to Text $0.39 Price per hour",
-    "id": "elevenlabs/scribe-v2-realtime/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.39",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "scribe-v2-realtime",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Scribe v2 Speech to Text $0.22 Price per hour",
-    "id": "elevenlabs/scribe-v2/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.22",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "scribe-v2",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Real-time rate 0.68€/hr (0.0113€/min)",
-    "id": "gladia/real-time-speech-to-text/real-time/self-serve",
-    "limits": {
-      "concurrent": 30,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "real-time",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.68",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "real-time-speech-to-text",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "0 - 100 hours 0.27€/hr 0.16€/hr",
-    "id": "gladia/solaria-1/batch/self-serve/0-100",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.27",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-1",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 100.0,
-      "min": 0.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "100 - 500 hours 0.26€/hr 0.15€/hr",
-    "id": "gladia/solaria-1/batch/self-serve/100-500",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.26",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-1",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 500.0,
-      "min": 100.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "10,000+ hours 0.21€/hr 0.12€/hr",
-    "id": "gladia/solaria-1/batch/self-serve/10000-up",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.21",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-1",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "min": 10000.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "2,000 - 5,000 hours 0.23€/hr 0.13€/hr",
-    "id": "gladia/solaria-1/batch/self-serve/2000-5000",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.23",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-1",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 5000.0,
-      "min": 2000.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "500 - 2,000 hours 0.24€/hr 0.14€/hr",
-    "id": "gladia/solaria-1/batch/self-serve/500-2000",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.24",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-1",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 2000.0,
-      "min": 500.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "5,000 - 10,000 hours 0.22€/hr 0.13€/hr",
-    "id": "gladia/solaria-1/batch/self-serve/5000-10000",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.22",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-1",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 10000.0,
-      "min": 5000.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "0 - 100 hours 0.27€/hr 0.16€/hr",
-    "id": "gladia/solaria-3/batch/self-serve/0-100",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.16",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-3",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 100.0,
-      "min": 0.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "100 - 500 hours 0.26€/hr 0.15€/hr",
-    "id": "gladia/solaria-3/batch/self-serve/100-500",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.15",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-3",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 500.0,
-      "min": 100.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "10,000+ hours 0.21€/hr 0.12€/hr",
-    "id": "gladia/solaria-3/batch/self-serve/10000-up",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.12",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-3",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "min": 10000.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "2,000 - 5,000 hours 0.23€/hr 0.13€/hr",
-    "id": "gladia/solaria-3/batch/self-serve/2000-5000",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.13",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-3",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 5000.0,
-      "min": 2000.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "500 - 2,000 hours 0.24€/hr 0.14€/hr",
-    "id": "gladia/solaria-3/batch/self-serve/500-2000",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.14",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-3",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 2000.0,
-      "min": 500.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "5,000 - 10,000 hours 0.22€/hr 0.13€/hr",
-    "id": "gladia/solaria-3/batch/self-serve/5000-10000",
-    "limits": {
-      "concurrent": 25,
-      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
-      "source_url": "https://www.gladia.io/pricing"
-    },
-    "mode": "batch",
-    "plan": "self-serve",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.13",
-      "currency": "EUR",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "solaria-3",
-    "provider": "gladia",
-    "since": "2026-10-28",
-    "source_url": "https://www.gladia.io/pricing",
-    "tax_included": null,
-    "volume": {
-      "max": 10000.0,
-      "min": 5000.0,
-      "unit": "hour"
-    }
-  },
-  {
-    "category": "stt",
-    "evidence": "$0.0027 / 1 minute, per 1 month / account",
-    "id": "google/dynamic-batch-recognition/batch/gemini-enterprise-flexible-savings-plan-1-year",
-    "limits": null,
-    "mode": "batch",
-    "plan": "gemini-enterprise-flexible-savings-plan-1-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0027",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "dynamic-batch-recognition",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "$0.0024 / 1 minute, per 1 month / account",
-    "id": "google/dynamic-batch-recognition/batch/gemini-enterprise-flexible-savings-plan-3-year",
-    "limits": null,
-    "mode": "batch",
-    "plan": "gemini-enterprise-flexible-savings-plan-3-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0024",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "dynamic-batch-recognition",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "$0.003 / 1 minute, per 1 month / account",
-    "id": "google/dynamic-batch-recognition/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.003",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "dynamic-batch-recognition",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0702 / 1 minute, per 1 month / account",
-    "id": "google/medical-conversation/any/gemini-enterprise-flexible-savings-plan-1-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-1-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0702",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "medical-conversation",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0624 / 1 minute, per 1 month / account",
-    "id": "google/medical-conversation/any/gemini-enterprise-flexible-savings-plan-3-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-3-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0624",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "medical-conversation",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.078 / 1 minute, per 1 month / account",
-    "id": "google/medical-conversation/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.078",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "medical-conversation",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0702 / 1 minute, per 1 month / account",
-    "id": "google/medical-dictation/any/gemini-enterprise-flexible-savings-plan-1-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-1-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0702",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "medical-dictation",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0624 / 1 minute, per 1 month / account",
-    "id": "google/medical-dictation/any/gemini-enterprise-flexible-savings-plan-3-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-3-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0624",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "medical-dictation",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.078 / 1 minute, per 1 month / account",
-    "id": "google/medical-dictation/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.078",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "medical-dictation",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "0 minute to 500,000 minute $0.0144 / 1 minute, per 1 month / account",
-    "id": "google/recognition/any/gemini-enterprise-flexible-savings-plan-1-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-1-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0144",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "recognition",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "0 minute to 500,000 minute $0.0128 / 1 minute, per 1 month / account",
-    "id": "google/recognition/any/gemini-enterprise-flexible-savings-plan-3-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-3-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0128",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "recognition",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "0 minute to 500,000 minute $0.016 / 1 minute, per 1 month / account",
-    "id": "google/recognition/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.016",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "recognition",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0144 / 1 minute, per 1 month / account",
-    "id": "google/speech-recognition-with-data-logging/any/gemini-enterprise-flexible-savings-plan-1-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-1-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0144",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "speech-recognition-with-data-logging",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0128 / 1 minute, per 1 month / account",
-    "id": "google/speech-recognition-with-data-logging/any/gemini-enterprise-flexible-savings-plan-3-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-3-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0128",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "speech-recognition-with-data-logging",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.016 / 1 minute, per 1 month / account",
-    "id": "google/speech-recognition-with-data-logging/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.016",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "speech-recognition-with-data-logging",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0216 / 1 minute, per 1 month / account",
-    "id": "google/speech-recognition-without-data-logging/any/gemini-enterprise-flexible-savings-plan-1-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-1-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0216",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "speech-recognition-without-data-logging",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.0192 / 1 minute, per 1 month / account",
-    "id": "google/speech-recognition-without-data-logging/any/gemini-enterprise-flexible-savings-plan-3-year",
-    "limits": null,
-    "mode": "any",
-    "plan": "gemini-enterprise-flexible-savings-plan-3-year",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0192",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "speech-recognition-without-data-logging",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "60 minute and above $0.024 / 1 minute, per 1 month / account",
-    "id": "google/speech-recognition-without-data-logging/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.024",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "speech-recognition-without-data-logging",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/speech-to-text/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "STT 1 $0.15 $0.10/hr",
-    "id": "inworld/stt-1/any/builder",
-    "limits": null,
-    "mode": "any",
-    "plan": "builder",
-    "plan_fee": {
-      "amount": "100",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.10",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "stt-1",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "STT 1 $0.15 $0.10/hr",
-    "id": "inworld/stt-1/any/creator",
-    "limits": null,
-    "mode": "any",
-    "plan": "creator",
-    "plan_fee": {
-      "amount": "25",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.10",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "stt-1",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "STT 1 $0.15 $0.10/hr",
-    "id": "inworld/stt-1/any/developer",
-    "limits": null,
-    "mode": "any",
-    "plan": "developer",
-    "plan_fee": {
-      "amount": "300",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.10",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "stt-1",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "STT 1 $0.15 $0.10/hr",
-    "id": "inworld/stt-1/any/growth",
-    "limits": null,
-    "mode": "any",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "1500",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.10",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "stt-1",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "STT 1 $0.15/hr",
-    "id": "inworld/stt-1/any/on-demand",
-    "limits": null,
-    "mode": "any",
-    "plan": "on-demand",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.15",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "stt-1",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "gpt-4o-mini-transcribe Transcription $1.25 $5.00 $0.003 / minute",
-    "id": "openai/gpt-4o-mini-transcribe/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.003",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "gpt-4o-mini-transcribe",
-    "provider": "openai",
-    "since": "2026-10-28",
-    "source_url": "https://platform.openai.com/docs/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "gpt-4o-transcribe Transcription $2.50 $10.00 $0.006 / minute",
-    "id": "openai/gpt-4o-transcribe/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.006",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "gpt-4o-transcribe",
-    "provider": "openai",
-    "since": "2026-10-28",
-    "source_url": "https://platform.openai.com/docs/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "gpt-live-transcribe Live transcription - - $0.017 / minute",
-    "id": "openai/gpt-live-transcribe/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.017",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "gpt-live-transcribe",
-    "provider": "openai",
-    "since": "2026-10-28",
-    "source_url": "https://platform.openai.com/docs/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "gpt-realtime-whisper Live transcription - - $0.017 / minute",
-    "id": "openai/gpt-realtime-whisper/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.017",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "gpt-realtime-whisper",
-    "provider": "openai",
-    "since": "2026-10-28",
-    "source_url": "https://platform.openai.com/docs/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "gpt-transcribe Transcription - - $0.0045 / minute",
-    "id": "openai/gpt-transcribe/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0045",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "gpt-transcribe",
-    "provider": "openai",
-    "since": "2026-10-28",
-    "source_url": "https://platform.openai.com/docs/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Human Transcription $1.99 per minute Rounded up to the nearest second, 15 second minimum",
-    "id": "revai/human/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "1.99",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "human",
-    "provider": "revai",
-    "since": "2026-10-28",
-    "source_url": "https://www.rev.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Reverb Foreign Language Transcription $0.30 per hour Languages: Spanish, French, Chinese, Portuguese, and 53 more. Rounded up to the nearest second, 15 second minimum",
-    "id": "revai/reverb-foreign-language/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.30",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "reverb-foreign-language",
-    "provider": "revai",
-    "since": "2026-10-28",
-    "source_url": "https://www.rev.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Reverb Transcription $0.20 per hour Languages: English Rounded up to the nearest second, 15 second minimum",
-    "id": "revai/reverb/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.20",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "reverb",
-    "provider": "revai",
-    "since": "2026-10-28",
-    "source_url": "https://www.rev.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Whisper Large Transcription $0.005 per minute Languages: English Rounded up to the nearest second, 15 second minimum",
-    "id": "revai/whisper-large/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.005",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "whisper-large",
-    "provider": "revai",
-    "since": "2026-10-28",
-    "source_url": "https://www.rev.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Rime STT $0.002 / min from Nov 20 Free until Nov 19",
-    "id": "rime/rime-stt/any/pay-as-you-go",
-    "limits": {
-      "concurrent": 10,
-      "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
-      "source_url": "https://www.rime.ai/pricing"
-    },
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.002",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "rime-stt",
-    "provider": "rime",
-    "since": "2026-10-28",
-    "source_url": "https://www.rime.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
-    "id": "sarvam/saaras/batch-with-diarization/business",
-    "limits": null,
-    "mode": "batch-with-diarization",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.47",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
-    "id": "sarvam/saaras/batch-with-diarization/growth",
-    "limits": null,
-    "mode": "batch-with-diarization",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.50",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
-    "id": "sarvam/saaras/batch-with-diarization/pay-as-you-go",
-    "limits": null,
-    "mode": "batch-with-diarization",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.59",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch with diarization per minute ₹0.59 ₹0.54 ₹0.50 ₹0.47",
-    "id": "sarvam/saaras/batch-with-diarization/pro",
-    "limits": null,
-    "mode": "batch-with-diarization",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.54",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/batch/business",
-    "limits": null,
-    "mode": "batch",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.38",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/batch/growth",
-    "limits": null,
-    "mode": "batch",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.41",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.49",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/batch/pro",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.45",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/real-time/business",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.38",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/real-time/growth",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.41",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.49",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Real-time per minute ₹0.49 ₹0.45 ₹0.41 ₹0.38",
-    "id": "sarvam/saaras/real-time/pro",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.45",
-      "currency": "INR",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "saaras",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "stt",
-    "evidence": "Pulse Pro (Pre-Recorded) ~$0.0035/minute",
-    "id": "smallestai/pulse-pro/batch/pay-as-you-go",
-    "limits": {
-      "concurrent": 100,
-      "evidence": "Concurrency for STT 100 concurrent streams",
-      "source_url": "https://smallest.ai/pricing/models"
-    },
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0035",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "pulse-pro",
-    "provider": "smallestai",
-    "since": "2026-10-28",
-    "source_url": "https://smallest.ai/pricing/models",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Pulse (Pre-Recorded) ~$0.003/minute",
-    "id": "smallestai/pulse/batch/pay-as-you-go",
-    "limits": {
-      "concurrent": 100,
-      "evidence": "Concurrency for STT 100 concurrent streams",
-      "source_url": "https://smallest.ai/pricing/models"
-    },
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.003",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "pulse",
-    "provider": "smallestai",
-    "since": "2026-10-28",
-    "source_url": "https://smallest.ai/pricing/models",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Pulse (Realtime) ~$0.004/minute",
-    "id": "smallestai/pulse/real-time/pay-as-you-go",
-    "limits": {
-      "concurrent": 100,
-      "evidence": "Concurrency for STT 100 concurrent streams",
-      "source_url": "https://smallest.ai/pricing/models"
-    },
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.004",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "pulse",
-    "provider": "smallestai",
-    "since": "2026-10-28",
-    "source_url": "https://smallest.ai/pricing/models",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Input audio tokens Duration of audio or streaming session $1.50 per 1M tokens $2.00 per 1M tokens",
-    "id": "soniox/stt-input-audio-tokens/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "1.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "stt-input-audio-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Input audio tokens Duration of audio or streaming session $1.50 per 1M tokens $2.00 per 1M tokens",
-    "id": "soniox/stt-input-audio-tokens/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "2.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "stt-input-audio-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Input text tokens Custom instructions or context you provide $3.50 per 1M tokens $4.00 per 1M tokens",
-    "id": "soniox/stt-input-text-tokens/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "3.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "stt-input-text-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Input text tokens Custom instructions or context you provide $3.50 per 1M tokens $4.00 per 1M tokens",
-    "id": "soniox/stt-input-text-tokens/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "4.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "stt-input-text-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Output text tokens Transcription and optionally translation or other text returned by the model $3.50 per 1M tokens $4.00 per 1M tokens",
-    "id": "soniox/stt-output-text-tokens/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "3.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "stt-output-text-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Output text tokens Transcription and optionally translation or other text returned by the model $3.50 per 1M tokens $4.00 per 1M tokens",
-    "id": "soniox/stt-output-text-tokens/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "4.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "stt-output-text-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Speech-to-Text is $0.10/hour for async (file uploads) and $0.12/hour for real-time (streaming)",
-    "id": "soniox/stt/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.10",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "stt",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Speech-to-Text is $0.10/hour for async (file uploads) and $0.12/hour for real-time (streaming)",
-    "id": "soniox/stt/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.12",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "stt",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Enhanced $0.38 / hr",
-    "id": "speechmatics/enhanced/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.38",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "enhanced",
-    "provider": "speechmatics",
-    "since": "2026-10-28",
-    "source_url": "https://www.speechmatics.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Melia 1 $0.12 / hr",
-    "id": "speechmatics/melia-1/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.12",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "melia-1",
-    "provider": "speechmatics",
-    "since": "2026-10-28",
-    "source_url": "https://www.speechmatics.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Oak 1 Medical $0.15 / hr",
-    "id": "speechmatics/oak-1-medical/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.15",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "oak-1-medical",
-    "provider": "speechmatics",
-    "since": "2026-10-28",
-    "source_url": "https://www.speechmatics.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Standard $0.23 / hr",
-    "id": "speechmatics/standard/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.23",
-      "currency": "USD",
-      "per": 1,
-      "unit": "hour"
-    },
-    "product": "standard",
-    "provider": "speechmatics",
-    "since": "2026-10-28",
-    "source_url": "https://www.speechmatics.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "AssemblyAI STT $0.005 per minute",
-    "id": "telnyx/assemblyai-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.005",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "assemblyai-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Azure STT $0.027 per minute",
-    "id": "telnyx/azure-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.027",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "azure-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Basira STT $0.007 per minute",
-    "id": "telnyx/basira-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.007",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "basira-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Cohere Arabic STT $0.0015 per minute",
-    "id": "telnyx/cohere-arabic-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "cohere-arabic-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Deepgram Flux STT $0.005 per minute",
-    "id": "telnyx/deepgram-flux-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.005",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "deepgram-flux-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Deepgram Nova 2 STT $0.005 per minute",
-    "id": "telnyx/deepgram-nova-2-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.005",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "deepgram-nova-2-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Deepgram Nova 3 STT $0.005 per minute",
-    "id": "telnyx/deepgram-nova-3-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.005",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "deepgram-nova-3-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Google STT $0.017 per minute",
-    "id": "telnyx/google-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.017",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "google-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Grok (xAI) STT $0.0033 per minute",
-    "id": "telnyx/grok-xai-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0033",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "grok-xai-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Humain STT $0.007 per minute",
-    "id": "telnyx/humain-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.007",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "humain-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Parakeet STT $0.0015 per minute",
-    "id": "telnyx/parakeet-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "parakeet-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Soniox STT $0.002 per minute",
-    "id": "telnyx/soniox-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.002",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "soniox-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Speechmatics STT $0.0035 per minute",
-    "id": "telnyx/speechmatics-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0035",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "speechmatics-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Telnyx STT $0.015 per minute",
-    "id": "telnyx/telnyx-stt/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "telnyx-stt",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Transcription $0.0500 / min Answering",
-    "id": "twilio/call-recording-transcription/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0500",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "call-recording-transcription",
-    "provider": "twilio",
-    "since": "2026-10-28",
-    "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Batch Transcription $0.024 / min",
-    "id": "twilio/conversation-intelligence-transcription/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.024",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "conversation-intelligence-transcription",
-    "provider": "twilio",
-    "since": "2026-10-28",
-    "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
-    "tax_included": null
-  },
-  {
-    "category": "stt",
-    "evidence": "Streaming (Real-Time) Transcription $0.027 / min",
-    "id": "twilio/conversation-intelligence-transcription/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.027",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "conversation-intelligence-transcription",
-    "provider": "twilio",
-    "since": "2026-10-28",
-    "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
-    "tax_included": null
-  }
-]
+  ],
+  "schema_version": 1
+}

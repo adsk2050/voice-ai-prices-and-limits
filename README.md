@@ -265,6 +265,18 @@ rows. The reason says what would unlock them; `sign-in-required` and
 Fetch them straight from GitHub, for example
 `https://raw.githubusercontent.com/adsk2050/voice-ai-prices-and-limits/main/data/tts.json`.
 
+Every file is an object with a `schema_version` and its content under
+one key: `rows` in the price files, `providers` in `checked.json` and
+`unavailable.json`.
+
+```json
+{"schema_version": 1, "rows": [ ... ]}
+```
+
+**Check `schema_version` before reading anything else**, and refuse a
+version you do not know. It goes up when a change would make an old
+reader misread the data.
+
 ## One row
 
 ```json
@@ -281,7 +293,8 @@ Fetch them straight from GitHub, for example
   "limits": null,
   "source_url": "https://www.sarvam.ai/api-pricing",
   "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-  "since": "2026-10-28"
+  "since": "2026-10-28",
+  "status": "ok"
 }
 ```
 
@@ -312,6 +325,12 @@ Rules the data keeps:
   the page does not say.
 - **`limits`** holds the plan's published limits: requests per minute,
   concurrent requests or streams, calls per second. `null` until known.
+- **`status`** says whether this row was read on the last check:
+  `ok`; `failed` when the provider's scraper failed, so the price is the
+  last one read; or `missing` when the page no longer lists it. When it
+  is not `ok`, **`error`** says why. A row stays `missing` until a
+  person deletes it or the page lists it again. Use only `ok` rows if
+  you need a current price.
 
 ## Use it from an agent (MCP)
 
@@ -363,8 +382,9 @@ Maintainers can also use **Run workflow** on the Actions tab.
 - **A price changed** (or a plan fee, tax flag or limit, or a row
   appeared or went): the pull request shows the old value, the new
   value and the evidence, and waits for a person to merge it.
-- **A scraper broke:** the provider keeps its old rows, is marked
-  `failed` in `data/checked.json`, and an issue is opened for it. A
+- **A scraper broke:** the provider keeps its old rows, each marked
+  `failed` with the error, is marked `failed` in `data/checked.json`,
+  and an issue is opened for it. A
   scraper never guesses a number it cannot find.
 
 ## Contributing

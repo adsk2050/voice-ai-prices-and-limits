@@ -10,6 +10,10 @@ from typing import Annotated, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
+# The shape of every file in data/. Raise it when a change would make an
+# old reader misread the data; readers refuse a version they do not know.
+SCHEMA_VERSION = 1
+
 Amount = Annotated[str, Field(pattern=r"^[0-9]+(\.[0-9]+)?$")]
 Currency = Annotated[str, Field(pattern=r"^[A-Z]{3}$", examples=["INR"])]
 Day = Annotated[str, Field(pattern=r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")]
@@ -41,6 +45,9 @@ Mode = Literal[
     "outbound",
     "any",
 ]
+
+
+RowStatus = Literal["ok", "failed", "missing"]
 
 
 class _Model(BaseModel):
@@ -115,6 +122,16 @@ class PriceRow(_Model):
     source_url: str
     evidence: Annotated[str, Field(min_length=1)]
     since: Day = Field(description="First day this repo saw this value.")
+    status: RowStatus = Field(
+        description=(
+            '"ok": read on the last check. "failed": the scraper for its'
+            ' provider failed; the price is the last one read. "missing":'
+            " the page no longer lists it."
+        )
+    )
+    error: str | None = Field(
+        default=None, description='Why status is not "ok".'
+    )
 
     def to_json(self) -> dict[str, object]:
         """The row as stored: optional fields left out when unset."""

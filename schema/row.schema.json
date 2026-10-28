@@ -277,6 +277,19 @@
       "default": null,
       "title": "Country"
     },
+    "error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "Why status is not \"ok\".",
+      "title": "Error"
+    },
     "evidence": {
       "minLength": 1,
       "title": "Evidence",
@@ -350,6 +363,16 @@
       "title": "Source Url",
       "type": "string"
     },
+    "status": {
+      "description": "\"ok\": read on the last check. \"failed\": the scraper for its provider failed; the price is the last one read. \"missing\": the page no longer lists it.",
+      "enum": [
+        "ok",
+        "failed",
+        "missing"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
     "tax_included": {
       "anyOf": [
         {
@@ -387,7 +410,8 @@
     "limits",
     "source_url",
     "evidence",
-    "since"
+    "since",
+    "status"
   ],
   "title": "One price row",
   "type": "object"

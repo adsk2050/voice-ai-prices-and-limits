@@ -3,8 +3,10 @@
 A row changes only when its price, plan fee, tax flag or limits change;
 it then gets a new ``since`` date. When each provider was last checked
 lives in ``data/checked.json``, so a day with no price change touches
-only that file. A provider whose scraper fails keeps its old rows, is
-marked failed there, and the run exits non-zero.
+only that file. A provider whose scraper fails keeps its old rows,
+each marked ``failed`` with the error, is marked failed there too, and
+the run exits non-zero. A row the page no longer lists is kept and
+marked ``missing``; a person deletes it.
 
 The run writes ``changes.md`` (the pull request's description) and, on
 GitHub Actions, the outputs ``price_changed`` and ``failed``.
@@ -24,7 +26,7 @@ import traceback
 from pathlib import Path
 from typing import Any
 
-from voice_prices import readme
+from voice_prices import files, readme
 from voice_prices.models import PriceRow
 from voice_prices.scrapers import SCRAPERS
 
@@ -34,23 +36,20 @@ CATEGORIES = ("stt", "tts", "telephony", "agent")
 CHECKED = DATA / "checked.json"
 
 
-def _read(path: Path, empty: Any) -> Any:
-    if not path.exists():
-        return empty
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def _write(path: Path, data: Any) -> None:
-    path.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
-
-
 def _same_price(a: dict[str, Any], b: dict[str, Any]) -> bool:
     keys = ("price", "plan_fee", "tax_included", "limits")
     return all(a.get(k) == b.get(k) for k in keys)
+
+
+def _content(row: dict[str, Any]) -> dict[str, Any]:
+    """The row without its check state, to compare what the page says."""
+    return {k: v for k, v in row.items() if k not in ("status", "error")}
+
+
+def _error_text(exc: Exception) -> str:
+    """One line for a row's ``error``: the exception, cut to 300 chars."""
+    first = str(exc).splitlines()[0] if str(exc) else ""
+    return f"{type(exc).__name__}: {first}"[:300]
 
 
 def _price_text(row: dict[str, Any]) -> str:
@@ -65,20 +64,29 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
         (price change lines, failed providers)
     """
     old = {
-        c: {r["id"]: r for r in _read(DATA / f"{c}.json", [])}
+        c: {r["id"]: r for r in files.load(DATA / f"{c}.json", [])}
         for c in CATEGORIES
     }
     new = {c: dict(rows) for c, rows in old.items()}
-    checked: dict[str, dict[str, str]] = _read(CHECKED, {})
+    checked: dict[str, dict[str, str]] = files.load(CHECKED, {})
     changes: list[str] = []
     failed: list[str] = []
     for provider in providers:
         try:
             scraped = SCRAPERS[provider]()
             rows = [item.to_row(since=today) for item in scraped]
-        except Exception:  # noqa: BLE001 - one provider must not stop the rest
+        except Exception as exc:  # noqa: BLE001 - one provider must not stop the rest
             traceback.print_exc()
             failed.append(provider)
+            error = _error_text(exc)
+            for category in CATEGORIES:
+                for row_id, row in new[category].items():
+                    if row["provider"] == provider:
+                        new[category][row_id] = {
+                            **row,
+                            "status": "failed",
+                            "error": error,
+                        }
             checked[provider] = {
                 **checked.get(provider, {}),
                 "checked_at": today,
@@ -94,16 +102,24 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
             seen.add(item.id)
             if before is None:
                 changes.append(f"- new: `{item.id}` {_price_text(row)}")
-            elif row != before:
+            elif _content(row) != _content(before):
                 changes.append(
                     f"- changed: `{item.id}` {_price_text(before)}"
                     f" -> {_price_text(row)}. Evidence: {row['evidence']}"
                 )
         for category in CATEGORIES:
             for row_id, row in list(new[category].items()):
-                if row["provider"] == provider and row_id not in seen:
+                if (
+                    row["provider"] == provider
+                    and row_id not in seen
+                    and row["status"] != "missing"
+                ):
                     changes.append(f"- gone from the page: `{row_id}`")
-                    del new[category][row_id]
+                    new[category][row_id] = {
+                        **row,
+                        "status": "missing",
+                        "error": f"not on the page on {today}",
+                    }
         checked[provider] = {
             "checked_at": today,
             "last_ok": today,
@@ -111,8 +127,8 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
         }
     for category in CATEGORIES:
         rows = sorted(new[category].values(), key=lambda r: r["id"])
-        _write(DATA / f"{category}.json", rows)
-    _write(CHECKED, checked)
+        files.dump(DATA / f"{category}.json", rows)
+    files.dump(CHECKED, checked)
     return changes, failed
 
 
