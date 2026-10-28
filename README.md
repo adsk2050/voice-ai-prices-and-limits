@@ -64,7 +64,7 @@ plans and modes, in the currency the provider states.
 | Speech-to-text | revai | reverb | any | pay-as-you-go | 0.2 USD per hour | 2026-10-28 |
 | Speech-to-text | revai | reverb-foreign-language | any | pay-as-you-go | 0.3 USD per hour | 2026-10-28 |
 | Speech-to-text | revai | whisper-large | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
-| Speech-to-text | rime | rime-stt | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Speech-to-text | rime | rime-stt | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 (scraper broken) |
 | Speech-to-text | sarvam | saaras | batch, batch-with-diarization, real-time | pay-as-you-go, pro, growth, business | 0.38–0.59 INR per minute | 2026-10-28 |
 | Speech-to-text | smallestai | pulse | batch, real-time | pay-as-you-go | 0.003–0.004 USD per minute | 2026-10-28 |
 | Speech-to-text | smallestai | pulse-pro | batch | pay-as-you-go | 0.0035 USD per minute | 2026-10-28 |
@@ -143,8 +143,8 @@ plans and modes, in the currency the provider states.
 | Text-to-speech | retell | minimax-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
 | Text-to-speech | retell | openai-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
 | Text-to-speech | retell | retell-platform-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
-| Text-to-speech | rime | coda-v2 | any | pay-as-you-go | 0.05 USD per minute | 2026-10-28 |
-| Text-to-speech | rime | mist-v3 | any | pay-as-you-go | 0.03 USD per minute | 2026-10-28 |
+| Text-to-speech | rime | coda-v2 | any | pay-as-you-go | 0.05 USD per minute | 2026-10-28 (scraper broken) |
+| Text-to-speech | rime | mist-v3 | any | pay-as-you-go | 0.03 USD per minute | 2026-10-28 (scraper broken) |
 | Text-to-speech | sarvam | bulbul-v3 | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 2.6–3 INR per 1,000 characters | 2026-10-28 |
 | Text-to-speech | sarvam | bulbul-v4-flash | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 0.8–1 INR per 1,000 characters | 2026-10-28 |
 | Text-to-speech | sarvam | voice-cloning | real-time | pay-as-you-go, pro, growth, business | 2 INR per 1,000 characters | 2026-10-28 |
