@@ -23,8 +23,7 @@ import traceback
 from pathlib import Path
 from typing import Any
 
-import jsonschema
-
+from voice_prices.models import PriceRow
 from voice_prices.scrapers import SCRAPERS
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -45,11 +44,6 @@ def _write(path: Path, data: Any) -> None:
         encoding="utf-8",
         newline="\n",
     )
-
-
-def _validator() -> jsonschema.Validator:
-    schema = _read(ROOT / "schema" / "row.schema.json", {})
-    return jsonschema.Draft202012Validator(schema)
 
 
 def _same_price(a: dict[str, Any], b: dict[str, Any]) -> bool:
@@ -76,7 +70,6 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
     checked: dict[str, dict[str, str]] = _read(CHECKED, {})
     changes: list[str] = []
     failed: list[str] = []
-    validator = _validator()
     for provider in providers:
         try:
             scraped = SCRAPERS[provider]()
@@ -95,7 +88,6 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
             row = item.to_row(since=today)
             if before is not None and _same_price(before, row):
                 row["since"] = before["since"]
-            validator.validate(row)
             new[item.category][item.id] = row
             seen.add(item.id)
             if before is None:
@@ -131,12 +123,28 @@ def _github_outputs(changes: list[str], failed: list[str]) -> None:
         out.write(f"failed={' '.join(failed)}\n")
 
 
+def schema_json() -> str:
+    """``schema/row.schema.json``, generated from :class:`PriceRow`."""
+    schema = {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        **PriceRow.model_json_schema(),
+    }
+    return json.dumps(schema, indent=2, sort_keys=True) + "\n"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="voice-prices")
     sub = parser.add_subparsers(dest="command", required=True)
     run = sub.add_parser("update", help="scrape and rewrite data/*.json")
     run.add_argument("providers", nargs="*", help="default: all")
+    sub.add_parser("schema", help="regenerate schema/row.schema.json")
     args = parser.parse_args()
+
+    if args.command == "schema":
+        (ROOT / "schema" / "row.schema.json").write_text(
+            schema_json(), encoding="utf-8", newline="\n"
+        )
+        return
 
     providers = args.providers or sorted(SCRAPERS)
     today = dt.datetime.now(dt.UTC).date().isoformat()

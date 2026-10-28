@@ -6,6 +6,8 @@ import re
 from dataclasses import dataclass, field
 from typing import Any
 
+from voice_prices.models import Price, PriceRow
+
 
 class PageChangedError(Exception):
     """A scraper could not find what it expects on the page.
@@ -42,29 +44,32 @@ class Scraped:
         return f"{self.provider}/{self.product}/{self.mode}/{self.plan}"
 
     def to_row(self, since: str) -> dict[str, Any]:
-        """The row as stored in ``data/<category>.json``."""
-        row: dict[str, Any] = {
-            "id": self.id,
-            "category": self.category,
-            "provider": self.provider,
-            "product": self.product,
-            "mode": self.mode,
-            "plan": self.plan,
-            "price": {
-                "amount": self.amount,
-                "currency": self.currency,
-                "per": self.per,
-                "unit": self.unit,
-            },
-            "plan_fee": self.plan_fee,
-            "tax_included": self.tax_included,
-            "limits": self.limits,
-            "source_url": self.source_url,
-            "evidence": self.evidence,
-            "since": since,
-        }
-        row.update(self.extra)
-        return row
+        """The row as stored in ``data/<category>.json``.
+
+        Raises:
+            pydantic.ValidationError: The row breaks the schema.
+        """
+        return PriceRow(
+            id=self.id,
+            category=self.category,
+            provider=self.provider,
+            product=self.product,
+            mode=self.mode,
+            plan=self.plan,
+            price=Price(
+                amount=self.amount,
+                currency=self.currency,
+                per=self.per,
+                unit=self.unit,
+            ),
+            plan_fee=self.plan_fee,
+            tax_included=self.tax_included,
+            limits=self.limits,
+            source_url=self.source_url,
+            evidence=self.evidence,
+            since=since,
+            **self.extra,
+        ).to_json()
 
 
 def slug(text: str) -> str:

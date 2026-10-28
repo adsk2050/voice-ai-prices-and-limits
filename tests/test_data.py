@@ -28,3 +28,18 @@ def test_rows_fit_the_schema(path: Path) -> None:
 def test_ids_are_unique(path: Path) -> None:
     ids = [r["id"] for r in json.loads(path.read_text(encoding="utf-8"))]
     assert len(ids) == len(set(ids))
+
+
+def test_schema_file_is_generated_from_the_models() -> None:
+    from voice_prices.update import schema_json
+
+    stored = (ROOT / "schema" / "row.schema.json").read_text(encoding="utf-8")
+    assert stored == schema_json(), "run: uv run voice-prices schema"
+
+
+@pytest.mark.parametrize("path", FILES, ids=lambda p: p.name)
+def test_rows_load_as_models(path: Path) -> None:
+    from voice_prices.models import PriceRow
+
+    for row in json.loads(path.read_text(encoding="utf-8")):
+        assert PriceRow.model_validate(row).to_json() == row

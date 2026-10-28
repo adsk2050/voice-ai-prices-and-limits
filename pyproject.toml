@@ -6,14 +6,17 @@ requires-python = ">=3.12"
 license = "MIT"
 dependencies = [
     "httpx>=0.28",
-    "jsonschema>=4.23",
+    "pydantic>=2.9",
+    "mcp>=2.3",
 ]
 
 [project.scripts]
 voice-prices = "voice_prices.update:main"
+voice-prices-mcp = "voice_prices.mcp_server:main"
 
 [dependency-groups]
 dev = [
+    "jsonschema>=4.23",
     "pytest>=8.3",
     "ruff>=0.8",
 ]

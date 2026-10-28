@@ -20,7 +20,7 @@ a commit, so the git history is the price history.
 | `data/tts.json` | Text-to-speech prices |
 | `data/telephony.json` | Call prices: per country, inbound or outbound, pulse, minimums |
 | `data/checked.json` | When each provider's page was last checked, and whether its scraper worked |
-| `schema/row.schema.json` | The shape every row must have. CI rejects a file that breaks it |
+| `schema/row.schema.json` | The shape every row must have, as JSON Schema. Generated from the Pydantic models in `src/voice_prices/models.py`; CI fails if the two differ |
 
 Fetch them straight from GitHub, for example
 `https://raw.githubusercontent.com/adsk2050/voice-ai-prices-and-limits/main/data/tts.json`.
@@ -62,6 +62,33 @@ Rules the data keeps:
   the page does not say.
 - **`limits`** holds the plan's published limits: requests per minute,
   concurrent requests or streams, calls per second. `null` until known.
+
+## Use it from an agent (MCP)
+
+The repo ships an MCP server with three tools:
+
+| Tool | What it answers |
+|---|---|
+| `list_providers(category)` | Who is covered, and when each provider was last checked |
+| `get_prices(category, provider, product, mode, plan)` | The matching rows |
+| `compare(category, plan)` | Cheapest first, grouped by currency and unit, never converted |
+
+Add it to an MCP client (Claude Code, Claude Desktop, Cursor and others):
+
+```json
+{
+  "mcpServers": {
+    "voice-prices": {
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/adsk2050/voice-ai-prices-and-limits", "voice-prices-mcp"]
+    }
+  }
+}
+```
+
+It reads the data files from this repo on GitHub and caches them for an
+hour. Set `VOICE_PRICES_DATA` to a local `data/` folder or another URL
+to read from there instead.
 
 ## What you actually pay
 

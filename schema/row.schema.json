@@ -1,9 +1,310 @@
 {
+  "$defs": {
+    "Billing": {
+      "additionalProperties": false,
+      "description": "How usage is rounded: a 60 s pulse, a minimum charge.",
+      "properties": {
+        "increment_seconds": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Increment Seconds"
+        },
+        "minimum_seconds": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum Seconds"
+        }
+      },
+      "title": "Billing",
+      "type": "object"
+    },
+    "Limits": {
+      "additionalProperties": false,
+      "description": "The plan's published limits.",
+      "properties": {
+        "calls_per_second": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Calls Per Second"
+        },
+        "concurrent": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Concurrent"
+        },
+        "evidence": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Evidence"
+        },
+        "requests_per_minute": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Requests Per Minute"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Url"
+        }
+      },
+      "title": "Limits",
+      "type": "object"
+    },
+    "PlanFee": {
+      "additionalProperties": false,
+      "description": "What the plan itself costs, before usage.",
+      "properties": {
+        "amount": {
+          "pattern": "^[0-9]+(\\.[0-9]+)?$",
+          "title": "Amount",
+          "type": "string"
+        },
+        "currency": {
+          "examples": [
+            "INR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "title": "Currency",
+          "type": "string"
+        },
+        "period": {
+          "enum": [
+            "month",
+            "year"
+          ],
+          "title": "Period",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "currency",
+        "period"
+      ],
+      "title": "PlanFee",
+      "type": "object"
+    },
+    "Price": {
+      "additionalProperties": false,
+      "description": "``amount`` ``currency`` per ``per`` ``unit``s.",
+      "properties": {
+        "amount": {
+          "pattern": "^[0-9]+(\\.[0-9]+)?$",
+          "title": "Amount",
+          "type": "string"
+        },
+        "currency": {
+          "examples": [
+            "INR"
+          ],
+          "pattern": "^[A-Z]{3}$",
+          "title": "Currency",
+          "type": "string"
+        },
+        "per": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "gt": 0,
+          "title": "Per"
+        },
+        "unit": {
+          "enum": [
+            "character",
+            "minute",
+            "second",
+            "hour",
+            "token",
+            "call",
+            "request"
+          ],
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "amount",
+        "currency",
+        "per",
+        "unit"
+      ],
+      "title": "Price",
+      "type": "object"
+    }
+  },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/adsk2050/voice-ai-prices-and-limits/schema/row.schema.json",
-  "title": "One price row",
-  "type": "object",
   "additionalProperties": false,
+  "description": "One price of one product, in one mode, on one plan.",
+  "properties": {
+    "billing": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Billing"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "category": {
+      "enum": [
+        "stt",
+        "tts",
+        "telephony"
+      ],
+      "title": "Category",
+      "type": "string"
+    },
+    "country": {
+      "anyOf": [
+        {
+          "pattern": "^[A-Z]{2}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Country"
+    },
+    "evidence": {
+      "minLength": 1,
+      "title": "Evidence",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z0-9.-]+(/[a-z0-9.-]+){3,}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "limits": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Limits"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "mode": {
+      "pattern": "^[a-z0-9.-]+$",
+      "title": "Mode",
+      "type": "string"
+    },
+    "plan": {
+      "pattern": "^[a-z0-9.-]+$",
+      "title": "Plan",
+      "type": "string"
+    },
+    "plan_fee": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PlanFee"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "price": {
+      "$ref": "#/$defs/Price"
+    },
+    "product": {
+      "pattern": "^[a-z0-9.-]+$",
+      "title": "Product",
+      "type": "string"
+    },
+    "provider": {
+      "pattern": "^[a-z0-9.-]+$",
+      "title": "Provider",
+      "type": "string"
+    },
+    "since": {
+      "description": "First day this repo saw this value.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "title": "Since",
+      "type": "string"
+    },
+    "source_url": {
+      "title": "Source Url",
+      "type": "string"
+    },
+    "tax_included": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "false: the page says tax is extra. null: it does not say.",
+      "title": "Tax Included"
+    }
+  },
   "required": [
     "id",
     "category",
@@ -19,173 +320,6 @@
     "evidence",
     "since"
   ],
-  "$defs": {
-    "date": {
-      "type": "string",
-      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
-    }
-  },
-  "properties": {
-    "id": {
-      "type": "string",
-      "pattern": "^[a-z0-9.-]+(/[a-z0-9.-]+){3,}$"
-    },
-    "category": {
-      "enum": [
-        "stt",
-        "tts",
-        "telephony"
-      ]
-    },
-    "provider": {
-      "type": "string",
-      "pattern": "^[a-z0-9-]+$"
-    },
-    "product": {
-      "type": "string",
-      "pattern": "^[a-z0-9.-]+$"
-    },
-    "mode": {
-      "type": "string",
-      "pattern": "^[a-z0-9-]+$"
-    },
-    "plan": {
-      "type": "string",
-      "pattern": "^[a-z0-9-]+$"
-    },
-    "country": {
-      "type": "string",
-      "pattern": "^[A-Z]{2}$"
-    },
-    "price": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "amount",
-        "currency",
-        "per",
-        "unit"
-      ],
-      "properties": {
-        "amount": {
-          "type": "string",
-          "pattern": "^[0-9]+(\\.[0-9]+)?$"
-        },
-        "currency": {
-          "type": "string",
-          "pattern": "^[A-Z]{3}$"
-        },
-        "per": {
-          "type": "number",
-          "exclusiveMinimum": 0
-        },
-        "unit": {
-          "enum": [
-            "character",
-            "minute",
-            "second",
-            "hour",
-            "token",
-            "call",
-            "request"
-          ]
-        }
-      }
-    },
-    "plan_fee": {
-      "oneOf": [
-        {
-          "type": "null"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "required": [
-            "amount",
-            "currency",
-            "period"
-          ],
-          "properties": {
-            "amount": {
-              "type": "string",
-              "pattern": "^[0-9]+(\\.[0-9]+)?$"
-            },
-            "currency": {
-              "type": "string",
-              "pattern": "^[A-Z]{3}$"
-            },
-            "period": {
-              "enum": [
-                "month",
-                "year"
-              ]
-            }
-          }
-        }
-      ]
-    },
-    "billing": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "increment_seconds": {
-          "type": "number",
-          "exclusiveMinimum": 0
-        },
-        "minimum_seconds": {
-          "type": "number",
-          "minimum": 0
-        }
-      }
-    },
-    "tax_included": {
-      "type": [
-        "boolean",
-        "null"
-      ]
-    },
-    "limits": {
-      "oneOf": [
-        {
-          "type": "null"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "requests_per_minute": {
-              "type": "integer",
-              "minimum": 1
-            },
-            "concurrent": {
-              "type": "integer",
-              "minimum": 1
-            },
-            "calls_per_second": {
-              "type": "number",
-              "exclusiveMinimum": 0
-            },
-            "source_url": {
-              "type": "string",
-              "format": "uri"
-            },
-            "evidence": {
-              "type": "string"
-            }
-          }
-        }
-      ]
-    },
-    "source_url": {
-      "type": "string",
-      "format": "uri"
-    },
-    "evidence": {
-      "type": "string",
-      "minLength": 1
-    },
-    "since": {
-      "$ref": "#/$defs/date"
-    }
-  }
+  "title": "One price row",
+  "type": "object"
 }
