@@ -1165,6 +1165,246 @@
   },
   {
     "category": "tts",
+    "evidence": "Cartesia Voices $0.015/minute",
+    "id": "retell/cartesia-voices/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "cartesia-voices",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "ElevenLabs Flash $0.040/minute",
+    "id": "retell/elevenlabs-flash/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.040",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "elevenlabs-flash",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "ElevenLabs Multilingual v2 $0.06/minute",
+    "id": "retell/elevenlabs-multilingual-v2/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.06",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "elevenlabs-multilingual-v2",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "ElevenLabs v3 Conversational $0.08/minute",
+    "id": "retell/elevenlabs-v3-conversational/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.08",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "elevenlabs-v3-conversational",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "ElevenLabs v3 $0.10/minute",
+    "id": "retell/elevenlabs-v3/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.10",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "elevenlabs-v3",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "ElevenLabs v4 Turbo $0.08/minute",
+    "id": "retell/elevenlabs-v4-turbo/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.08",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "elevenlabs-v4-turbo",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "ElevenLabs v4 $0.10/minute",
+    "id": "retell/elevenlabs-v4/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.10",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "elevenlabs-v4",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "Fish Voices $0.015/minute",
+    "id": "retell/fish-voices/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "fish-voices",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "Inworld Voices $0.015/minute",
+    "id": "retell/inworld-voices/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "inworld-voices",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "Minimax Voices $0.015/minute",
+    "id": "retell/minimax-voices/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "minimax-voices",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "OpenAI Voices $0.015/minute",
+    "id": "retell/openai-voices/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "openai-voices",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "Retell Platform Voices $0.015/minute",
+    "id": "retell/retell-platform-voices/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "retell-platform-voices",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
     "evidence": "Coda v2 Text to speech, most natural $0.05 / min",
     "id": "rime/coda-v2/any/pay-as-you-go",
     "limits": {

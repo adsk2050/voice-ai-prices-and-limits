@@ -14,6 +14,16 @@
     "last_ok": "2026-10-28",
     "status": "ok"
   },
+  "bland": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
+  "bolna": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
   "cartesia": {
     "checked_at": "2026-10-28",
     "last_ok": "2026-10-28",
@@ -29,6 +39,11 @@
     "last_ok": "2026-10-28",
     "status": "ok"
   },
+  "gladia": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
   "google": {
     "checked_at": "2026-10-28",
     "last_ok": "2026-10-28",
@@ -39,12 +54,22 @@
     "last_ok": "2026-10-28",
     "status": "ok"
   },
+  "knowlarity": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
   "openai": {
     "checked_at": "2026-10-28",
     "last_ok": "2026-10-28",
     "status": "ok"
   },
   "plivo": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
+  "retell": {
     "checked_at": "2026-10-28",
     "last_ok": "2026-10-28",
     "status": "ok"
@@ -85,6 +110,11 @@
     "status": "ok"
   },
   "twilio": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
+  "vapi": {
     "checked_at": "2026-10-28",
     "last_ok": "2026-10-28",
     "status": "ok"

@@ -1,1 +1,394 @@
-[]
+[
+  {
+    "category": "agent",
+    "evidence": "Transfer Time Rate $0.05/min $0.04/min Custom",
+    "id": "bland/bland-agent-transfer/any/build",
+    "limits": {
+      "concurrent": 50,
+      "evidence": "Concurrent calls 10 calls 50 calls Custom",
+      "source_url": "https://www.bland.ai/pricing"
+    },
+    "mode": "any",
+    "plan": "build",
+    "plan_fee": {
+      "amount": "299",
+      "currency": "USD",
+      "period": "month"
+    },
+    "price": {
+      "amount": "0.04",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "bland-agent-transfer",
+    "provider": "bland",
+    "since": "2026-10-28",
+    "source_url": "https://www.bland.ai/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Transfer Time Rate $0.05/min $0.04/min Custom",
+    "id": "bland/bland-agent-transfer/any/start",
+    "limits": {
+      "concurrent": 10,
+      "evidence": "Concurrent calls 10 calls 50 calls Custom",
+      "source_url": "https://www.bland.ai/pricing"
+    },
+    "mode": "any",
+    "plan": "start",
+    "plan_fee": {
+      "amount": "0",
+      "currency": "USD",
+      "period": "month"
+    },
+    "price": {
+      "amount": "0.05",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "bland-agent-transfer",
+    "provider": "bland",
+    "since": "2026-10-28",
+    "source_url": "https://www.bland.ai/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Talk Time Rate $0.14/min $0.12/min Custom",
+    "id": "bland/bland-agent/any/build",
+    "limits": {
+      "concurrent": 50,
+      "evidence": "Concurrent calls 10 calls 50 calls Custom",
+      "source_url": "https://www.bland.ai/pricing"
+    },
+    "mode": "any",
+    "plan": "build",
+    "plan_fee": {
+      "amount": "299",
+      "currency": "USD",
+      "period": "month"
+    },
+    "price": {
+      "amount": "0.12",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "bland-agent",
+    "provider": "bland",
+    "since": "2026-10-28",
+    "source_url": "https://www.bland.ai/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Talk Time Rate $0.14/min $0.12/min Custom",
+    "id": "bland/bland-agent/any/start",
+    "limits": {
+      "concurrent": 10,
+      "evidence": "Concurrent calls 10 calls 50 calls Custom",
+      "source_url": "https://www.bland.ai/pricing"
+    },
+    "mode": "any",
+    "plan": "start",
+    "plan_fee": {
+      "amount": "0",
+      "currency": "USD",
+      "period": "month"
+    },
+    "price": {
+      "amount": "0.14",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "bland-agent",
+    "provider": "bland",
+    "since": "2026-10-28",
+    "source_url": "https://www.bland.ai/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Bolna AI starts at $0.06 per minute (about ₹5.52) on pay-as-you-go",
+    "id": "bolna/bolna-ai/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.06",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "bolna-ai",
+    "provider": "bolna",
+    "since": "2026-10-28",
+    "source_url": "https://www.bolna.ai/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "$300 for 6,500 minutes (~4.6¢/min)",
+    "id": "bolna/bolna-ai/any/pilot-300",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "up to 25 concurrent calls",
+      "source_url": "https://www.bolna.ai/pricing"
+    },
+    "mode": "any",
+    "plan": "pilot-300",
+    "plan_fee": null,
+    "price": {
+      "amount": "300",
+      "currency": "USD",
+      "per": 6500,
+      "unit": "minute"
+    },
+    "product": "bolna-ai",
+    "provider": "bolna",
+    "since": "2026-10-28",
+    "source_url": "https://www.bolna.ai/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "$500 for 12,000 minutes (~4.2¢/min)",
+    "id": "bolna/bolna-ai/any/pilot-500",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "up to 25 concurrent calls",
+      "source_url": "https://www.bolna.ai/pricing"
+    },
+    "mode": "any",
+    "plan": "pilot-500",
+    "plan_fee": null,
+    "price": {
+      "amount": "500",
+      "currency": "USD",
+      "per": 12000,
+      "unit": "minute"
+    },
+    "product": "bolna-ai",
+    "provider": "bolna",
+    "since": "2026-10-28",
+    "source_url": "https://www.bolna.ai/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Advanced Denoising +$0.005/min",
+    "id": "retell/advanced-denoising/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.005",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "advanced-denoising",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "AI Quality Assurance First 100 minutes free $0.10/min",
+    "id": "retell/ai-quality-assurance/any/pay-as-you-go/100-up",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.10",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "ai-quality-assurance",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null,
+    "volume": {
+      "min": 100.0,
+      "unit": "minute"
+    }
+  },
+  {
+    "category": "agent",
+    "evidence": "Batch Call +$0.005/dial",
+    "id": "retell/batch-call/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.005",
+      "currency": "USD",
+      "per": 1,
+      "unit": "call"
+    },
+    "product": "batch-call",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Branded Call +$0.10/outbound call",
+    "id": "retell/branded-call/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.10",
+      "currency": "USD",
+      "per": 1,
+      "unit": "call"
+    },
+    "product": "branded-call",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Knowledge Base +$0.005/minute",
+    "id": "retell/knowledge-base/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.005",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "knowledge-base",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "PII Removal +$0.01/min",
+    "id": "retell/pii-removal/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.01",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "pii-removal",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Retell Voice Infra $0.055/minute",
+    "id": "retell/retell-voice-infra/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.055",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "retell-voice-infra",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Safety Guardrails +$0.005/min",
+    "id": "retell/safety-guardrails/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.005",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "safety-guardrails",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "Voice AI Pay-as-you-go Enterprise Price $0.07-$0.31/minute",
+    "id": "retell/voice-agent/any/pay-as-you-go",
+    "limits": {
+      "concurrent": 20,
+      "evidence": "Concurrent calls 20 included",
+      "source_url": "https://www.retellai.com/pricing"
+    },
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.07",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "voice-agent",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "agent",
+    "evidence": "No Success Package Get started for free, and then pay only for the minutes that run $0 to start Pre-paid, $0.05/min Vapi hosting",
+    "id": "vapi/vapi/any/no-success-package",
+    "limits": {
+      "concurrent": 4,
+      "evidence": "4 concurrent calls",
+      "source_url": "https://vapi.ai/pricing"
+    },
+    "mode": "any",
+    "plan": "no-success-package",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.05",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "vapi",
+    "provider": "vapi",
+    "since": "2026-10-28",
+    "source_url": "https://vapi.ai/pricing",
+    "tax_included": null
+  }
+]

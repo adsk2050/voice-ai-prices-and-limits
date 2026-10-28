@@ -23,6 +23,102 @@
   {
     "category": "telephony",
     "country": "IN",
+    "evidence": "Application Rental/ Missed call number Rs 5,000 per month",
+    "id": "knowlarity/missed-call-number/any/monthly-plan",
+    "limits": null,
+    "mode": "any",
+    "plan": "monthly-plan",
+    "plan_fee": null,
+    "price": {
+      "amount": "5000",
+      "currency": "INR",
+      "per": 1,
+      "unit": "month"
+    },
+    "product": "missed-call-number",
+    "provider": "knowlarity",
+    "since": "2026-10-28",
+    "source_url": "https://www.knowlarity.com/pricing/voice",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Rs. 1.05 per minute",
+    "id": "knowlarity/toll-free-number/inbound/advance",
+    "limits": null,
+    "mode": "inbound",
+    "plan": "advance",
+    "plan_fee": {
+      "amount": "28800",
+      "currency": "INR",
+      "period": "year"
+    },
+    "price": {
+      "amount": "1.05",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "toll-free-number",
+    "provider": "knowlarity",
+    "since": "2026-10-28",
+    "source_url": "https://www.knowlarity.com/pricing/voice",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Rs. 1.05 per minute",
+    "id": "knowlarity/toll-free-number/inbound/basic",
+    "limits": null,
+    "mode": "inbound",
+    "plan": "basic",
+    "plan_fee": {
+      "amount": "21000",
+      "currency": "INR",
+      "period": "year"
+    },
+    "price": {
+      "amount": "1.05",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "toll-free-number",
+    "provider": "knowlarity",
+    "since": "2026-10-28",
+    "source_url": "https://www.knowlarity.com/pricing/voice",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Rs. 1.05 per minute",
+    "id": "knowlarity/toll-free-number/inbound/premium",
+    "limits": null,
+    "mode": "inbound",
+    "plan": "premium",
+    "plan_fee": {
+      "amount": "46200",
+      "currency": "INR",
+      "period": "year"
+    },
+    "price": {
+      "amount": "1.05",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "toll-free-number",
+    "provider": "knowlarity",
+    "since": "2026-10-28",
+    "source_url": "https://www.knowlarity.com/pricing/voice",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
     "evidence": "Answering Machine Detection ₹0.00/min",
     "id": "plivo/answering-machine-detection/any/pay-as-you-go",
     "limits": null,
@@ -282,6 +378,27 @@
     "provider": "plivo",
     "since": "2026-10-28",
     "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "US",
+    "evidence": "Select Country Country United States (Twilio) United States (Twilio Toll Free) India (Twilio) Australia (Twilio) Germany (Twilio) Spain (Twilio) United Kingdom (Twilio) Mexico (Twilio) France (Twilio) Japan (Twilio) Canada (Twilio) Italy (Twilio) Indonesia (Twilio) Philippines (Twilio) Malaysia (Twilio) Thailand (Twilio) United States (Telnyx) India(Telnyx) Canada(Telnyx) $ 0.015 /min",
+    "id": "retell/retell-twilio/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "retell-twilio",
+    "provider": "retell",
+    "since": "2026-10-28",
+    "source_url": "https://www.retellai.com/pricing",
     "tax_included": null
   },
   {

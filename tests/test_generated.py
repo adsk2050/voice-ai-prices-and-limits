@@ -15,19 +15,26 @@ FIXTURES = Path(__file__).parent / "fixtures"
 MODULES = [
     "assemblyai",
     "aws_polly",
+    "aws_transcribe",
+    "bland",
+    "bolna",
     "cartesia",
     "deepgram",
     "elevenlabs",
     "google",
+    "gladia",
     "google_tts",
     "inworld",
+    "knowlarity",
     "openai",
+    "retell",
     "revai",
     "rime",
     "soniox",
     "speechmatics",
     "telnyx",
     "twilio",
+    "vapi",
 ]
 
 

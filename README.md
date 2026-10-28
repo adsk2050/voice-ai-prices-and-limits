@@ -31,6 +31,9 @@ plans and modes, in the currency the provider states.
 | Speech-to-text | assemblyai | universal-3.6-pro-realtime | real-time | pay-as-you-go | 0.45 USD per hour | 2026-10-28 |
 | Speech-to-text | assemblyai | universal-streaming | real-time | pay-as-you-go | 0.15 USD per hour | 2026-10-28 |
 | Speech-to-text | assemblyai | universal-streaming-multilingual | real-time | pay-as-you-go | 0.15 USD per hour | 2026-10-28 |
+| Speech-to-text | aws | call-analytics | any | pay-as-you-go | 0.0138–0.03 USD per minute | 2026-10-28 |
+| Speech-to-text | aws | content-redaction | any | pay-as-you-go | 0.00102–0.0024 USD per minute | 2026-10-28 |
+| Speech-to-text | aws | transcribe | batch, streaming | pay-as-you-go | 0.006–0.01 USD per minute | 2026-10-28 |
 | Speech-to-text | azure | fast-transcription | any | pay-as-you-go | 0.36 USD per hour | 2026-10-28 |
 | Speech-to-text | azure | speech-to-text | batch, real-time | pay-as-you-go | 0.18–1 USD per hour | 2026-10-28 |
 | Speech-to-text | cartesia | ink-2 | any | scale | 0.39 USD per hour | 2026-10-28 |
@@ -42,6 +45,9 @@ plans and modes, in the currency the provider states.
 | Speech-to-text | elevenlabs | scribe-v2 | any | pay-as-you-go | 0.22 USD per hour | 2026-10-28 |
 | Speech-to-text | elevenlabs | scribe-v2-medical | any | pay-as-you-go | 0.22 USD per hour | 2026-10-28 |
 | Speech-to-text | elevenlabs | scribe-v2-realtime | real-time | pay-as-you-go | 0.39 USD per hour | 2026-10-28 |
+| Speech-to-text | gladia | real-time-speech-to-text | real-time | self-serve | 0.68 EUR per hour | 2026-10-28 |
+| Speech-to-text | gladia | solaria-1 | batch | self-serve | 0.21–0.27 EUR per hour | 2026-10-28 |
+| Speech-to-text | gladia | solaria-3 | batch | self-serve | 0.12–0.16 EUR per hour | 2026-10-28 |
 | Speech-to-text | google | dynamic-batch-recognition | batch | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0024–0.003 USD per minute | 2026-10-28 |
 | Speech-to-text | google | medical-conversation | any | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0624–0.078 USD per minute | 2026-10-28 |
 | Speech-to-text | google | medical-dictation | any | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0624–0.078 USD per minute | 2026-10-28 |
@@ -125,6 +131,18 @@ plans and modes, in the currency the provider states.
 | Text-to-speech | google | wavenet | any | pay-as-you-go | 4 USD per 1e+06 characters | 2026-10-28 |
 | Text-to-speech | inworld | tts-2 | real-time | enterprise, on-demand, creator, builder, developer, growth | 5–25 USD per 1e+06 characters | 2026-10-28 |
 | Text-to-speech | inworld | tts-2-flash | real-time | on-demand, creator, builder, developer, growth | 7–15 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | retell | cartesia-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | elevenlabs-flash | any | pay-as-you-go | 0.04 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | elevenlabs-multilingual-v2 | any | pay-as-you-go | 0.06 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | elevenlabs-v3 | any | pay-as-you-go | 0.1 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | elevenlabs-v3-conversational | any | pay-as-you-go | 0.08 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | elevenlabs-v4 | any | pay-as-you-go | 0.1 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | elevenlabs-v4-turbo | any | pay-as-you-go | 0.08 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | fish-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | inworld-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | minimax-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | openai-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
+| Text-to-speech | retell | retell-platform-voices | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
 | Text-to-speech | rime | coda-v2 | any | pay-as-you-go | 0.05 USD per minute | 2026-10-28 |
 | Text-to-speech | rime | mist-v3 | any | pay-as-you-go | 0.03 USD per minute | 2026-10-28 |
 | Text-to-speech | sarvam | bulbul-v3 | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 2.6–3 INR per 1,000 characters | 2026-10-28 |
@@ -150,6 +168,8 @@ plans and modes, in the currency the provider states.
 | Text-to-speech | twilio | premium-neural | any | pay-as-you-go | 0.0032 USD per 100 characters | 2026-10-28 |
 | Text-to-speech | twilio | premium-standard | any | pay-as-you-go | 0.0008 USD per 100 characters | 2026-10-28 |
 | Telephony | cartesia | cartesia-provided-number | any | pay-as-you-go | 0.014 USD per minute | 2026-10-28 |
+| Telephony | knowlarity | missed-call-number | any | monthly-plan | 5000 INR per month | 2026-10-28 |
+| Telephony | knowlarity | toll-free-number | inbound | basic, advance, premium | 1.05 INR per minute | 2026-10-28 |
 | Telephony | plivo | answering-machine-detection | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
 | Telephony | plivo | automatic-speech-recognition | any | pay-as-you-go | 1.7 INR per 15 seconds | 2026-10-28 |
 | Telephony | plivo | browser-sdks-and-webrtc | inbound, outbound | pay-as-you-go | 0.25 INR per minute | 2026-10-28 |
@@ -160,6 +180,7 @@ plans and modes, in the currency the provider states.
 | Telephony | plivo | multilingual-text-to-speech | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
 | Telephony | plivo | noise-cancellation | any | pay-as-you-go | 0.12 INR per minute | 2026-10-28 |
 | Telephony | plivo | phone-number | any | pay-as-you-go | 200 INR per month | 2026-10-28 |
+| Telephony | retell | retell-twilio | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
 | Telephony | telnyx | browser-app-calling | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
 | Telephony | telnyx | call-recording | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
 | Telephony | telnyx | call-recording-storage | any | pay-as-you-go | 0 USD per minute | 2026-10-28 |
@@ -188,6 +209,19 @@ plans and modes, in the currency the provider states.
 | Telephony | twilio | siprec | any | pay-as-you-go | 0.0044 USD per minute | 2026-10-28 |
 | Telephony | twilio | toll-free-calls | inbound, outbound | pay-as-you-go | 0.014–0.022 USD per minute | 2026-10-28 |
 | Telephony | twilio | toll-free-numbers | any | pay-as-you-go | 2.15 USD per month | 2026-10-28 |
+| Voice agent | bland | bland-agent | any | start, build | 0.12–0.14 USD per minute | 2026-10-28 |
+| Voice agent | bland | bland-agent-transfer | any | start, build | 0.04–0.05 USD per minute | 2026-10-28 |
+| Voice agent | bolna | bolna-ai | any | pay-as-you-go, pilot-300, pilot-500 | 0.06–500 USD per minute | 2026-10-28 |
+| Voice agent | retell | advanced-denoising | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Voice agent | retell | ai-quality-assurance | any | pay-as-you-go | 0.1 USD per minute | 2026-10-28 |
+| Voice agent | retell | batch-call | any | pay-as-you-go | 0.005 USD per call | 2026-10-28 |
+| Voice agent | retell | branded-call | any | pay-as-you-go | 0.1 USD per call | 2026-10-28 |
+| Voice agent | retell | knowledge-base | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Voice agent | retell | pii-removal | any | pay-as-you-go | 0.01 USD per minute | 2026-10-28 |
+| Voice agent | retell | retell-voice-infra | any | pay-as-you-go | 0.055 USD per minute | 2026-10-28 |
+| Voice agent | retell | safety-guardrails | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Voice agent | retell | voice-agent | any | pay-as-you-go | 0.07 USD per minute | 2026-10-28 |
+| Voice agent | vapi | vapi | any | no-success-package | 0.05 USD per minute | 2026-10-28 |
 <!-- coverage:end -->
 
 ### Not public
@@ -208,6 +242,7 @@ rows. The reason says what would unlock them; `sign-in-required` and
 | murf | Text-to-speech | rendered-by-javascript: The page returns almost no text without a browser. | https://murf.ai/api/pricing | 2026-10-28 |
 | ozonetel | Telephony | blocked: Times out or redirects with an empty body for automated fetches. | https://ozonetel.com/pricing/ | 2026-10-28 |
 | playht | Text-to-speech | fetch-failed: The site's certificate chain is incomplete, and with that skipped the server disconnects without a response. | https://playht.com/pricing/ | 2026-10-28 |
+| resemble | Text-to-speech | pricing-page-not-found: The pricing page lists only detection services; no text-to-speech price on it, and no other pricing page was searched. | https://www.resemble.ai/pricing/ | 2026-10-28 |
 | reverie | Speech-to-text, Text-to-speech | pricing-page-not-found: /pricing returns 404 and the homepage links to no pricing page. | https://reverieinc.com/pricing/ | 2026-10-28 |
 | synthflow | Voice agent | rendered-by-javascript: The pricing page text holds almost no prices; plans load in the browser. | https://synthflow.ai/pricing | 2026-10-28 |
 | tatatele | Telephony | pricing-page-not-found: Smartflo /pricing returns 404; the homepage links only to Microsoft 365 plan pricing. | https://www.tatateleservices.com/ | 2026-10-28 |

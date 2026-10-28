@@ -82,6 +82,16 @@
   },
   {
     "categories": [
+      "tts"
+    ],
+    "checked_at": "2026-10-28",
+    "evidence": "The pricing page lists only detection services; no text-to-speech price on it, and no other pricing page was searched.",
+    "provider": "resemble",
+    "reason": "pricing-page-not-found",
+    "url": "https://www.resemble.ai/pricing/"
+  },
+  {
+    "categories": [
       "stt",
       "tts"
     ],

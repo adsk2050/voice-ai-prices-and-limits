@@ -141,6 +141,196 @@
   },
   {
     "category": "stt",
+    "evidence": "Tier 1 (T1) pricing of $0.0300/minute applies to the first 250,000 minutes",
+    "id": "aws/call-analytics/any/pay-as-you-go/0-250000",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.0300",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "call-analytics",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null,
+    "volume": {
+      "max": 250000.0,
+      "min": 0.0,
+      "unit": "minute"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "Tier 3 pricing of $0.0138/minute (54% discount to T1 pricing) applies to the next 4,000,000 minutes",
+    "id": "aws/call-analytics/any/pay-as-you-go/1000000-5000000",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.0138",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "call-analytics",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null,
+    "volume": {
+      "max": 5000000.0,
+      "min": 1000000.0,
+      "unit": "minute"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "Tier 2 pricing of $0.0186/minute (38% discount to T1 pricing) applies to the next 750,000 minutes",
+    "id": "aws/call-analytics/any/pay-as-you-go/250000-1000000",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.0186",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "call-analytics",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null,
+    "volume": {
+      "max": 1000000.0,
+      "min": 250000.0,
+      "unit": "minute"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "Tier 1 (T1) content redaction pricing of $0.0024 applies to the first 250,000 minutes",
+    "id": "aws/content-redaction/any/pay-as-you-go/0-250000",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.0024",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "content-redaction",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null,
+    "volume": {
+      "max": 250000.0,
+      "min": 0.0,
+      "unit": "minute"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "Tier 3 content redaction pricing of $0.00102/minute (58% discount to T1 pricing) applies to the next 4,000,000 minutes",
+    "id": "aws/content-redaction/any/pay-as-you-go/1000000-5000000",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.00102",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "content-redaction",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null,
+    "volume": {
+      "max": 5000000.0,
+      "min": 1000000.0,
+      "unit": "minute"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "Tier 2 content redaction pricing of $0.0015 (38% discount to T1 pricing) applies to the next 750,000 minutes",
+    "id": "aws/content-redaction/any/pay-as-you-go/250000-1000000",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.0015",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "content-redaction",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null,
+    "volume": {
+      "max": 1000000.0,
+      "min": 250000.0,
+      "unit": "minute"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "Batch transcription is priced at $0.006 per minute",
+    "id": "aws/transcribe/batch/pay-as-you-go",
+    "limits": null,
+    "mode": "batch",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.006",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "transcribe",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null
+  },
+  {
+    "category": "stt",
+    "evidence": "Streaming transcription is priced at $0.01 per minute",
+    "id": "aws/transcribe/streaming/pay-as-you-go",
+    "limits": null,
+    "mode": "streaming",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.01",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "transcribe",
+    "provider": "aws",
+    "since": "2026-10-28",
+    "source_url": "https://aws.amazon.com/transcribe/pricing/",
+    "tax_included": null
+  },
+  {
+    "category": "stt",
     "evidence": "Fast Transcription Speech To Text: 0.36 USD per 1 Hour (eastus)",
     "id": "azure/fast-transcription/any/pay-as-you-go",
     "limits": null,
@@ -622,6 +812,376 @@
     "since": "2026-10-28",
     "source_url": "https://elevenlabs.io/pricing/api",
     "tax_included": false
+  },
+  {
+    "category": "stt",
+    "evidence": "Real-time rate 0.68€/hr (0.0113€/min)",
+    "id": "gladia/real-time-speech-to-text/real-time/self-serve",
+    "limits": {
+      "concurrent": 30,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "real-time",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.68",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "real-time-speech-to-text",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null
+  },
+  {
+    "category": "stt",
+    "evidence": "0 - 100 hours 0.27€/hr 0.16€/hr",
+    "id": "gladia/solaria-1/batch/self-serve/0-100",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.27",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-1",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 100.0,
+      "min": 0.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "100 - 500 hours 0.26€/hr 0.15€/hr",
+    "id": "gladia/solaria-1/batch/self-serve/100-500",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.26",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-1",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 500.0,
+      "min": 100.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "10,000+ hours 0.21€/hr 0.12€/hr",
+    "id": "gladia/solaria-1/batch/self-serve/10000-up",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.21",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-1",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "min": 10000.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "2,000 - 5,000 hours 0.23€/hr 0.13€/hr",
+    "id": "gladia/solaria-1/batch/self-serve/2000-5000",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.23",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-1",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 5000.0,
+      "min": 2000.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "500 - 2,000 hours 0.24€/hr 0.14€/hr",
+    "id": "gladia/solaria-1/batch/self-serve/500-2000",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.24",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-1",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 2000.0,
+      "min": 500.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "5,000 - 10,000 hours 0.22€/hr 0.13€/hr",
+    "id": "gladia/solaria-1/batch/self-serve/5000-10000",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.22",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-1",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 10000.0,
+      "min": 5000.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "0 - 100 hours 0.27€/hr 0.16€/hr",
+    "id": "gladia/solaria-3/batch/self-serve/0-100",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.16",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-3",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 100.0,
+      "min": 0.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "100 - 500 hours 0.26€/hr 0.15€/hr",
+    "id": "gladia/solaria-3/batch/self-serve/100-500",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.15",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-3",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 500.0,
+      "min": 100.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "10,000+ hours 0.21€/hr 0.12€/hr",
+    "id": "gladia/solaria-3/batch/self-serve/10000-up",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.12",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-3",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "min": 10000.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "2,000 - 5,000 hours 0.23€/hr 0.13€/hr",
+    "id": "gladia/solaria-3/batch/self-serve/2000-5000",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.13",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-3",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 5000.0,
+      "min": 2000.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "500 - 2,000 hours 0.24€/hr 0.14€/hr",
+    "id": "gladia/solaria-3/batch/self-serve/500-2000",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.14",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-3",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 2000.0,
+      "min": 500.0,
+      "unit": "hour"
+    }
+  },
+  {
+    "category": "stt",
+    "evidence": "5,000 - 10,000 hours 0.22€/hr 0.13€/hr",
+    "id": "gladia/solaria-3/batch/self-serve/5000-10000",
+    "limits": {
+      "concurrent": 25,
+      "evidence": "The Self-serve plan allows 30 concurrent real-time sessions and 25 concurrent pre-recorded jobs",
+      "source_url": "https://www.gladia.io/pricing"
+    },
+    "mode": "batch",
+    "plan": "self-serve",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.13",
+      "currency": "EUR",
+      "per": 1,
+      "unit": "hour"
+    },
+    "product": "solaria-3",
+    "provider": "gladia",
+    "since": "2026-10-28",
+    "source_url": "https://www.gladia.io/pricing",
+    "tax_included": null,
+    "volume": {
+      "max": 10000.0,
+      "min": 5000.0,
+      "unit": "hour"
+    }
   },
   {
     "category": "stt",
