@@ -1,1 +1,266 @@
-[]
+[
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Answering Machine Detection ₹0.00/min",
+    "id": "plivo/answering-machine-detection/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.00",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "answering-machine-detection",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Automatic Speech Recognition ₹1.70/ 15 seconds",
+    "id": "plivo/automatic-speech-recognition/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "1.70",
+      "currency": "INR",
+      "per": 15,
+      "unit": "second"
+    },
+    "product": "automatic-speech-recognition",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "billing": {
+      "increment_seconds": 30.0
+    },
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Browser SDKs and WebRTC ₹0.25/min ₹0.25/min Pulse is 30 seconds.",
+    "id": "plivo/browser-sdks-and-webrtc/inbound/pay-as-you-go",
+    "limits": null,
+    "mode": "inbound",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.25",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "browser-sdks-and-webrtc",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "billing": {
+      "increment_seconds": 30.0
+    },
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Browser SDKs and WebRTC ₹0.25/min ₹0.25/min Pulse is 30 seconds.",
+    "id": "plivo/browser-sdks-and-webrtc/outbound/pay-as-you-go",
+    "limits": null,
+    "mode": "outbound",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.25",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "browser-sdks-and-webrtc",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Call Recording * ₹0.00/min",
+    "id": "plivo/call-recording/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.00",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "call-recording",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Call Transcription ₹0.81/min",
+    "id": "plivo/call-transcription/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.81",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "call-transcription",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Conference Calls ₹0.00/min",
+    "id": "plivo/conference-calls/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.00",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "conference-calls",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "billing": {
+      "increment_seconds": 30.0
+    },
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Domestic Calls ₹0.38/min ₹0.38/min Pulse is 30 seconds.",
+    "id": "plivo/domestic-calls/inbound/pay-as-you-go",
+    "limits": null,
+    "mode": "inbound",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.38",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "domestic-calls",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "billing": {
+      "increment_seconds": 30.0
+    },
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Domestic Calls ₹0.38/min ₹0.38/min Pulse is 30 seconds.",
+    "id": "plivo/domestic-calls/outbound/pay-as-you-go",
+    "limits": null,
+    "mode": "outbound",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.38",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "domestic-calls",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Multilingual Text to Speech ₹0.00/min",
+    "id": "plivo/multilingual-text-to-speech/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.00",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "multilingual-text-to-speech",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Noise Cancellation ₹0.12/min",
+    "id": "plivo/noise-cancellation/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.12",
+      "currency": "INR",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "noise-cancellation",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  },
+  {
+    "category": "telephony",
+    "country": "IN",
+    "evidence": "Domestic Numbers ₹200.00/month",
+    "id": "plivo/phone-number/any/pay-as-you-go",
+    "limits": null,
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "200.00",
+      "currency": "INR",
+      "per": 1,
+      "unit": "month"
+    },
+    "product": "phone-number",
+    "provider": "plivo",
+    "since": "2026-10-28",
+    "source_url": "https://www.plivo.com/voice/pricing/in/",
+    "tax_included": null
+  }
+]

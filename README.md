@@ -25,10 +25,33 @@ plans and modes, in the currency the provider states.
 | Category | Provider | Product | Modes | Plans | Price | Last checked |
 |---|---|---|---|---|---|---|
 | Speech-to-text | sarvam | saaras | batch, batch-with-diarization, real-time | pay-as-you-go, pro, growth, business | 0.38–0.59 INR per minute | 2026-10-28 |
+| Speech-to-text | smallestai | pulse | batch, real-time | pay-as-you-go | 0.003–0.004 USD per minute | 2026-10-28 |
+| Speech-to-text | smallestai | pulse-pro | batch | pay-as-you-go | 0.0035 USD per minute | 2026-10-28 |
 | Text-to-speech | sarvam | bulbul-v3 | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 2.6–3 INR per 1,000 characters | 2026-10-28 |
 | Text-to-speech | sarvam | bulbul-v4-flash | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 0.8–1 INR per 1,000 characters | 2026-10-28 |
 | Text-to-speech | sarvam | voice-cloning | real-time | pay-as-you-go, pro, growth, business | 2 INR per 1,000 characters | 2026-10-28 |
+| Text-to-speech | smallestai | lightning-v3.1 | any | pay-as-you-go | 0.175 USD per 10,000 characters | 2026-10-28 |
+| Text-to-speech | smallestai | lightning-v3.1-pro | any | pay-as-you-go | 0.195 USD per 10,000 characters | 2026-10-28 |
+| Telephony | plivo | answering-machine-detection | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
+| Telephony | plivo | automatic-speech-recognition | any | pay-as-you-go | 1.7 INR per 15 seconds | 2026-10-28 |
+| Telephony | plivo | browser-sdks-and-webrtc | inbound, outbound | pay-as-you-go | 0.25 INR per minute | 2026-10-28 |
+| Telephony | plivo | call-recording | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
+| Telephony | plivo | call-transcription | any | pay-as-you-go | 0.81 INR per minute | 2026-10-28 |
+| Telephony | plivo | conference-calls | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
+| Telephony | plivo | domestic-calls | inbound, outbound | pay-as-you-go | 0.38 INR per minute | 2026-10-28 |
+| Telephony | plivo | multilingual-text-to-speech | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
+| Telephony | plivo | noise-cancellation | any | pay-as-you-go | 0.12 INR per minute | 2026-10-28 |
+| Telephony | plivo | phone-number | any | pay-as-you-go | 200 INR per month | 2026-10-28 |
 <!-- coverage:end -->
+
+### Not public
+
+These publish no price we can read, so they have no rows. Ask them for a
+quote.
+
+| Provider | What their site says | Checked |
+|---|---|---|
+| Vobiz (India) | Pricing page marks India "contact sales" | 2026-10-28 |
 
 ## The files
 
@@ -70,6 +93,13 @@ Rules the data keeps:
   no float rounding creeps in. Converting to one currency is a separate,
   later step that records the exchange rate and its date.
 - **Each plan is its own row.** Pay as you go, Pro, Growth and so on.
+- **`mode` is one of a fixed list:** `real-time`, `streaming`,
+  `websocket`, `batch`, `batch-with-diarization`, `inbound`,
+  `outbound`, or `any` when one price covers every mode. Scrapers map
+  each page's own words onto it; a word not mapped yet fails that
+  provider's run until someone adds it.
+- **A fixed charge is a row whose unit is a period:** renting one phone
+  number is a price per 1 `month`.
 - **`evidence` is the text the number was read from**, so anyone can
   check it against the page.
 - **`since`** is the first day this repo saw this value. When the

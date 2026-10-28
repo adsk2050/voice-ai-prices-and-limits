@@ -286,5 +286,77 @@
     "since": "2026-10-28",
     "source_url": "https://www.sarvam.ai/api-pricing",
     "tax_included": false
+  },
+  {
+    "category": "stt",
+    "evidence": "Pulse Pro (Pre-Recorded) ~$0.0035/minute",
+    "id": "smallestai/pulse-pro/batch/pay-as-you-go",
+    "limits": {
+      "concurrent": 100,
+      "evidence": "Concurrency for STT 100 concurrent streams",
+      "source_url": "https://smallest.ai/pricing/models"
+    },
+    "mode": "batch",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.0035",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "pulse-pro",
+    "provider": "smallestai",
+    "since": "2026-10-28",
+    "source_url": "https://smallest.ai/pricing/models",
+    "tax_included": null
+  },
+  {
+    "category": "stt",
+    "evidence": "Pulse (Pre-Recorded) ~$0.003/minute",
+    "id": "smallestai/pulse/batch/pay-as-you-go",
+    "limits": {
+      "concurrent": 100,
+      "evidence": "Concurrency for STT 100 concurrent streams",
+      "source_url": "https://smallest.ai/pricing/models"
+    },
+    "mode": "batch",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.003",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "pulse",
+    "provider": "smallestai",
+    "since": "2026-10-28",
+    "source_url": "https://smallest.ai/pricing/models",
+    "tax_included": null
+  },
+  {
+    "category": "stt",
+    "evidence": "Pulse (Realtime) ~$0.004/minute",
+    "id": "smallestai/pulse/real-time/pay-as-you-go",
+    "limits": {
+      "concurrent": 100,
+      "evidence": "Concurrency for STT 100 concurrent streams",
+      "source_url": "https://smallest.ai/pricing/models"
+    },
+    "mode": "real-time",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.004",
+      "currency": "USD",
+      "per": 1,
+      "unit": "minute"
+    },
+    "product": "pulse",
+    "provider": "smallestai",
+    "since": "2026-10-28",
+    "source_url": "https://smallest.ai/pricing/models",
+    "tax_included": null
   }
 ]

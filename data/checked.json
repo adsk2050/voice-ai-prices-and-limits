@@ -1,5 +1,15 @@
 {
+  "plivo": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
   "sarvam": {
+    "checked_at": "2026-10-28",
+    "last_ok": "2026-10-28",
+    "status": "ok"
+  },
+  "smallestai": {
     "checked_at": "2026-10-28",
     "last_ok": "2026-10-28",
     "status": "ok"

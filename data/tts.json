@@ -670,5 +670,55 @@
     "since": "2026-10-28",
     "source_url": "https://www.sarvam.ai/api-pricing",
     "tax_included": false
+  },
+  {
+    "category": "tts",
+    "evidence": "Lightning V3.1 Pro ~$0.195/10K characters",
+    "id": "smallestai/lightning-v3.1-pro/any/pay-as-you-go",
+    "limits": {
+      "concurrent": 15,
+      "evidence": "Concurrency for TTS 15 concurrent streams; RPM for TTS APIs 100",
+      "requests_per_minute": 100,
+      "source_url": "https://smallest.ai/pricing/models"
+    },
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.195",
+      "currency": "USD",
+      "per": 10000,
+      "unit": "character"
+    },
+    "product": "lightning-v3.1-pro",
+    "provider": "smallestai",
+    "since": "2026-10-28",
+    "source_url": "https://smallest.ai/pricing/models",
+    "tax_included": null
+  },
+  {
+    "category": "tts",
+    "evidence": "Lightning V3.1 ~$0.175/10K characters",
+    "id": "smallestai/lightning-v3.1/any/pay-as-you-go",
+    "limits": {
+      "concurrent": 15,
+      "evidence": "Concurrency for TTS 15 concurrent streams; RPM for TTS APIs 100",
+      "requests_per_minute": 100,
+      "source_url": "https://smallest.ai/pricing/models"
+    },
+    "mode": "any",
+    "plan": "pay-as-you-go",
+    "plan_fee": null,
+    "price": {
+      "amount": "0.175",
+      "currency": "USD",
+      "per": 10000,
+      "unit": "character"
+    },
+    "product": "lightning-v3.1",
+    "provider": "smallestai",
+    "since": "2026-10-28",
+    "source_url": "https://smallest.ai/pricing/models",
+    "tax_included": null
   }
 ]
