@@ -54,7 +54,8 @@ jobs:
         continue-on-error: true
         env:
           PROVIDERS: ${{ steps.which.outputs.providers }}
-        run: uv run voice-prices update $PROVIDERS
+        # Unquoted on purpose: one argument per provider name.
+        run: uv run voice-prices update $PROVIDERS # shellcheck disable=SC2086
 
       # A pull request opened with this job's token does not start the
       # Check workflow, so the same checks run here, before it is opened.
