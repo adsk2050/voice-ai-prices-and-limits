@@ -1,0 +1,16 @@
+name: Report a wrong price
+description: A price, plan or limit here does not match the provider's page.
+labels: [wrong-price]
+body:
+  - type: input
+    id: row
+    attributes:
+      label: Row id
+      placeholder: e.g. sarvam/bulbul-v4-flash/real-time/pay-as-you-go
+    validations: { required: true }
+  - type: textarea
+    id: what
+    attributes:
+      label: What the page says
+      description: Paste the line from the provider's page, with the link.
+    validations: { required: true }

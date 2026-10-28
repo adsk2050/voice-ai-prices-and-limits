@@ -9,6 +9,8 @@ on:
         description: "Providers to scrape, space-separated (empty = all)"
         required: false
         default: ""
+  issues:
+    types: [opened] # the "Re-check prices now" form
 
 permissions:
   contents: write
@@ -21,6 +23,9 @@ concurrency:
 
 jobs:
   update:
+    if: >-
+      github.event_name != 'issues' ||
+      contains(github.event.issue.labels.*.name, 'recheck')
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
@@ -29,11 +34,24 @@ jobs:
       - uses: astral-sh/setup-uv@v6
       - run: uv sync
 
+      # Issue and input text is untrusted: it reaches the shell only
+      # through an environment variable, and only names of real
+      # scrapers come out.
+      - name: Which providers
+        id: which
+        env:
+          ASKED: ${{ github.event.issue.body || github.event.inputs.providers }}
+        run: |
+          picked="$(uv run voice-prices providers-from "$ASKED")"
+          echo "providers=$picked" >> "$GITHUB_OUTPUT"
+
       - name: Scrape
         id: scrape
         # A broken scraper must not hold back the others' data.
         continue-on-error: true
-        run: uv run voice-prices update ${{ github.event.inputs.providers }}
+        env:
+          PROVIDERS: ${{ steps.which.outputs.providers }}
+        run: uv run voice-prices update $PROVIDERS
 
       # A pull request opened with this job's token does not start the
       # Check workflow, so the same checks run here, before it is opened.
@@ -59,7 +77,9 @@ jobs:
           title: ${{ steps.title.outputs.title }}
           commit-message: ${{ steps.title.outputs.title }}
           body-path: changes.md
-          add-paths: data/*.json
+          add-paths: |
+            data/*.json
+            README.md
           labels: ${{ steps.scrape.outputs.price_changed == 'true' && 'price-change' || 'no-change' }}
 
       # Only a run that changed no price merges itself. A price change
@@ -72,14 +92,34 @@ jobs:
           gh pr merge ${{ steps.pr.outputs.pull-request-number }}
           --squash --delete-branch
 
+      - name: Answer the re-check issue
+        if: github.event_name == 'issues'
+        env:
+          ISSUE: ${{ github.event.issue.number }}
+          PR: ${{ steps.pr.outputs.pull-request-url }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            cat changes.md
+            echo
+            if [ -n "$PR" ]; then echo "Pull request: $PR"; fi
+            echo "Run: $RUN"
+          } > reply.md
+          gh issue comment "$ISSUE" --body-file reply.md
+          gh issue close "$ISSUE"
+
       - name: Open an issue per broken scraper
         if: steps.scrape.outputs.failed != ''
+        env:
+          FAILED: ${{ steps.scrape.outputs.failed }}
+          RUN: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
-          for provider in ${{ steps.scrape.outputs.failed }}; do
+          for provider in $FAILED; do
             title="Scraper broken: $provider"
-            if [ -z "$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[].number')" ]; then
+            open="$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[].number')"
+            if [ -z "$open" ]; then
               gh issue create --title "$title" --label scraper-broken \
-                --body "The daily run on $(date -u +%F) could not read $provider's prices. Its old rows are kept and it is marked failed in data/checked.json. Run log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+                --body "The run on $(date -u +%F) could not read $provider's prices. Its old rows are kept and it is marked failed in data/checked.json. Run log: $RUN"
             fi
           done
           exit 1

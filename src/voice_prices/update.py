@@ -18,11 +18,13 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 import traceback
 from pathlib import Path
 from typing import Any
 
+from voice_prices import readme
 from voice_prices.models import PriceRow
 from voice_prices.scrapers import SCRAPERS
 
@@ -138,7 +140,21 @@ def main() -> None:
     run = sub.add_parser("update", help="scrape and rewrite data/*.json")
     run.add_argument("providers", nargs="*", help="default: all")
     sub.add_parser("schema", help="regenerate schema/row.schema.json")
+    sub.add_parser("readme", help="regenerate the README coverage table")
+    pick = sub.add_parser(
+        "providers-from", help="known provider names found in a text"
+    )
+    pick.add_argument("text")
     args = parser.parse_args()
+
+    if args.command == "readme":
+        readme.rewrite(ROOT / "README.md", DATA)
+        return
+    if args.command == "providers-from":
+        # Issue text is untrusted: only names of real scrapers come out.
+        words = set(re.findall(r"[a-z0-9-]+", args.text.lower()))
+        print(" ".join(sorted(words & set(SCRAPERS))))
+        return
 
     if args.command == "schema":
         (ROOT / "schema" / "row.schema.json").write_text(
@@ -155,5 +171,6 @@ def main() -> None:
         report += [f"- {p}" for p in failed]
     (ROOT / "changes.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
+    readme.rewrite(ROOT / "README.md", DATA)
     _github_outputs(changes, failed)
     sys.exit(1 if failed else 0)

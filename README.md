@@ -8,9 +8,27 @@ Every number is scraped from the provider's own page, stored with the
 page's own words as evidence, and re-checked every day. Every change is
 a commit, so the git history is the price history.
 
+[![Request a provider or model](https://img.shields.io/badge/Request-a%20provider%20or%20model-2ea44f)](https://github.com/adsk2050/voice-ai-prices-and-limits/issues/new?template=new-provider.yml)
+[![Re-check prices now](https://img.shields.io/badge/Re--check-prices%20now-0969da)](https://github.com/adsk2050/voice-ai-prices-and-limits/issues/new?template=recheck.yml)
+[![Report a wrong price](https://img.shields.io/badge/Report-a%20wrong%20price-d73a49)](https://github.com/adsk2050/voice-ai-prices-and-limits/issues/new?template=wrong-price.yml)
+
 > **LLM prices are not here.** [models.dev](https://models.dev) keeps
 > them well. If you need an LLM price this repo has a reason to carry
 > (an Indian provider models.dev lacks, say), open an issue.
+
+## What is tracked
+
+Generated from the data files on every run. Price is the range across
+plans and modes, in the currency the provider states.
+
+<!-- coverage:start -->
+| Category | Provider | Product | Modes | Plans | Price | Last checked |
+|---|---|---|---|---|---|---|
+| Speech-to-text | sarvam | saaras | batch, batch-with-diarization, real-time | pay-as-you-go, pro, growth, business | 0.38–0.59 INR per minute | 2026-10-28 |
+| Text-to-speech | sarvam | bulbul-v3 | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 2.6–3 INR per 1,000 characters | 2026-10-28 |
+| Text-to-speech | sarvam | bulbul-v4-flash | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 0.8–1 INR per 1,000 characters | 2026-10-28 |
+| Text-to-speech | sarvam | voice-cloning | real-time | pay-as-you-go, pro, growth, business | 2 INR per 1,000 characters | 2026-10-28 |
+<!-- coverage:end -->
 
 ## The files
 
@@ -101,8 +119,11 @@ planned.
 
 ## How it updates
 
-A GitHub Action runs every scraper once a day, and on demand from the
-Actions tab.
+A GitHub Actions workflow (`.github/workflows/update.yml`) runs every
+scraper once a day at 03:30 UTC, on GitHub's servers. It also runs on
+demand: anyone can open a [re-check issue](https://github.com/adsk2050/voice-ai-prices-and-limits/issues/new?template=recheck.yml),
+which starts the run, posts the result on the issue and closes it.
+Maintainers can also use **Run workflow** on the Actions tab.
 
 - **No price changed:** it opens a pull request that only moves the
   dates in `data/checked.json`, and merges it at once. A merged pull

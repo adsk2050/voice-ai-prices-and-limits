@@ -1,0 +1,10 @@
+name: Re-check prices now
+description: Run the scrapers now instead of waiting for the daily run. The result is posted here and the issue closes itself.
+title: "Re-check prices"
+labels: [recheck]
+body:
+  - type: input
+    id: providers
+    attributes:
+      label: Providers
+      description: Names as they appear in the data (e.g. "sarvam"), space-separated. Leave empty to check all.

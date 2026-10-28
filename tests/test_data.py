@@ -43,3 +43,11 @@ def test_rows_load_as_models(path: Path) -> None:
 
     for row in json.loads(path.read_text(encoding="utf-8")):
         assert PriceRow.model_validate(row).to_json() == row
+
+
+def test_readme_table_is_current() -> None:
+    from voice_prices.readme import END, START, table
+
+    text = (ROOT / "README.md").read_text(encoding="utf-8")
+    current = text.split(START, 1)[1].split(END, 1)[0].strip()
+    assert current == table(ROOT / "data"), "run: uv run voice-prices readme"

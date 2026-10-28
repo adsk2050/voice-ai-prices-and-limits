@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: LLM prices
+    url: https://models.dev
+    about: LLM prices are kept by models.dev. Open a blank issue if you need one here that models.dev lacks.
