@@ -1,0 +1,44 @@
+[
+ {
+  "meterName": "S1 Neural Text To Speech Characters",
+  "retailPrice": 15.0,
+  "unitOfMeasure": "1M",
+  "currencyCode": "USD",
+  "armRegionName": "eastus"
+ },
+ {
+  "meterName": "S1 Speech To Text",
+  "retailPrice": 1.0,
+  "unitOfMeasure": "1 Hour",
+  "currencyCode": "USD",
+  "armRegionName": "eastus"
+ },
+ {
+  "meterName": "S1 Speech to Text Batch",
+  "retailPrice": 0.18,
+  "unitOfMeasure": "1 Hour",
+  "currencyCode": "USD",
+  "armRegionName": "eastus"
+ },
+ {
+  "meterName": "Neural HD Text to Speech Characters",
+  "retailPrice": 22.0,
+  "unitOfMeasure": "1M",
+  "currencyCode": "USD",
+  "armRegionName": "eastus"
+ },
+ {
+  "meterName": "Fast Transcription Speech To Text",
+  "retailPrice": 0.36,
+  "unitOfMeasure": "1 Hour",
+  "currencyCode": "USD",
+  "armRegionName": "eastus"
+ },
+ {
+  "meterName": "S1 Neural Long Audio Characters",
+  "retailPrice": 100.0,
+  "unitOfMeasure": "1M",
+  "currencyCode": "USD",
+  "armRegionName": "eastus"
+ }
+]

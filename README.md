@@ -24,14 +24,132 @@ plans and modes, in the currency the provider states.
 <!-- coverage:start -->
 | Category | Provider | Product | Modes | Plans | Price | Last checked |
 |---|---|---|---|---|---|---|
+| Speech-to-text | assemblyai | dictation-api | batch | pay-as-you-go | 0.62 USD per hour | 2026-10-28 |
+| Speech-to-text | assemblyai | sync-api | batch | pay-as-you-go | 0.3 USD per hour | 2026-10-28 |
+| Speech-to-text | assemblyai | universal-2 | batch | pay-as-you-go | 0.15 USD per hour | 2026-10-28 |
+| Speech-to-text | assemblyai | universal-3.5-pro | batch | pay-as-you-go | 0.21 USD per hour | 2026-10-28 |
+| Speech-to-text | assemblyai | universal-3.6-pro-realtime | real-time | pay-as-you-go | 0.45 USD per hour | 2026-10-28 |
+| Speech-to-text | assemblyai | universal-streaming | real-time | pay-as-you-go | 0.15 USD per hour | 2026-10-28 |
+| Speech-to-text | assemblyai | universal-streaming-multilingual | real-time | pay-as-you-go | 0.15 USD per hour | 2026-10-28 |
+| Speech-to-text | azure | fast-transcription | any | pay-as-you-go | 0.36 USD per hour | 2026-10-28 |
+| Speech-to-text | azure | speech-to-text | batch, real-time | pay-as-you-go | 0.18–1 USD per hour | 2026-10-28 |
+| Speech-to-text | cartesia | ink-2 | any | scale | 0.39 USD per hour | 2026-10-28 |
+| Speech-to-text | deepgram | flux-english | streaming | growth, pay-as-you-go | 0.0057–0.0065 USD per minute | 2026-10-28 |
+| Speech-to-text | deepgram | flux-multilingual | streaming | growth, pay-as-you-go | 0.0068–0.0078 USD per minute | 2026-10-28 |
+| Speech-to-text | deepgram | nova-3-monolingual | batch, streaming | growth, pay-as-you-go | 0.0036–0.0048 USD per minute | 2026-10-28 |
+| Speech-to-text | deepgram | nova-3-multilingual | batch, streaming | growth, pay-as-you-go | 0.0043–0.0058 USD per minute | 2026-10-28 |
+| Speech-to-text | deepgram | whisper-large | batch | growth, pay-as-you-go | 0.0048 USD per minute | 2026-10-28 |
+| Speech-to-text | elevenlabs | scribe-v2 | any | pay-as-you-go | 0.22 USD per hour | 2026-10-28 |
+| Speech-to-text | elevenlabs | scribe-v2-medical | any | pay-as-you-go | 0.22 USD per hour | 2026-10-28 |
+| Speech-to-text | elevenlabs | scribe-v2-realtime | real-time | pay-as-you-go | 0.39 USD per hour | 2026-10-28 |
+| Speech-to-text | google | dynamic-batch-recognition | batch | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0024–0.003 USD per minute | 2026-10-28 |
+| Speech-to-text | google | medical-conversation | any | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0624–0.078 USD per minute | 2026-10-28 |
+| Speech-to-text | google | medical-dictation | any | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0624–0.078 USD per minute | 2026-10-28 |
+| Speech-to-text | google | recognition | any | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0128–0.016 USD per minute | 2026-10-28 |
+| Speech-to-text | google | speech-recognition-with-data-logging | any | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0128–0.016 USD per minute | 2026-10-28 |
+| Speech-to-text | google | speech-recognition-without-data-logging | any | gemini-enterprise-flexible-savings-plan-1-year, gemini-enterprise-flexible-savings-plan-3-year, pay-as-you-go | 0.0192–0.024 USD per minute | 2026-10-28 |
+| Speech-to-text | inworld | stt-1 | any | on-demand, creator, builder, developer, growth | 0.1–0.15 USD per hour | 2026-10-28 |
+| Speech-to-text | openai | gpt-4o-mini-transcribe | any | pay-as-you-go | 0.003 USD per minute | 2026-10-28 |
+| Speech-to-text | openai | gpt-4o-transcribe | any | pay-as-you-go | 0.006 USD per minute | 2026-10-28 |
+| Speech-to-text | openai | gpt-live-transcribe | real-time | pay-as-you-go | 0.017 USD per minute | 2026-10-28 |
+| Speech-to-text | openai | gpt-realtime-whisper | real-time | pay-as-you-go | 0.017 USD per minute | 2026-10-28 |
+| Speech-to-text | openai | gpt-transcribe | any | pay-as-you-go | 0.0045 USD per minute | 2026-10-28 |
+| Speech-to-text | revai | human | any | pay-as-you-go | 1.99 USD per minute | 2026-10-28 |
+| Speech-to-text | revai | reverb | any | pay-as-you-go | 0.2 USD per hour | 2026-10-28 |
+| Speech-to-text | revai | reverb-foreign-language | any | pay-as-you-go | 0.3 USD per hour | 2026-10-28 |
+| Speech-to-text | revai | whisper-large | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Speech-to-text | rime | rime-stt | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
 | Speech-to-text | sarvam | saaras | batch, batch-with-diarization, real-time | pay-as-you-go, pro, growth, business | 0.38–0.59 INR per minute | 2026-10-28 |
 | Speech-to-text | smallestai | pulse | batch, real-time | pay-as-you-go | 0.003–0.004 USD per minute | 2026-10-28 |
 | Speech-to-text | smallestai | pulse-pro | batch | pay-as-you-go | 0.0035 USD per minute | 2026-10-28 |
+| Speech-to-text | soniox | stt | batch, real-time | pay-as-you-go | 0.1–0.12 USD per hour | 2026-10-28 |
+| Speech-to-text | soniox | stt-input-audio-tokens | batch, real-time | pay-as-you-go | 1.5–2 USD per 1e+06 tokens | 2026-10-28 |
+| Speech-to-text | soniox | stt-input-text-tokens | batch, real-time | pay-as-you-go | 3.5–4 USD per 1e+06 tokens | 2026-10-28 |
+| Speech-to-text | soniox | stt-output-text-tokens | batch, real-time | pay-as-you-go | 3.5–4 USD per 1e+06 tokens | 2026-10-28 |
+| Speech-to-text | speechmatics | enhanced | batch | pay-as-you-go | 0.38 USD per hour | 2026-10-28 |
+| Speech-to-text | speechmatics | melia-1 | batch | pay-as-you-go | 0.12 USD per hour | 2026-10-28 |
+| Speech-to-text | speechmatics | oak-1-medical | batch | pay-as-you-go | 0.15 USD per hour | 2026-10-28 |
+| Speech-to-text | speechmatics | standard | batch | pay-as-you-go | 0.23 USD per hour | 2026-10-28 |
+| Speech-to-text | telnyx | assemblyai-stt | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | azure-stt | any | pay-as-you-go | 0.027 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | basira-stt | any | pay-as-you-go | 0.007 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | cohere-arabic-stt | any | pay-as-you-go | 0.0015 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | deepgram-flux-stt | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | deepgram-nova-2-stt | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | deepgram-nova-3-stt | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | google-stt | any | pay-as-you-go | 0.017 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | grok-xai-stt | any | pay-as-you-go | 0.0033 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | humain-stt | any | pay-as-you-go | 0.007 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | parakeet-stt | any | pay-as-you-go | 0.0015 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | soniox-stt | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | speechmatics-stt | any | pay-as-you-go | 0.0035 USD per minute | 2026-10-28 |
+| Speech-to-text | telnyx | telnyx-stt | any | pay-as-you-go | 0.015 USD per minute | 2026-10-28 |
+| Speech-to-text | twilio | call-recording-transcription | any | pay-as-you-go | 0.05 USD per minute | 2026-10-28 |
+| Speech-to-text | twilio | conversation-intelligence-transcription | batch, real-time | pay-as-you-go | 0.024–0.027 USD per minute | 2026-10-28 |
+| Text-to-speech | assemblyai | assemblyai-tts-1 | any | pay-as-you-go | 15 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | aws | generative-voices | any | pay-as-you-go | 30 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | aws | long-form-voices | any | pay-as-you-go | 100 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | aws | neural-voices | any | govcloud-us, pay-as-you-go | 16–19.2 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | aws | standard-voices | any | govcloud-us, pay-as-you-go | 4–4.8 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | azure | neural | any | pay-as-you-go | 15 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | azure | neural-hd | any | pay-as-you-go | 22 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | azure | neural-long-audio | batch | pay-as-you-go | 100 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | cartesia | sonic-3.6 | any | pro, startup, scale | 38–65 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | deepgram | aura-1 | any | growth, pay-as-you-go | 0.0135–0.015 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | deepgram | aura-2 | any | growth, pay-as-you-go | 0.027–0.03 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | deepgram | flux-tts | any | growth, pay-as-you-go | 0.0405–0.045 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | elevenlabs | flash-turbo | any | pay-as-you-go | 0.04 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | elevenlabs | v2-multilingual | any | pay-as-you-go | 0.08 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | elevenlabs | v3 | any | pay-as-you-go | 0.08 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | elevenlabs | v3-conversational | any | pay-as-you-go | 0.04 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | elevenlabs | v4 | any | pay-as-you-go | 0.08 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | elevenlabs | v4-turbo | any | pay-as-you-go | 0.04 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | google | chirp-3-hd | any | pay-as-you-go | 30 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | google | gemini-2.5-flash-lite-preview-tts-audio-output | any | pay-as-you-go | 10 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-2.5-flash-lite-preview-tts-text-input | any | pay-as-you-go | 0.5 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-2.5-flash-tts-audio-output | any | pay-as-you-go | 10 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-2.5-flash-tts-text-input | any | pay-as-you-go | 0.5 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-2.5-pro-tts-audio-output | any | pay-as-you-go | 20 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-2.5-pro-tts-text-input | any | pay-as-you-go | 1 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-3.1-flash-tts-preview-audio-output | any | pay-as-you-go | 20 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-3.1-flash-tts-preview-text-input | any | pay-as-you-go | 1 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-3.8-flash-lite-tts-preview-audio-output | any | pay-as-you-go | 6 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-3.8-flash-lite-tts-preview-text-input | any | pay-as-you-go | 0.5 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-3.8-flash-tts-preview-audio-output | any | pay-as-you-go | 9 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | gemini-3.8-flash-tts-preview-text-input | any | pay-as-you-go | 0.5 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | google | instant-custom | any | pay-as-you-go | 60 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | google | neural2 | any | pay-as-you-go | 16 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | google | polyglot-preview | any | pay-as-you-go | 16 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | google | standard | any | pay-as-you-go | 4 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | google | studio | any | pay-as-you-go | 160 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | google | wavenet | any | pay-as-you-go | 4 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | inworld | tts-2 | real-time | enterprise, on-demand, creator, builder, developer, growth | 5–25 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | inworld | tts-2-flash | real-time | on-demand, creator, builder, developer, growth | 7–15 USD per 1e+06 characters | 2026-10-28 |
+| Text-to-speech | rime | coda-v2 | any | pay-as-you-go | 0.05 USD per minute | 2026-10-28 |
+| Text-to-speech | rime | mist-v3 | any | pay-as-you-go | 0.03 USD per minute | 2026-10-28 |
 | Text-to-speech | sarvam | bulbul-v3 | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 2.6–3 INR per 1,000 characters | 2026-10-28 |
 | Text-to-speech | sarvam | bulbul-v4-flash | real-time, streaming, websocket | pay-as-you-go, pro, growth, business | 0.8–1 INR per 1,000 characters | 2026-10-28 |
 | Text-to-speech | sarvam | voice-cloning | real-time | pay-as-you-go, pro, growth, business | 2 INR per 1,000 characters | 2026-10-28 |
 | Text-to-speech | smallestai | lightning-v3.1 | any | pay-as-you-go | 0.175 USD per 10,000 characters | 2026-10-28 |
 | Text-to-speech | smallestai | lightning-v3.1-pro | any | pay-as-you-go | 0.195 USD per 10,000 characters | 2026-10-28 |
+| Text-to-speech | soniox | tts-input-text-tokens | real-time | pay-as-you-go | 4 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | soniox | tts-output-audio-tokens | real-time | pay-as-you-go | 21.5 USD per 1e+06 tokens | 2026-10-28 |
+| Text-to-speech | speechmatics | text-to-speech | any | pay-as-you-go | 0.011 USD per 1,000 characters | 2026-10-28 |
+| Text-to-speech | telnyx | inworld-max-tts | any | pay-as-you-go | 1e-05 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | inworld-mini-tts | any | pay-as-you-go | 5.5e-06 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | minimax-speech-2.8-turbo-tts | any | pay-as-you-go | 3.4e-05 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | neural-voices-tts-amazon-polly | any | pay-as-you-go | 2.4e-05 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | qwen3tts | any | pay-as-you-go | 3.2e-05 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | resemble-tts | any | pay-as-you-go | 8e-06 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | rime-tts | any | pay-as-you-go | 2e-05 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | standard-tts-amazon-polly | any | pay-as-you-go | 9e-06 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | telnyx-hd-voices-tts | any | pay-as-you-go | 4.8e-05 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | telnyx-tts | any | pay-as-you-go | 3e-06 USD per character | 2026-10-28 |
+| Text-to-speech | telnyx | telnyx-ultra | any | pay-as-you-go | 3.2e-05 USD per character | 2026-10-28 |
+| Text-to-speech | twilio | premium-generative | any | pay-as-you-go | 0.013 USD per 100 characters | 2026-10-28 |
+| Text-to-speech | twilio | premium-neural | any | pay-as-you-go | 0.0032 USD per 100 characters | 2026-10-28 |
+| Text-to-speech | twilio | premium-standard | any | pay-as-you-go | 0.0008 USD per 100 characters | 2026-10-28 |
+| Telephony | cartesia | cartesia-provided-number | any | pay-as-you-go | 0.014 USD per minute | 2026-10-28 |
 | Telephony | plivo | answering-machine-detection | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
 | Telephony | plivo | automatic-speech-recognition | any | pay-as-you-go | 1.7 INR per 15 seconds | 2026-10-28 |
 | Telephony | plivo | browser-sdks-and-webrtc | inbound, outbound | pay-as-you-go | 0.25 INR per minute | 2026-10-28 |
@@ -42,6 +160,34 @@ plans and modes, in the currency the provider states.
 | Telephony | plivo | multilingual-text-to-speech | any | pay-as-you-go | 0 INR per minute | 2026-10-28 |
 | Telephony | plivo | noise-cancellation | any | pay-as-you-go | 0.12 INR per minute | 2026-10-28 |
 | Telephony | plivo | phone-number | any | pay-as-you-go | 200 INR per month | 2026-10-28 |
+| Telephony | telnyx | browser-app-calling | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | call-recording | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | call-recording-storage | any | pay-as-you-go | 0 USD per minute | 2026-10-28 |
+| Telephony | telnyx | conference-calls | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | conversation-relay | any | pay-as-you-go | 0.05 USD per minute | 2026-10-28 |
+| Telephony | telnyx | decrypted-forking | any | pay-as-you-go | 0.0025 USD per minute | 2026-10-28 |
+| Telephony | telnyx | local-number | inbound | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | make-outbound-calls | outbound | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | media-streaming-over-websockets | any | pay-as-you-go | 0.0035 USD per minute | 2026-10-28 |
+| Telephony | telnyx | noise-suppression | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | noise-suppression-aicoustics | any | pay-as-you-go | 0.003 USD per minute | 2026-10-28 |
+| Telephony | telnyx | noise-suppression-krisp | any | pay-as-you-go | 0.005 USD per minute | 2026-10-28 |
+| Telephony | telnyx | phone-numbers | any | pay-as-you-go | 1 USD per month | 2026-10-28 |
+| Telephony | telnyx | premium-answering-machine-detection | any | pay-as-you-go | 0.0065 USD per call | 2026-10-28 |
+| Telephony | telnyx | sip-interface | any | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | standard-answering-machine-detection | any | pay-as-you-go | 0.002 USD per call | 2026-10-28 |
+| Telephony | telnyx | toll-free-number | inbound | pay-as-you-go | 0.002 USD per minute | 2026-10-28 |
+| Telephony | telnyx | toll-free-numbers | any | pay-as-you-go | 1 USD per month | 2026-10-28 |
+| Telephony | twilio | browser-app | inbound, outbound | pay-as-you-go | 0.004 USD per minute | 2026-10-28 |
+| Telephony | twilio | byoc-trunking | inbound, outbound | pay-as-you-go | 0.004 USD per minute | 2026-10-28 |
+| Telephony | twilio | call-recording | any | pay-as-you-go | 0.0025 USD per minute | 2026-10-28 |
+| Telephony | twilio | local-calls | inbound, outbound | pay-as-you-go | 0.0085–0.014 USD per minute | 2026-10-28 |
+| Telephony | twilio | local-numbers | any | pay-as-you-go | 1.15 USD per month | 2026-10-28 |
+| Telephony | twilio | media-streams | any | pay-as-you-go | 0.0044 USD per minute | 2026-10-28 |
+| Telephony | twilio | sip-interface | inbound, outbound | pay-as-you-go | 0.004 USD per minute | 2026-10-28 |
+| Telephony | twilio | siprec | any | pay-as-you-go | 0.0044 USD per minute | 2026-10-28 |
+| Telephony | twilio | toll-free-calls | inbound, outbound | pay-as-you-go | 0.014–0.022 USD per minute | 2026-10-28 |
+| Telephony | twilio | toll-free-numbers | any | pay-as-you-go | 2.15 USD per month | 2026-10-28 |
 <!-- coverage:end -->
 
 ### Not public
