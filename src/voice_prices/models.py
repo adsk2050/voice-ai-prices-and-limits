@@ -129,6 +129,7 @@ Reason = Literal[
     "no-public-price",  # no price published anywhere we found
     "rendered-by-javascript",  # prices exist but not in any fetchable text
     "blocked",  # the site refuses automated fetches
+    "fetch-failed",  # the page cannot be fetched (bad certificate, timeout)
     "free",  # no charge, so nothing to price
 ]
 
