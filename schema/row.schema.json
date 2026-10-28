@@ -176,7 +176,9 @@
             "hour",
             "token",
             "call",
-            "request"
+            "request",
+            "month",
+            "year"
           ],
           "title": "Unit",
           "type": "string"
@@ -250,7 +252,17 @@
       ]
     },
     "mode": {
-      "pattern": "^[a-z0-9.-]+$",
+      "description": "\"any\" when one price covers every mode.",
+      "enum": [
+        "real-time",
+        "streaming",
+        "websocket",
+        "batch",
+        "batch-with-diarization",
+        "inbound",
+        "outbound",
+        "any"
+      ],
       "title": "Mode",
       "type": "string"
     },

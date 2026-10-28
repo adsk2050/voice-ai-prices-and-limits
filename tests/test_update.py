@@ -78,6 +78,25 @@ def test_a_new_price_is_a_change_with_a_new_since(
     assert (row["price"]["amount"], row["since"]) == ("0.04", "2026-10-29")
 
 
+def test_an_unknown_mode_fails_only_that_provider(
+    data: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    from voice_prices.rows import PageChangedError, mode
+
+    with pytest.raises(PageChangedError):
+        mode("hyper-realtime")
+    good = _row("0.05")
+    bad = Scraped(**{**good.__dict__, "provider": "other", "mode": "odd"})
+    monkeypatch.setattr(
+        update, "SCRAPERS", {"acme": lambda: [good], "other": lambda: [bad]}
+    )
+
+    changes, failed = update.update(["acme", "other"], "2026-10-28")
+
+    assert failed == ["other"]
+    assert len(changes) == 1 and "acme" in changes[0]
+
+
 def test_a_broken_scraper_keeps_old_rows(
     data: Path, monkeypatch: pytest.MonkeyPatch
 ) -> None:

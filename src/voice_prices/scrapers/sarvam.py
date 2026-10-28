@@ -11,7 +11,7 @@ from __future__ import annotations
 import re
 
 from voice_prices.page import fetch_text
-from voice_prices.rows import PageChangedError, Scraped, amount, slug
+from voice_prices.rows import PageChangedError, Scraped, amount, mode, slug
 
 PRICING_URL = "https://www.sarvam.ai/api-pricing"
 DOCS_URL = "https://docs.sarvam.ai/api/getting-started/pricing"
@@ -70,11 +70,11 @@ def _service_and_mode(
     ``(default_product, "batch")``.
     """
     if "," in label:
-        service, mode = (part.strip() for part in label.split(",", 1))
-        return slug(service), slug(mode)
+        service, word = (part.strip() for part in label.split(",", 1))
+        return slug(service), word
     if default_product is None:
         raise PageChangedError(f"row with no service name: {label!r}")
-    return default_product, slug(label)
+    return default_product, label
 
 
 def parse(pricing_text: str, docs_text: str) -> list[Scraped]:
@@ -86,10 +86,10 @@ def parse(pricing_text: str, docs_text: str) -> list[Scraped]:
         table = _table(pricing_text, heading)
         found = 0
         for match in _row_pattern().finditer(table):
-            product, mode = _service_and_mode(
+            product, word = _service_and_mode(
                 match.group("label"), default_product
             )
-            if mode == "language-identification":
+            if slug(word) == "language-identification":
                 continue  # not speech-to-text itself
             per = int((match.group("per") or "1").replace(",", ""))
             evidence = match.group(0)
@@ -99,7 +99,7 @@ def parse(pricing_text: str, docs_text: str) -> list[Scraped]:
                         category=category,
                         provider="sarvam",
                         product=product,
-                        mode=mode,
+                        mode=mode(word),
                         plan=slug(plan),
                         amount=amount(match.group(f"p{i}")),
                         currency="INR",

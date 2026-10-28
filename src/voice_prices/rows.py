@@ -72,6 +72,33 @@ class Scraped:
         ).to_json()
 
 
+_MODES = {
+    "real-time": "real-time",
+    "realtime": "real-time",
+    "streaming": "streaming",
+    "websocket": "websocket",
+    "batch": "batch",
+    "pre-recorded": "batch",
+    "prerecorded": "batch",
+    "batch-with-diarization": "batch-with-diarization",
+    "inbound": "inbound",
+    "outbound": "outbound",
+    "any": "any",
+}
+
+
+def mode(text: str) -> str:
+    """The page's word for a mode, as one of the fixed modes.
+
+    Raises:
+        PageChangedError: A word not mapped yet. Add it to ``_MODES``.
+    """
+    key = slug(text)
+    if key not in _MODES:
+        raise PageChangedError(f"unknown mode {text!r}: map it in rows.py")
+    return _MODES[key]
+
+
 def slug(text: str) -> str:
     """``"Bulbul V4 Flash"`` -> ``"bulbul-v4-flash"``."""
     return re.sub(r"[^a-z0-9.]+", "-", text.lower()).strip("-")

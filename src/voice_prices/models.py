@@ -16,7 +16,29 @@ Day = Annotated[str, Field(pattern=r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")]
 Slug = Annotated[str, Field(pattern=r"^[a-z0-9.-]+$")]
 Category = Literal["stt", "tts", "telephony"]
 Unit = Literal[
-    "character", "minute", "second", "hour", "token", "call", "request"
+    "character",
+    "minute",
+    "second",
+    "hour",
+    "token",
+    "call",
+    "request",
+    # A period: a fixed charge per product per month or year, such as
+    # renting one phone number or one block of extra channels.
+    "month",
+    "year",
+]
+# The fixed list. Scrapers map their page's words onto it
+# (rows.mode); a word not here fails that provider's run.
+Mode = Literal[
+    "real-time",
+    "streaming",
+    "websocket",
+    "batch",
+    "batch-with-diarization",
+    "inbound",
+    "outbound",
+    "any",
 ]
 
 
@@ -69,7 +91,7 @@ class PriceRow(_Model):
     category: Category
     provider: Slug
     product: Slug
-    mode: Slug
+    mode: Mode = Field(description='"any" when one price covers every mode.')
     plan: Slug
     country: Annotated[str | None, Field(pattern=r"^[A-Z]{2}$")] = None
     price: Price

@@ -75,6 +75,7 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
     for provider in providers:
         try:
             scraped = SCRAPERS[provider]()
+            rows = [item.to_row(since=today) for item in scraped]
         except Exception:  # noqa: BLE001 - one provider must not stop the rest
             traceback.print_exc()
             failed.append(provider)
@@ -85,9 +86,8 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
             }
             continue
         seen: set[str] = set()
-        for item in scraped:
+        for item, row in zip(scraped, rows, strict=True):
             before = old[item.category].get(item.id)
-            row = item.to_row(since=today)
             if before is not None and _same_price(before, row):
                 row["since"] = before["since"]
             new[item.category][item.id] = row
