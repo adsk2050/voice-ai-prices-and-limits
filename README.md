@@ -122,6 +122,10 @@ test with a short excerpt of the page in `tests/fixtures/`. See
 `uv run pytest` and `uv run voice-prices update`, then open a pull
 request. Wrong price? Open an issue with a link to the page.
 
+Commits are scanned for secrets (API keys, tokens) with
+[gitleaks](https://github.com/gitleaks/gitleaks): on every pull request
+in CI, and locally after `uvx pre-commit install`.
+
 Keeping the scrapers working is a shared job: when a provider moves
 its page or changes its layout, the daily run opens a "scraper broken"
 issue, and a fix is a pull request to that provider's scraper.
