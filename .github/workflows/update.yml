@@ -27,11 +27,14 @@ jobs:
       github.event_name != 'issues' ||
       contains(github.event.issue.labels.*.name, 'recheck')
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
       - run: uv sync
 
       # Issue and input text is untrusted: it reaches the shell only

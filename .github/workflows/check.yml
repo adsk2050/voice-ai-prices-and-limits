@@ -5,12 +5,19 @@ on:
   push:
     branches: [main]
 
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
       - run: uv sync
       - run: uv run ruff check .
       - run: uv run ruff format --check .
@@ -19,6 +26,7 @@ jobs:
   secrets:
     # Every commit a pull request brings, not just the final files.
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
         with:
