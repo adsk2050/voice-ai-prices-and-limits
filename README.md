@@ -1,8 +1,8 @@
 # voice-ai-prices-and-limits
 
 Prices and rate limits for voice AI services, as structured data that
-updates itself: **speech-to-text (STT)**, **text-to-speech (TTS)** and
-**telephony**, for Indian and global providers.
+updates itself: **speech-to-text (STT)**, **text-to-speech (TTS)**, **telephony** and
+**voice-agent platforms**, for Indian and global providers.
 
 Every number is scraped from the provider's own page, stored with the
 page's own words as evidence, and re-checked every day. Every change is
@@ -220,6 +220,7 @@ rows. The reason says what would unlock them; `sign-in-required` and
 |---|---|
 | `data/stt.json` | Speech-to-text prices, per provider, model, mode and plan |
 | `data/tts.json` | Text-to-speech prices |
+| `data/agent.json` | Voice-agent platforms, per minute of conversation |
 | `data/telephony.json` | Call prices: per country, inbound or outbound, pulse, minimums |
 | `data/unavailable.json` | Providers tracked but not priced, and the reason |
 | `data/checked.json` | When each provider's page was last checked, and whether its scraper worked |
@@ -260,6 +261,9 @@ Rules the data keeps:
   `outbound`, or `any` when one price covers every mode. Scrapers map
   each page's own words onto it; a word not mapped yet fails that
   provider's run until someone adds it.
+- **A volume tier is its own row**, with `volume`: `{"min": 0, "max":
+  250000, "unit": "minute"}` (no `max` for the last tier). Its id ends
+  in the range, for example `.../pay-as-you-go/0-250000`.
 - **A fixed charge is a row whose unit is a period:** renting one phone
   number is a price per 1 `month`.
 - **`evidence` is the text the number was read from**, so anyone can

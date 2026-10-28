@@ -30,7 +30,7 @@ from voice_prices.scrapers import SCRAPERS
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
-CATEGORIES = ("stt", "tts", "telephony")
+CATEGORIES = ("stt", "tts", "telephony", "agent")
 CHECKED = DATA / "checked.json"
 
 

@@ -12,7 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = json.loads(
     (ROOT / "schema" / "row.schema.json").read_text(encoding="utf-8")
 )
-FILES = [ROOT / "data" / f"{c}.json" for c in ("stt", "tts", "telephony")]
+FILES = [
+    ROOT / "data" / f"{c}.json" for c in ("stt", "tts", "telephony", "agent")
+]
 
 
 @pytest.mark.parametrize("path", FILES, ids=lambda p: p.name)

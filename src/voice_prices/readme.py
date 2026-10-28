@@ -19,6 +19,7 @@ _CATEGORY = {
     "stt": "Speech-to-text",
     "tts": "Text-to-speech",
     "telephony": "Telephony",
+    "agent": "Voice agent",
 }
 
 

@@ -37,11 +37,19 @@ class Scraped:
     plan_fee: dict[str, str] | None = None
     tax_included: bool | None = None
     limits: dict[str, Any] | None = None
+    # A volume tier: {"min": 0, "max": 250000, "unit": "minute"}; max None
+    # for the last tier. Each tier is its own row.
+    volume: dict[str, Any] | None = None
     extra: dict[str, Any] = field(default_factory=dict)
 
     @property
     def id(self) -> str:
-        return f"{self.provider}/{self.product}/{self.mode}/{self.plan}"
+        base = f"{self.provider}/{self.product}/{self.mode}/{self.plan}"
+        if self.volume is None:
+            return base
+        top = self.volume.get("max")
+        upper = "up" if top is None else f"{top:g}"
+        return f"{base}/{self.volume['min']:g}-{upper}"
 
     def to_row(self, since: str) -> dict[str, Any]:
         """The row as stored in ``data/<category>.json``.
@@ -65,6 +73,7 @@ class Scraped:
             plan_fee=self.plan_fee,
             tax_included=self.tax_included,
             limits=self.limits,
+            volume=self.volume,
             source_url=self.source_url,
             evidence=self.evidence,
             since=since,

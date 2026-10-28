@@ -30,7 +30,7 @@ DEFAULT_DATA = (
     "voice-ai-prices-and-limits/main/data"
 )
 CACHE_SECONDS = 3600
-CATEGORIES: tuple[Category, ...] = ("stt", "tts", "telephony")
+CATEGORIES: tuple[Category, ...] = ("stt", "tts", "telephony", "agent")
 
 mcp = MCPServer(
     "voice-ai-prices-and-limits",
@@ -81,7 +81,7 @@ def list_providers(category: Category | None = None) -> list[Provider]:
     """Providers with prices here, and when each was last checked.
 
     Args:
-        category: "stt", "tts" or "telephony"; all when not given.
+        category: "stt", "tts", "telephony" or "agent"; all when not given.
     """
     checked = {k: Checked(**v) for k, v in _file("checked.json").items()}
     found: dict[str, Provider] = {}
@@ -113,7 +113,7 @@ def get_prices(
     """Price rows, filtered. Each price is in the currency its page states.
 
     Args:
-        category: "stt", "tts" or "telephony".
+        category: "stt", "tts", "telephony" or "agent".
         provider: e.g. "sarvam".
         product: e.g. "bulbul-v4-flash".
         mode: e.g. "real-time", "streaming", "batch".
@@ -146,7 +146,7 @@ def compare(
     """Cheapest first, grouped by currency and unit (never converted).
 
     Args:
-        category: "stt", "tts" or "telephony".
+        category: "stt", "tts", "telephony" or "agent".
         plan: only this plan; every plan when null.
     """
     groups: dict[str, list[Ranked]] = {}

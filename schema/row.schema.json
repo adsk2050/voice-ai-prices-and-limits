@@ -192,6 +192,51 @@
       ],
       "title": "Price",
       "type": "object"
+    },
+    "Volume": {
+      "additionalProperties": false,
+      "description": "A volume tier: this price applies from ``min`` to ``max`` units of\nuse in the billing period. ``max`` None means no upper bound.",
+      "properties": {
+        "max": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max"
+        },
+        "min": {
+          "minimum": 0,
+          "title": "Min",
+          "type": "number"
+        },
+        "unit": {
+          "enum": [
+            "character",
+            "minute",
+            "second",
+            "hour",
+            "token",
+            "call",
+            "request",
+            "month",
+            "year"
+          ],
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "min",
+        "unit"
+      ],
+      "title": "Volume",
+      "type": "object"
     }
   },
   "$schema": "https://json-schema.org/draft/2020-12/schema",
@@ -213,7 +258,8 @@
       "enum": [
         "stt",
         "tts",
-        "telephony"
+        "telephony",
+        "agent"
       ],
       "title": "Category",
       "type": "string"
@@ -315,6 +361,17 @@
       ],
       "description": "false: the page says tax is extra. null: it does not say.",
       "title": "Tax Included"
+    },
+    "volume": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Volume"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
     }
   },
   "required": [

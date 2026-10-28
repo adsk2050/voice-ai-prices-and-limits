@@ -20,8 +20,15 @@ def to_text(markup: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def fetch_text(url: str) -> str:
+def fetch_text(url: str, *, verify_tls: bool = True) -> str:
     """Download *url* and return its visible text.
+
+    Args:
+        url: The page.
+        verify_tls: False only for a site whose certificate chain is
+            incomplete (browsers repair it, HTTP clients do not). The
+            page is public and read-only, and every price must still
+            match the page's own text.
 
     Raises:
         httpx.HTTPError: The page could not be fetched.
@@ -31,6 +38,7 @@ def fetch_text(url: str) -> str:
         headers={"User-Agent": _USER_AGENT},
         follow_redirects=True,
         timeout=30,
+        verify=verify_tls,
     )
     response.raise_for_status()
     return to_text(response.text)

@@ -14,7 +14,8 @@ Amount = Annotated[str, Field(pattern=r"^[0-9]+(\.[0-9]+)?$")]
 Currency = Annotated[str, Field(pattern=r"^[A-Z]{3}$", examples=["INR"])]
 Day = Annotated[str, Field(pattern=r"^[0-9]{4}-[0-9]{2}-[0-9]{2}$")]
 Slug = Annotated[str, Field(pattern=r"^[a-z0-9.-]+$")]
-Category = Literal["stt", "tts", "telephony"]
+# agent: voice-agent platforms priced per minute of conversation.
+Category = Literal["stt", "tts", "telephony", "agent"]
 Unit = Literal[
     "character",
     "minute",
@@ -80,6 +81,15 @@ class Limits(_Model):
     evidence: str | None = None
 
 
+class Volume(_Model):
+    """A volume tier: this price applies from ``min`` to ``max`` units of
+    use in the billing period. ``max`` None means no upper bound."""
+
+    min: Annotated[float, Field(ge=0)]
+    max: Annotated[float | None, Field(gt=0)] = None
+    unit: Unit
+
+
 class PriceRow(_Model):
     """One price of one product, in one mode, on one plan."""
 
@@ -101,6 +111,7 @@ class PriceRow(_Model):
         description="false: the page says tax is extra. null: it does not say."
     )
     limits: Limits | None
+    volume: Volume | None = None
     source_url: str
     evidence: Annotated[str, Field(min_length=1)]
     since: Day = Field(description="First day this repo saw this value.")
