@@ -41,7 +41,7 @@ class Scraped:
     def id(self) -> str:
         return f"{self.provider}/{self.product}/{self.mode}/{self.plan}"
 
-    def to_row(self, checked_at: str, since: str) -> dict[str, Any]:
+    def to_row(self, since: str) -> dict[str, Any]:
         """The row as stored in ``data/<category>.json``."""
         row: dict[str, Any] = {
             "id": self.id,
@@ -61,7 +61,6 @@ class Scraped:
             "limits": self.limits,
             "source_url": self.source_url,
             "evidence": self.evidence,
-            "checked_at": checked_at,
             "since": since,
         }
         row.update(self.extra)

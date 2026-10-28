@@ -1,10 +1,13 @@
 """Run the scrapers and rewrite ``data/*.json``.
 
-A row whose price is unchanged keeps its ``since`` date and gets today's
-``checked_at``. A changed or new row starts a new ``since``. A provider
-whose scraper fails keeps its old rows untouched, and the run exits
-non-zero so the failure is seen. Changes are written to
-``changes.md`` for the pull request's description.
+A row changes only when its price, plan fee, tax flag or limits change;
+it then gets a new ``since`` date. When each provider was last checked
+lives in ``data/checked.json``, so a day with no price change touches
+only that file. A provider whose scraper fails keeps its old rows, is
+marked failed there, and the run exits non-zero.
+
+The run writes ``changes.md`` (the pull request's description) and, on
+GitHub Actions, the outputs ``price_changed`` and ``failed``.
 
 Usage: ``voice-prices update [provider ...]``
 """
@@ -14,6 +17,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import sys
 import traceback
 from pathlib import Path
@@ -26,28 +30,25 @@ from voice_prices.scrapers import SCRAPERS
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "data"
 CATEGORIES = ("stt", "tts", "telephony")
+CHECKED = DATA / "checked.json"
 
 
-def _load(category: str) -> list[dict[str, Any]]:
-    path = DATA / f"{category}.json"
+def _read(path: Path, empty: Any) -> Any:
     if not path.exists():
-        return []
+        return empty
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def _save(category: str, rows: list[dict[str, Any]]) -> None:
-    rows.sort(key=lambda r: r["id"])
-    (DATA / f"{category}.json").write_text(
-        json.dumps(rows, ensure_ascii=False, indent=2) + "\n",
+def _write(path: Path, data: Any) -> None:
+    path.write_text(
+        json.dumps(data, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
         newline="\n",
     )
 
 
 def _validator() -> jsonschema.Validator:
-    schema = json.loads(
-        (ROOT / "schema" / "row.schema.json").read_text(encoding="utf-8")
-    )
+    schema = _read(ROOT / "schema" / "row.schema.json", {})
     return jsonschema.Draft202012Validator(schema)
 
 
@@ -65,10 +66,14 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
     """Scrape *providers* and merge into the data files.
 
     Returns:
-        (change lines, failed providers)
+        (price change lines, failed providers)
     """
-    old = {c: {r["id"]: r for r in _load(c)} for c in CATEGORIES}
+    old = {
+        c: {r["id"]: r for r in _read(DATA / f"{c}.json", [])}
+        for c in CATEGORIES
+    }
     new = {c: dict(rows) for c, rows in old.items()}
+    checked: dict[str, dict[str, str]] = _read(CHECKED, {})
     changes: list[str] = []
     failed: list[str] = []
     validator = _validator()
@@ -78,22 +83,24 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
         except Exception:  # noqa: BLE001 - one provider must not stop the rest
             traceback.print_exc()
             failed.append(provider)
+            checked[provider] = {
+                **checked.get(provider, {}),
+                "checked_at": today,
+                "status": "failed",
+            }
             continue
         seen: set[str] = set()
         for item in scraped:
             before = old[item.category].get(item.id)
-            since = today
-            if before is not None and _same_price(
-                before, item.to_row(today, today)
-            ):
-                since = before["since"]
-            row = item.to_row(today, since)
+            row = item.to_row(since=today)
+            if before is not None and _same_price(before, row):
+                row["since"] = before["since"]
             validator.validate(row)
             new[item.category][item.id] = row
             seen.add(item.id)
             if before is None:
                 changes.append(f"- new: `{item.id}` {_price_text(row)}")
-            elif since == today:
+            elif row != before:
                 changes.append(
                     f"- changed: `{item.id}` {_price_text(before)}"
                     f" -> {_price_text(row)}. Evidence: {row['evidence']}"
@@ -103,9 +110,25 @@ def update(providers: list[str], today: str) -> tuple[list[str], list[str]]:
                 if row["provider"] == provider and row_id not in seen:
                     changes.append(f"- gone from the page: `{row_id}`")
                     del new[category][row_id]
+        checked[provider] = {
+            "checked_at": today,
+            "last_ok": today,
+            "status": "ok",
+        }
     for category in CATEGORIES:
-        _save(category, list(new[category].values()))
+        rows = sorted(new[category].values(), key=lambda r: r["id"])
+        _write(DATA / f"{category}.json", rows)
+    _write(CHECKED, checked)
     return changes, failed
+
+
+def _github_outputs(changes: list[str], failed: list[str]) -> None:
+    path = os.environ.get("GITHUB_OUTPUT")
+    if not path:
+        return
+    with open(path, "a", encoding="utf-8") as out:
+        out.write(f"price_changed={'true' if changes else 'false'}\n")
+        out.write(f"failed={' '.join(failed)}\n")
 
 
 def main() -> None:
@@ -124,4 +147,5 @@ def main() -> None:
         report += [f"- {p}" for p in failed]
     (ROOT / "changes.md").write_text("\n".join(report) + "\n", encoding="utf-8")
     print("\n".join(report))
+    _github_outputs(changes, failed)
     sys.exit(1 if failed else 0)

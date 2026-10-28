@@ -17,7 +17,6 @@
     "limits",
     "source_url",
     "evidence",
-    "checked_at",
     "since"
   ],
   "$defs": {
@@ -184,9 +183,6 @@
     "evidence": {
       "type": "string",
       "minLength": 1
-    },
-    "checked_at": {
-      "$ref": "#/$defs/date"
     },
     "since": {
       "$ref": "#/$defs/date"

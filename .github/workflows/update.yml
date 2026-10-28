@@ -13,28 +13,73 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
+
+concurrency:
+  group: update-prices
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
       - run: uv sync
+
       - name: Scrape
         id: scrape
-        # A failed scraper still lets the others' changes through; the
-        # job is marked failed afterwards so the breakage is seen.
+        # A broken scraper must not hold back the others' data.
         continue-on-error: true
         run: uv run voice-prices update ${{ github.event.inputs.providers }}
+
+      # A pull request opened with this job's token does not start the
+      # Check workflow, so the same checks run here, before it is opened.
+      - name: Check
+        run: |
+          uv run ruff check .
+          uv run pytest -q
+
+      - name: Title
+        id: title
+        run: |
+          if [ "${{ steps.scrape.outputs.price_changed }}" = "true" ]; then
+            echo "title=Price change $(date -u +%F)" >> "$GITHUB_OUTPUT"
+          else
+            echo "title=Prices checked $(date -u +%F): no change" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: peter-evans/create-pull-request@v7
+        id: pr
         with:
           branch: prices/update
-          title: "Price update"
-          commit-message: "data: price update"
+          delete-branch: true
+          title: ${{ steps.title.outputs.title }}
+          commit-message: ${{ steps.title.outputs.title }}
           body-path: changes.md
           add-paths: data/*.json
-      - if: steps.scrape.outcome == 'failure'
+          labels: ${{ steps.scrape.outputs.price_changed == 'true' && 'price-change' || 'no-change' }}
+
+      # Only a run that changed no price merges itself. A price change
+      # waits for a person.
+      - name: Merge a no-change update
+        if: >-
+          steps.pr.outputs.pull-request-number != '' &&
+          steps.scrape.outputs.price_changed != 'true'
+        run: >-
+          gh pr merge ${{ steps.pr.outputs.pull-request-number }}
+          --squash --delete-branch
+
+      - name: Open an issue per broken scraper
+        if: steps.scrape.outputs.failed != ''
         run: |
-          cat changes.md
+          for provider in ${{ steps.scrape.outputs.failed }}; do
+            title="Scraper broken: $provider"
+            if [ -z "$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[].number')" ]; then
+              gh issue create --title "$title" --label scraper-broken \
+                --body "The daily run on $(date -u +%F) could not read $provider's prices. Its old rows are kept and it is marked failed in data/checked.json. Run log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            fi
+          done
           exit 1
