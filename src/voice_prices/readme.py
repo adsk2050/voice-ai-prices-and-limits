@@ -13,6 +13,8 @@ from typing import Any
 
 START = "<!-- coverage:start -->"
 END = "<!-- coverage:end -->"
+NP_START = "<!-- not-public:start -->"
+NP_END = "<!-- not-public:end -->"
 _CATEGORY = {
     "stt": "Speech-to-text",
     "tts": "Text-to-speech",
@@ -77,12 +79,36 @@ def table(data: Path) -> str:
     return "\n".join(lines)
 
 
+def not_public(data: Path) -> str:
+    """The providers we track but cannot price, and why."""
+    path = data / "unavailable.json"
+    rows = []
+    if path.exists():
+        rows = json.loads(path.read_text(encoding="utf-8"))
+    lines = [
+        "| Provider | Category | Why | Page | Checked |",
+        "|---|---|---|---|---|",
+    ]
+    for r in sorted(rows, key=lambda r: r["provider"]):
+        cats = ", ".join(_CATEGORY[c] for c in r["categories"])
+        lines.append(
+            f"| {r['provider']} | {cats} | {r['reason']}: {r['evidence']}"
+            f" | {r['url']} | {r['checked_at']} |"
+        )
+    return "\n".join(lines)
+
+
+def _between(text: str, start: str, end: str, body: str) -> str:
+    head, rest = text.split(start, 1)
+    _, tail = rest.split(end, 1)
+    return f"{head}{start}\n{body}\n{end}{tail}"
+
+
 def rewrite(readme: Path, data: Path) -> bool:
-    """Put the current table into *readme*. Returns whether it changed."""
+    """Put the current tables into *readme*. Returns whether it changed."""
     text = readme.read_text(encoding="utf-8")
-    head, rest = text.split(START, 1)
-    _, tail = rest.split(END, 1)
-    new = f"{head}{START}\n{table(data)}\n{END}{tail}"
+    new = _between(text, START, END, table(data))
+    new = _between(new, NP_START, NP_END, not_public(data))
     if new == text:
         return False
     readme.write_text(new, encoding="utf-8", newline="\n")

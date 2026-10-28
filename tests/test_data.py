@@ -51,3 +51,11 @@ def test_readme_table_is_current() -> None:
     text = (ROOT / "README.md").read_text(encoding="utf-8")
     current = text.split(START, 1)[1].split(END, 1)[0].strip()
     assert current == table(ROOT / "data"), "run: uv run voice-prices readme"
+
+
+def test_unavailable_entries_load() -> None:
+    from voice_prices.models import Unavailable
+
+    path = ROOT / "data" / "unavailable.json"
+    for entry in json.loads(path.read_text(encoding="utf-8")):
+        Unavailable.model_validate(entry)

@@ -1,0 +1,10 @@
+[
+  {
+    "categories": ["telephony"],
+    "checked_at": "2026-10-28",
+    "evidence": "The pricing data marks India {code:\"IN\", contactSalesOnly:true}; extra capacity is priced per account in the console.",
+    "provider": "vobiz",
+    "reason": "contact-sales",
+    "url": "https://www.vobiz.ai/pricing/?country=IN"
+  }
+]

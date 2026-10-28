@@ -121,3 +121,27 @@ class Checked(_Model):
     checked_at: Day
     last_ok: Day | None = None
     status: Literal["ok", "failed"]
+
+
+Reason = Literal[
+    "contact-sales",  # the page says to ask for a quote
+    "sign-in-required",  # prices only inside an account
+    "no-public-price",  # no price published anywhere we found
+    "rendered-by-javascript",  # prices exist but not in any fetchable text
+    "blocked",  # the site refuses automated fetches
+    "free",  # no charge, so nothing to price
+]
+
+
+class Unavailable(_Model):
+    """A provider we track but cannot price, and why.
+
+    These are the gaps a contributed price could fill later.
+    """
+
+    provider: Slug
+    categories: list[Category]
+    reason: Reason
+    url: str
+    evidence: str = Field(description="What the page says, or what we saw.")
+    checked_at: Day

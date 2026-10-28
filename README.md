@@ -46,12 +46,16 @@ plans and modes, in the currency the provider states.
 
 ### Not public
 
-These publish no price we can read, so they have no rows. Ask them for a
-quote.
+These are tracked but publish no price we can read, so they have no
+rows. The reason says what would unlock them; `sign-in-required` and
+`contact-sales` prices may later come from contributors. Generated from
+`data/unavailable.json`.
 
-| Provider | What their site says | Checked |
-|---|---|---|
-| Vobiz (India) | Pricing page marks India "contact sales" | 2026-10-28 |
+<!-- not-public:start -->
+| Provider | Category | Why | Page | Checked |
+|---|---|---|---|---|
+| vobiz | Telephony | contact-sales: The pricing data marks India {code:"IN", contactSalesOnly:true}; extra capacity is priced per account in the console. | https://www.vobiz.ai/pricing/?country=IN | 2026-10-28 |
+<!-- not-public:end -->
 
 ## The files
 
@@ -60,6 +64,7 @@ quote.
 | `data/stt.json` | Speech-to-text prices, per provider, model, mode and plan |
 | `data/tts.json` | Text-to-speech prices |
 | `data/telephony.json` | Call prices: per country, inbound or outbound, pulse, minimums |
+| `data/unavailable.json` | Providers tracked but not priced, and the reason |
 | `data/checked.json` | When each provider's page was last checked, and whether its scraper worked |
 | `schema/row.schema.json` | The shape every row must have, as JSON Schema. Generated from the Pydantic models in `src/voice_prices/models.py`; CI fails if the two differ |
 
