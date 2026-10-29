@@ -77,6 +77,7 @@ class Scraped:
             source_url=self.source_url,
             evidence=self.evidence,
             since=since,
+            status="ok",
             **self.extra,
         ).to_json()
 

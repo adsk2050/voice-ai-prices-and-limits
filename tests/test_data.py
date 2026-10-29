@@ -8,6 +8,8 @@ from pathlib import Path
 import jsonschema
 import pytest
 
+from voice_prices import files
+
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = json.loads(
     (ROOT / "schema" / "row.schema.json").read_text(encoding="utf-8")
@@ -19,7 +21,7 @@ FILES = [
 
 @pytest.mark.parametrize("path", FILES, ids=lambda p: p.name)
 def test_rows_fit_the_schema(path: Path) -> None:
-    rows = json.loads(path.read_text(encoding="utf-8"))
+    rows = files.load(path, [])
     validator = jsonschema.Draft202012Validator(SCHEMA)
     for row in rows:
         validator.validate(row)
@@ -28,7 +30,7 @@ def test_rows_fit_the_schema(path: Path) -> None:
 
 @pytest.mark.parametrize("path", FILES, ids=lambda p: p.name)
 def test_ids_are_unique(path: Path) -> None:
-    ids = [r["id"] for r in json.loads(path.read_text(encoding="utf-8"))]
+    ids = [r["id"] for r in files.load(path, [])]
     assert len(ids) == len(set(ids))
 
 
@@ -43,7 +45,7 @@ def test_schema_file_is_generated_from_the_models() -> None:
 def test_rows_load_as_models(path: Path) -> None:
     from voice_prices.models import PriceRow
 
-    for row in json.loads(path.read_text(encoding="utf-8")):
+    for row in files.load(path, []):
         assert PriceRow.model_validate(row).to_json() == row
 
 
@@ -59,5 +61,5 @@ def test_unavailable_entries_load() -> None:
     from voice_prices.models import Unavailable
 
     path = ROOT / "data" / "unavailable.json"
-    for entry in json.loads(path.read_text(encoding="utf-8")):
+    for entry in files.load(path, []):
         Unavailable.model_validate(entry)

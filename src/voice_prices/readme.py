@@ -6,10 +6,11 @@ rewrites it, and a test fails when it is out of date.
 
 from __future__ import annotations
 
-import json
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
+
+from voice_prices import files
 
 START = "<!-- coverage:start -->"
 END = "<!-- coverage:end -->"
@@ -26,9 +27,8 @@ _CATEGORY = {
 def _rows(data: Path) -> list[dict[str, Any]]:
     rows = []
     for category in _CATEGORY:
-        path = data / f"{category}.json"
-        if path.exists():
-            rows += json.loads(path.read_text(encoding="utf-8"))
+        loaded = files.load(data / f"{category}.json", [])
+        rows += [r for r in loaded if r["status"] != "missing"]
     return rows
 
 
@@ -41,7 +41,7 @@ def _per(price: dict[str, Any]) -> str:
 
 def table(data: Path) -> str:
     """One line per provider and product: modes, plans, price range."""
-    checked = json.loads((data / "checked.json").read_text(encoding="utf-8"))
+    checked = files.load(data / "checked.json", {})
     groups: dict[tuple[str, str, str], list[dict[str, Any]]] = defaultdict(list)
     for row in _rows(data):
         groups[(row["category"], row["provider"], row["product"])].append(row)
@@ -82,10 +82,7 @@ def table(data: Path) -> str:
 
 def not_public(data: Path) -> str:
     """The providers we track but cannot price, and why."""
-    path = data / "unavailable.json"
-    rows = []
-    if path.exists():
-        rows = json.loads(path.read_text(encoding="utf-8"))
+    rows = files.load(data / "unavailable.json", [])
     lines = [
         "| Provider | Category | Why | Page | Checked |",
         "|---|---|---|---|---|",

@@ -1,2516 +1,2637 @@
-[
-  {
-    "category": "tts",
-    "evidence": "AssemblyAI-TTS-1 New Streaming text-to-speech with about 90 ms time to first audio, in English, Spanish, French, German, Italian, and Portuguese. Available over streaming WebSocket and HTTP APIs. $15 /1M chars",
-    "id": "assemblyai/assemblyai-tts-1/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "15",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "assemblyai-tts-1",
-    "provider": "assemblyai",
-    "since": "2026-10-28",
-    "source_url": "https://www.assemblyai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Amazon Polly’s Generative voices are priced at $30 per 1 million characters",
-    "id": "aws/generative-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "30",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "generative-voices",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/polly/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Amazon Polly’s Long-Form voices are priced at $100.00 per 1 million characters",
-    "id": "aws/long-form-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "100.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "long-form-voices",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/polly/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Amazon Polly’s Neural TTS voices are priced at $19.20 per 1 million characters",
-    "id": "aws/neural-voices/any/govcloud-us",
-    "limits": null,
-    "mode": "any",
-    "plan": "govcloud-us",
-    "plan_fee": null,
-    "price": {
-      "amount": "19.20",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "neural-voices",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/polly/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Amazon Polly’s Neural voices are priced at $16.00 per 1 million characters",
-    "id": "aws/neural-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "16.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "neural-voices",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/polly/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Amazon Polly’s Standard voices are priced at $4.80 per 1 million characters",
-    "id": "aws/standard-voices/any/govcloud-us",
-    "limits": null,
-    "mode": "any",
-    "plan": "govcloud-us",
-    "plan_fee": null,
-    "price": {
-      "amount": "4.80",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "standard-voices",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/polly/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Amazon Polly’s Standard voices are priced at $4.00 per 1 million characters",
-    "id": "aws/standard-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "4.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "standard-voices",
-    "provider": "aws",
-    "since": "2026-10-28",
-    "source_url": "https://aws.amazon.com/polly/pricing/",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Neural HD Text to Speech Characters: 22.0 USD per 1M (eastus)",
-    "id": "azure/neural-hd/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "22",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "neural-hd",
-    "provider": "azure",
-    "since": "2026-10-28",
-    "source_url": "https://prices.azure.com/api/retail/prices",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "S1 Neural Long Audio Characters: 100.0 USD per 1M (eastus)",
-    "id": "azure/neural-long-audio/batch/pay-as-you-go",
-    "limits": null,
-    "mode": "batch",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "100",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "neural-long-audio",
-    "provider": "azure",
-    "since": "2026-10-28",
-    "source_url": "https://prices.azure.com/api/retail/prices",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "S1 Neural Text To Speech Characters: 15.0 USD per 1M (eastus)",
-    "id": "azure/neural/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "15",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "neural",
-    "provider": "azure",
-    "since": "2026-10-28",
-    "source_url": "https://prices.azure.com/api/retail/prices",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "At pro tier, it's $65 per 1M credits.",
-    "id": "cartesia/sonic-3.6/any/pro",
-    "limits": {
-      "concurrent": 3,
-      "evidence": "Concurrent requests 2 3 5 15",
-      "source_url": "https://cartesia.ai/pricing"
-    },
-    "mode": "any",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "5",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "65",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "sonic-3.6",
-    "provider": "cartesia",
-    "since": "2026-10-28",
-    "source_url": "https://cartesia.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "At scale tier, it's $38 per 1M credits.",
-    "id": "cartesia/sonic-3.6/any/scale",
-    "limits": {
-      "concurrent": 15,
-      "evidence": "Concurrent requests 2 3 5 15",
-      "source_url": "https://cartesia.ai/pricing"
-    },
-    "mode": "any",
-    "plan": "scale",
-    "plan_fee": {
-      "amount": "299",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "38",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "sonic-3.6",
-    "provider": "cartesia",
-    "since": "2026-10-28",
-    "source_url": "https://cartesia.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "At startup tier, it's $45 per 1M credits.",
-    "id": "cartesia/sonic-3.6/any/startup",
-    "limits": {
-      "concurrent": 5,
-      "evidence": "Concurrent requests 2 3 5 15",
-      "source_url": "https://cartesia.ai/pricing"
-    },
-    "mode": "any",
-    "plan": "startup",
-    "plan_fee": {
-      "amount": "49",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "45",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "sonic-3.6",
-    "provider": "cartesia",
-    "since": "2026-10-28",
-    "source_url": "https://cartesia.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
-    "id": "deepgram/aura-1/any/growth",
-    "limits": null,
-    "mode": "any",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0135",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "aura-1",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
-    "id": "deepgram/aura-1/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0150",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "aura-1",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
-    "id": "deepgram/aura-2/any/growth",
-    "limits": null,
-    "mode": "any",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.027",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "aura-2",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
-    "id": "deepgram/aura-2/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.030",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "aura-2",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
-    "id": "deepgram/flux-tts/any/growth",
-    "limits": null,
-    "mode": "any",
-    "plan": "growth",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0405",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "flux-tts",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
-    "id": "deepgram/flux-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0450",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "flux-tts",
-    "provider": "deepgram",
-    "since": "2026-10-28",
-    "source_url": "https://deepgram.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Flash / Turbo Text to Speech $0.04 Price per 1K characters",
-    "id": "elevenlabs/flash-turbo/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.04",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "flash-turbo",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "v2 Multilingual Text to Speech $0.08 Price per 1K characters",
-    "id": "elevenlabs/v2-multilingual/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.08",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "v2-multilingual",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "v3 Conversational Text to Speech $0.04 Price per 1K characters",
-    "id": "elevenlabs/v3-conversational/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.04",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "v3-conversational",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "v3 Text to Speech $0.08 Price per 1K characters",
-    "id": "elevenlabs/v3/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.08",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "v3",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "v4 Turbo Text to Speech New $0.04 Price per 1K characters",
-    "id": "elevenlabs/v4-turbo/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.04",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "v4-turbo",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "v4 Text to Speech New $0.08 Price per 1K characters",
-    "id": "elevenlabs/v4/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.08",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "v4",
-    "provider": "elevenlabs",
-    "since": "2026-10-28",
-    "source_url": "https://elevenlabs.io/pricing/api",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Chirp 3: HD voices (sku:F977-2280-6F1B) 0 to 1 million characters US$0.00003 per character (US$30 per 1 million characters)",
-    "id": "google/chirp-3-hd/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "30",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "chirp-3-hd",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
-    "id": "google/gemini-2.5-flash-lite-preview-tts-audio-output/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "10.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-2.5-flash-lite-preview-tts-audio-output",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
-    "id": "google/gemini-2.5-flash-lite-preview-tts-text-input/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-2.5-flash-lite-preview-tts-text-input",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
-    "id": "google/gemini-2.5-flash-tts-audio-output/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "10.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-2.5-flash-tts-audio-output",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
-    "id": "google/gemini-2.5-flash-tts-text-input/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-2.5-flash-tts-text-input",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 2.5 Pro TTS Not available Input tokens: $1.00 per 1 million text tokens* (sku: 8FF1-7E5B-5BB7) Output tokens: $20.00 per 1 million audio tokens",
-    "id": "google/gemini-2.5-pro-tts-audio-output/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "20.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-2.5-pro-tts-audio-output",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 2.5 Pro TTS Not available Input tokens: $1.00 per 1 million text tokens* (sku: 8FF1-7E5B-5BB7) Output tokens: $20.00 per 1 million audio tokens",
-    "id": "google/gemini-2.5-pro-tts-text-input/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "1.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-2.5-pro-tts-text-input",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 3.1 Flash TTS (Preview) Not available Input tokens: $1.00 per 1 million text tokens* (sku: EB3F-1051-05D7) Output tokens: $20.00 per 1 million audio tokens",
-    "id": "google/gemini-3.1-flash-tts-preview-audio-output/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "20.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-3.1-flash-tts-preview-audio-output",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 3.1 Flash TTS (Preview) Not available Input tokens: $1.00 per 1 million text tokens* (sku: EB3F-1051-05D7) Output tokens: $20.00 per 1 million audio tokens",
-    "id": "google/gemini-3.1-flash-tts-preview-text-input/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "1.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-3.1-flash-tts-preview-text-input",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 3.8 Flash-Lite TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 6D6B-51EE-87C4). Output tokens: $6.00 per 1 million audio tokens",
-    "id": "google/gemini-3.8-flash-lite-tts-preview-audio-output/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "6.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-3.8-flash-lite-tts-preview-audio-output",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 3.8 Flash-Lite TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 6D6B-51EE-87C4). Output tokens: $6.00 per 1 million audio tokens",
-    "id": "google/gemini-3.8-flash-lite-tts-preview-text-input/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-3.8-flash-lite-tts-preview-text-input",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 3.8 Flash TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 4CB8-5200-1246). Output tokens: $9.00 per 1 million audio tokens",
-    "id": "google/gemini-3.8-flash-tts-preview-audio-output/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "9.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-3.8-flash-tts-preview-audio-output",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Gemini 3.8 Flash TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 4CB8-5200-1246). Output tokens: $9.00 per 1 million audio tokens",
-    "id": "google/gemini-3.8-flash-tts-preview-text-input/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "gemini-3.8-flash-tts-preview-text-input",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Instant custom voice (sku:A247-37D7-C094) Not available US$0.00006 per character (US$60 per 1 million characters)",
-    "id": "google/instant-custom/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "60",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "instant-custom",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Neural2 voices (sku:FEBD-04B6-769B) 0 to 1 million characters US$0.000016 per character (US$16 per 1 million characters)",
-    "id": "google/neural2/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "16",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "neural2",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Polyglot (Preview) voices (sku:FEBD-04B6-769B) 0 to 1 million characters US$0.000016 per character (US$16 per 1 million characters)",
-    "id": "google/polyglot-preview/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "16",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "polyglot-preview",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Standard voices (sku:9D01-5995-B545) 0 to 4 million characters US$0.000004 per character (US$4 per 1 million characters)",
-    "id": "google/standard/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "4",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "standard",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Studio voices (sku:84AB-48C0-F9C3) 0 to 1 million characters US$0.00016 per character (US$160 per 1 million characters)",
-    "id": "google/studio/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "160",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "studio",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "WaveNet voices (sku:9D01-5995-B545) 0 to 4 million characters US$0.000004 per character (US$4per 1 million characters)",
-    "id": "google/wavenet/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "4",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "wavenet",
-    "provider": "google",
-    "since": "2026-10-28",
-    "source_url": "https://cloud.google.com/text-to-speech/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
-    "id": "inworld/tts-2-flash/real-time/builder",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "builder",
-    "plan_fee": {
-      "amount": "100",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "9",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2-flash",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
-    "id": "inworld/tts-2-flash/real-time/creator",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "creator",
-    "plan_fee": {
-      "amount": "25",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "10",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2-flash",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
-    "id": "inworld/tts-2-flash/real-time/developer",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "developer",
-    "plan_fee": {
-      "amount": "300",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "8",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2-flash",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
-    "id": "inworld/tts-2-flash/real-time/growth",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "1500",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "7",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2-flash",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
-    "id": "inworld/tts-2-flash/real-time/on-demand",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "on-demand",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "15",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2-flash",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
-    "id": "inworld/tts-2/real-time/builder",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "builder",
-    "plan_fee": {
-      "amount": "100",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "17.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
-    "id": "inworld/tts-2/real-time/creator",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "creator",
-    "plan_fee": {
-      "amount": "25",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "20",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
-    "id": "inworld/tts-2/real-time/developer",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "developer",
-    "plan_fee": {
-      "amount": "300",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "15",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
-    "id": "inworld/tts-2/real-time/enterprise",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "enterprise",
-    "plan_fee": null,
-    "price": {
-      "amount": "5",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
-    "id": "inworld/tts-2/real-time/growth",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "1500",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "12.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
-    "id": "inworld/tts-2/real-time/on-demand",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "on-demand",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "USD",
-      "period": "month"
-    },
-    "price": {
-      "amount": "25",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "character"
-    },
-    "product": "tts-2",
-    "provider": "inworld",
-    "since": "2026-10-28",
-    "source_url": "https://inworld.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Cartesia Voices $0.015/minute",
-    "id": "retell/cartesia-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "cartesia-voices",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "ElevenLabs Flash $0.040/minute",
-    "id": "retell/elevenlabs-flash/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.040",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "elevenlabs-flash",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "ElevenLabs Multilingual v2 $0.06/minute",
-    "id": "retell/elevenlabs-multilingual-v2/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.06",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "elevenlabs-multilingual-v2",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "ElevenLabs v3 Conversational $0.08/minute",
-    "id": "retell/elevenlabs-v3-conversational/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.08",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "elevenlabs-v3-conversational",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "ElevenLabs v3 $0.10/minute",
-    "id": "retell/elevenlabs-v3/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.10",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "elevenlabs-v3",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "ElevenLabs v4 Turbo $0.08/minute",
-    "id": "retell/elevenlabs-v4-turbo/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.08",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "elevenlabs-v4-turbo",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "ElevenLabs v4 $0.10/minute",
-    "id": "retell/elevenlabs-v4/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.10",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "elevenlabs-v4",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Fish Voices $0.015/minute",
-    "id": "retell/fish-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "fish-voices",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Inworld Voices $0.015/minute",
-    "id": "retell/inworld-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "inworld-voices",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Minimax Voices $0.015/minute",
-    "id": "retell/minimax-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "minimax-voices",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "OpenAI Voices $0.015/minute",
-    "id": "retell/openai-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "openai-voices",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Retell Platform Voices $0.015/minute",
-    "id": "retell/retell-platform-voices/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.015",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "retell-platform-voices",
-    "provider": "retell",
-    "since": "2026-10-28",
-    "source_url": "https://www.retellai.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Coda v2 Text to speech, most natural $0.05 / min",
-    "id": "rime/coda-v2/any/pay-as-you-go",
-    "limits": {
-      "concurrent": 10,
-      "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
-      "source_url": "https://www.rime.ai/pricing"
-    },
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.05",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "coda-v2",
-    "provider": "rime",
-    "since": "2026-10-28",
-    "source_url": "https://www.rime.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Mist v3 Text to speech, lowest latency $0.03 / min",
-    "id": "rime/mist-v3/any/pay-as-you-go",
-    "limits": {
-      "concurrent": 15,
-      "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
-      "source_url": "https://www.rime.ai/pricing"
-    },
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.03",
-      "currency": "USD",
-      "per": 1,
-      "unit": "minute"
-    },
-    "product": "mist-v3",
-    "provider": "rime",
-    "since": "2026-10-28",
-    "source_url": "https://www.rime.ai/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/real-time/business",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.60",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/real-time/growth",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.70",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "3.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/real-time/pro",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.85",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/streaming/business",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.60",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/streaming/growth",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.70",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/streaming/pay-as-you-go",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "3.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/streaming/pro",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.85",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/websocket/business",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.60",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/websocket/growth",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.70",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/websocket/pay-as-you-go",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "3.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
-    "id": "sarvam/bulbul-v3/websocket/pro",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.85",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v3",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/real-time/business",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.80",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/real-time/growth",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.85",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "1.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/real-time/pro",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.925",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/streaming/business",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.80",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/streaming/growth",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.85",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/streaming/pay-as-you-go",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "1.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/streaming/pro",
-    "limits": null,
-    "mode": "streaming",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.925",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/websocket/business",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.80",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/websocket/growth",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.85",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/websocket/pay-as-you-go",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "1.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
-    "id": "sarvam/bulbul-v4-flash/websocket/pro",
-    "limits": null,
-    "mode": "websocket",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "0.925",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "bulbul-v4-flash",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
-    "id": "sarvam/voice-cloning/real-time/business",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "business",
-    "plan_fee": {
-      "amount": "199999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "voice-cloning",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
-    "id": "sarvam/voice-cloning/real-time/growth",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "growth",
-    "plan_fee": {
-      "amount": "49999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "voice-cloning",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
-    "id": "sarvam/voice-cloning/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": {
-      "amount": "0",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "voice-cloning",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
-    "id": "sarvam/voice-cloning/real-time/pro",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pro",
-    "plan_fee": {
-      "amount": "9999",
-      "currency": "INR",
-      "period": "month"
-    },
-    "price": {
-      "amount": "2.00",
-      "currency": "INR",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "voice-cloning",
-    "provider": "sarvam",
-    "since": "2026-10-28",
-    "source_url": "https://www.sarvam.ai/api-pricing",
-    "tax_included": false
-  },
-  {
-    "category": "tts",
-    "evidence": "Lightning V3.1 Pro ~$0.195/10K characters",
-    "id": "smallestai/lightning-v3.1-pro/any/pay-as-you-go",
-    "limits": {
-      "concurrent": 15,
-      "evidence": "Concurrency for TTS 15 concurrent streams; RPM for TTS APIs 100",
-      "requests_per_minute": 100,
-      "source_url": "https://smallest.ai/pricing/models"
-    },
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.195",
-      "currency": "USD",
-      "per": 10000,
-      "unit": "character"
-    },
-    "product": "lightning-v3.1-pro",
-    "provider": "smallestai",
-    "since": "2026-10-28",
-    "source_url": "https://smallest.ai/pricing/models",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Lightning V3.1 ~$0.175/10K characters",
-    "id": "smallestai/lightning-v3.1/any/pay-as-you-go",
-    "limits": {
-      "concurrent": 15,
-      "evidence": "Concurrency for TTS 15 concurrent streams; RPM for TTS APIs 100",
-      "requests_per_minute": 100,
-      "source_url": "https://smallest.ai/pricing/models"
-    },
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.175",
-      "currency": "USD",
-      "per": 10000,
-      "unit": "character"
-    },
-    "product": "lightning-v3.1",
-    "provider": "smallestai",
-    "since": "2026-10-28",
-    "source_url": "https://smallest.ai/pricing/models",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Input text tokens Text input to generate $4.00 per 1M tokens",
-    "id": "soniox/tts-input-text-tokens/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "4.00",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "tts-input-text-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Output audio tokens Duration of generated audio $21.50 per 1M tokens",
-    "id": "soniox/tts-output-audio-tokens/real-time/pay-as-you-go",
-    "limits": null,
-    "mode": "real-time",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "21.50",
-      "currency": "USD",
-      "per": 1000000,
-      "unit": "token"
-    },
-    "product": "tts-output-audio-tokens",
-    "provider": "soniox",
-    "since": "2026-10-28",
-    "source_url": "https://soniox.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Text to Speech Natural, low-latency speech synthesis for Voice AI use cases. $0.011 per 1,000 characters",
-    "id": "speechmatics/text-to-speech/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.011",
-      "currency": "USD",
-      "per": 1000,
-      "unit": "character"
-    },
-    "product": "text-to-speech",
-    "provider": "speechmatics",
-    "since": "2026-10-28",
-    "source_url": "https://www.speechmatics.com/pricing",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Inworld Max TTS $0.00001 per character",
-    "id": "telnyx/inworld-max-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.00001",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "inworld-max-tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Inworld Mini TTS $0.0000055 per character",
-    "id": "telnyx/inworld-mini-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0000055",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "inworld-mini-tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "MiniMax speech-2.8-turbo TTS $0.000034 per character",
-    "id": "telnyx/minimax-speech-2.8-turbo-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000034",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "minimax-speech-2.8-turbo-tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Neural Voices TTS (Amazon Polly) $0.000024 per character",
-    "id": "telnyx/neural-voices-tts-amazon-polly/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000024",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "neural-voices-tts-amazon-polly",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Qwen3TTS $0.000032 per character",
-    "id": "telnyx/qwen3tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000032",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "qwen3tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Resemble TTS $0.000008 per character",
-    "id": "telnyx/resemble-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000008",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "resemble-tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Rime TTS $0.00002 per character",
-    "id": "telnyx/rime-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.00002",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "rime-tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Standard TTS (Amazon Polly) $0.000009 per character",
-    "id": "telnyx/standard-tts-amazon-polly/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000009",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "standard-tts-amazon-polly",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Telnyx HD Voices TTS $0.000048 per character",
-    "id": "telnyx/telnyx-hd-voices-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000048",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "telnyx-hd-voices-tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Telnyx TTS $0.000003 per character",
-    "id": "telnyx/telnyx-tts/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000003",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "telnyx-tts",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Telnyx Ultra $0.000032 per character",
-    "id": "telnyx/telnyx-ultra/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.000032",
-      "currency": "USD",
-      "per": 1,
-      "unit": "character"
-    },
-    "product": "telnyx-ultra",
-    "provider": "telnyx",
-    "since": "2026-10-28",
-    "source_url": "https://telnyx.com/pricing/call-control",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Generative $0.0130 / 100 chars",
-    "id": "twilio/premium-generative/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0130",
-      "currency": "USD",
-      "per": 100,
-      "unit": "character"
-    },
-    "product": "premium-generative",
-    "provider": "twilio",
-    "since": "2026-10-28",
-    "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Neural $0.0032 / 100 chars",
-    "id": "twilio/premium-neural/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0032",
-      "currency": "USD",
-      "per": 100,
-      "unit": "character"
-    },
-    "product": "premium-neural",
-    "provider": "twilio",
-    "since": "2026-10-28",
-    "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
-    "tax_included": null
-  },
-  {
-    "category": "tts",
-    "evidence": "Standard $0.0008 / 100 chars",
-    "id": "twilio/premium-standard/any/pay-as-you-go",
-    "limits": null,
-    "mode": "any",
-    "plan": "pay-as-you-go",
-    "plan_fee": null,
-    "price": {
-      "amount": "0.0008",
-      "currency": "USD",
-      "per": 100,
-      "unit": "character"
-    },
-    "product": "premium-standard",
-    "provider": "twilio",
-    "since": "2026-10-28",
-    "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
-    "tax_included": null
-  }
-]
+{
+  "rows": [
+    {
+      "category": "tts",
+      "evidence": "AssemblyAI-TTS-1 New Streaming text-to-speech with about 90 ms time to first audio, in English, Spanish, French, German, Italian, and Portuguese. Available over streaming WebSocket and HTTP APIs. $15 /1M chars",
+      "id": "assemblyai/assemblyai-tts-1/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "15",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "assemblyai-tts-1",
+      "provider": "assemblyai",
+      "since": "2026-10-28",
+      "source_url": "https://www.assemblyai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Amazon Polly’s Generative voices are priced at $30 per 1 million characters",
+      "id": "aws/generative-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "30",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "generative-voices",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Amazon Polly’s Long-Form voices are priced at $100.00 per 1 million characters",
+      "id": "aws/long-form-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "100.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "long-form-voices",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Amazon Polly’s Neural TTS voices are priced at $19.20 per 1 million characters",
+      "id": "aws/neural-voices/any/govcloud-us",
+      "limits": null,
+      "mode": "any",
+      "plan": "govcloud-us",
+      "plan_fee": null,
+      "price": {
+        "amount": "19.20",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "neural-voices",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Amazon Polly’s Neural voices are priced at $16.00 per 1 million characters",
+      "id": "aws/neural-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "16.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "neural-voices",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Amazon Polly’s Standard voices are priced at $4.80 per 1 million characters",
+      "id": "aws/standard-voices/any/govcloud-us",
+      "limits": null,
+      "mode": "any",
+      "plan": "govcloud-us",
+      "plan_fee": null,
+      "price": {
+        "amount": "4.80",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "standard-voices",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Amazon Polly’s Standard voices are priced at $4.00 per 1 million characters",
+      "id": "aws/standard-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "4.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "standard-voices",
+      "provider": "aws",
+      "since": "2026-10-28",
+      "source_url": "https://aws.amazon.com/polly/pricing/",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Neural HD Text to Speech Characters: 22.0 USD per 1M (eastus)",
+      "id": "azure/neural-hd/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "22",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "neural-hd",
+      "provider": "azure",
+      "since": "2026-10-28",
+      "source_url": "https://prices.azure.com/api/retail/prices",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "S1 Neural Long Audio Characters: 100.0 USD per 1M (eastus)",
+      "id": "azure/neural-long-audio/batch/pay-as-you-go",
+      "limits": null,
+      "mode": "batch",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "100",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "neural-long-audio",
+      "provider": "azure",
+      "since": "2026-10-28",
+      "source_url": "https://prices.azure.com/api/retail/prices",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "S1 Neural Text To Speech Characters: 15.0 USD per 1M (eastus)",
+      "id": "azure/neural/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "15",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "neural",
+      "provider": "azure",
+      "since": "2026-10-28",
+      "source_url": "https://prices.azure.com/api/retail/prices",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "At pro tier, it's $65 per 1M credits.",
+      "id": "cartesia/sonic-3.6/any/pro",
+      "limits": {
+        "concurrent": 3,
+        "evidence": "Concurrent requests 2 3 5 15",
+        "source_url": "https://cartesia.ai/pricing"
+      },
+      "mode": "any",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "5",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "65",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "sonic-3.6",
+      "provider": "cartesia",
+      "since": "2026-10-28",
+      "source_url": "https://cartesia.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "At scale tier, it's $38 per 1M credits.",
+      "id": "cartesia/sonic-3.6/any/scale",
+      "limits": {
+        "concurrent": 15,
+        "evidence": "Concurrent requests 2 3 5 15",
+        "source_url": "https://cartesia.ai/pricing"
+      },
+      "mode": "any",
+      "plan": "scale",
+      "plan_fee": {
+        "amount": "299",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "38",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "sonic-3.6",
+      "provider": "cartesia",
+      "since": "2026-10-28",
+      "source_url": "https://cartesia.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "At startup tier, it's $45 per 1M credits.",
+      "id": "cartesia/sonic-3.6/any/startup",
+      "limits": {
+        "concurrent": 5,
+        "evidence": "Concurrent requests 2 3 5 15",
+        "source_url": "https://cartesia.ai/pricing"
+      },
+      "mode": "any",
+      "plan": "startup",
+      "plan_fee": {
+        "amount": "49",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "45",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "sonic-3.6",
+      "provider": "cartesia",
+      "since": "2026-10-28",
+      "source_url": "https://cartesia.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
+      "id": "deepgram/aura-1/any/growth",
+      "limits": null,
+      "mode": "any",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0135",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "aura-1",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
+      "id": "deepgram/aura-1/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0150",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "aura-1",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
+      "id": "deepgram/aura-2/any/growth",
+      "limits": null,
+      "mode": "any",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.027",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "aura-2",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
+      "id": "deepgram/aura-2/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.030",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "aura-2",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
+      "id": "deepgram/flux-tts/any/growth",
+      "limits": null,
+      "mode": "any",
+      "plan": "growth",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0405",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "flux-tts",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
+      "id": "deepgram/flux-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0450",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "flux-tts",
+      "provider": "deepgram",
+      "since": "2026-10-28",
+      "source_url": "https://deepgram.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Flash / Turbo Text to Speech $0.04 Price per 1K characters",
+      "id": "elevenlabs/flash-turbo/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.04",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "flash-turbo",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "v2 Multilingual Text to Speech $0.08 Price per 1K characters",
+      "id": "elevenlabs/v2-multilingual/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.08",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "v2-multilingual",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "v3 Conversational Text to Speech $0.04 Price per 1K characters",
+      "id": "elevenlabs/v3-conversational/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.04",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "v3-conversational",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "v3 Text to Speech $0.08 Price per 1K characters",
+      "id": "elevenlabs/v3/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.08",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "v3",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "v4 Turbo Text to Speech New $0.04 Price per 1K characters",
+      "id": "elevenlabs/v4-turbo/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.04",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "v4-turbo",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "v4 Text to Speech New $0.08 Price per 1K characters",
+      "id": "elevenlabs/v4/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.08",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "v4",
+      "provider": "elevenlabs",
+      "since": "2026-10-28",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Chirp 3: HD voices (sku:F977-2280-6F1B) 0 to 1 million characters US$0.00003 per character (US$30 per 1 million characters)",
+      "id": "google/chirp-3-hd/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "30",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "chirp-3-hd",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
+      "id": "google/gemini-2.5-flash-lite-preview-tts-audio-output/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "10.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-2.5-flash-lite-preview-tts-audio-output",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
+      "id": "google/gemini-2.5-flash-lite-preview-tts-text-input/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-2.5-flash-lite-preview-tts-text-input",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
+      "id": "google/gemini-2.5-flash-tts-audio-output/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "10.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-2.5-flash-tts-audio-output",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
+      "id": "google/gemini-2.5-flash-tts-text-input/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-2.5-flash-tts-text-input",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 2.5 Pro TTS Not available Input tokens: $1.00 per 1 million text tokens* (sku: 8FF1-7E5B-5BB7) Output tokens: $20.00 per 1 million audio tokens",
+      "id": "google/gemini-2.5-pro-tts-audio-output/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "20.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-2.5-pro-tts-audio-output",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 2.5 Pro TTS Not available Input tokens: $1.00 per 1 million text tokens* (sku: 8FF1-7E5B-5BB7) Output tokens: $20.00 per 1 million audio tokens",
+      "id": "google/gemini-2.5-pro-tts-text-input/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "1.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-2.5-pro-tts-text-input",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 3.1 Flash TTS (Preview) Not available Input tokens: $1.00 per 1 million text tokens* (sku: EB3F-1051-05D7) Output tokens: $20.00 per 1 million audio tokens",
+      "id": "google/gemini-3.1-flash-tts-preview-audio-output/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "20.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-3.1-flash-tts-preview-audio-output",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 3.1 Flash TTS (Preview) Not available Input tokens: $1.00 per 1 million text tokens* (sku: EB3F-1051-05D7) Output tokens: $20.00 per 1 million audio tokens",
+      "id": "google/gemini-3.1-flash-tts-preview-text-input/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "1.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-3.1-flash-tts-preview-text-input",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 3.8 Flash-Lite TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 6D6B-51EE-87C4). Output tokens: $6.00 per 1 million audio tokens",
+      "id": "google/gemini-3.8-flash-lite-tts-preview-audio-output/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "6.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-3.8-flash-lite-tts-preview-audio-output",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 3.8 Flash-Lite TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 6D6B-51EE-87C4). Output tokens: $6.00 per 1 million audio tokens",
+      "id": "google/gemini-3.8-flash-lite-tts-preview-text-input/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-3.8-flash-lite-tts-preview-text-input",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 3.8 Flash TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 4CB8-5200-1246). Output tokens: $9.00 per 1 million audio tokens",
+      "id": "google/gemini-3.8-flash-tts-preview-audio-output/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "9.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-3.8-flash-tts-preview-audio-output",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Gemini 3.8 Flash TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 4CB8-5200-1246). Output tokens: $9.00 per 1 million audio tokens",
+      "id": "google/gemini-3.8-flash-tts-preview-text-input/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "gemini-3.8-flash-tts-preview-text-input",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Instant custom voice (sku:A247-37D7-C094) Not available US$0.00006 per character (US$60 per 1 million characters)",
+      "id": "google/instant-custom/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "60",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "instant-custom",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Neural2 voices (sku:FEBD-04B6-769B) 0 to 1 million characters US$0.000016 per character (US$16 per 1 million characters)",
+      "id": "google/neural2/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "16",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "neural2",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Polyglot (Preview) voices (sku:FEBD-04B6-769B) 0 to 1 million characters US$0.000016 per character (US$16 per 1 million characters)",
+      "id": "google/polyglot-preview/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "16",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "polyglot-preview",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Standard voices (sku:9D01-5995-B545) 0 to 4 million characters US$0.000004 per character (US$4 per 1 million characters)",
+      "id": "google/standard/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "4",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "standard",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Studio voices (sku:84AB-48C0-F9C3) 0 to 1 million characters US$0.00016 per character (US$160 per 1 million characters)",
+      "id": "google/studio/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "160",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "studio",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "WaveNet voices (sku:9D01-5995-B545) 0 to 4 million characters US$0.000004 per character (US$4per 1 million characters)",
+      "id": "google/wavenet/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "4",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "wavenet",
+      "provider": "google",
+      "since": "2026-10-28",
+      "source_url": "https://cloud.google.com/text-to-speech/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
+      "id": "inworld/tts-2-flash/real-time/builder",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "builder",
+      "plan_fee": {
+        "amount": "100",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "9",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2-flash",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
+      "id": "inworld/tts-2-flash/real-time/creator",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "creator",
+      "plan_fee": {
+        "amount": "25",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "10",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2-flash",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
+      "id": "inworld/tts-2-flash/real-time/developer",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "developer",
+      "plan_fee": {
+        "amount": "300",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "8",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2-flash",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
+      "id": "inworld/tts-2-flash/real-time/growth",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "1500",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "7",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2-flash",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 Flash $15 $10 $9 $8 $7",
+      "id": "inworld/tts-2-flash/real-time/on-demand",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "on-demand",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "15",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2-flash",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
+      "id": "inworld/tts-2/real-time/builder",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "builder",
+      "plan_fee": {
+        "amount": "100",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "17.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
+      "id": "inworld/tts-2/real-time/creator",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "creator",
+      "plan_fee": {
+        "amount": "25",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "20",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
+      "id": "inworld/tts-2/real-time/developer",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "developer",
+      "plan_fee": {
+        "amount": "300",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "15",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
+      "id": "inworld/tts-2/real-time/enterprise",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "enterprise",
+      "plan_fee": null,
+      "price": {
+        "amount": "5",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
+      "id": "inworld/tts-2/real-time/growth",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "1500",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "12.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Realtime TTS-2 $25 $20 $17.50 $15 $12.50 As low as $5",
+      "id": "inworld/tts-2/real-time/on-demand",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "on-demand",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "25",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "character"
+      },
+      "product": "tts-2",
+      "provider": "inworld",
+      "since": "2026-10-28",
+      "source_url": "https://inworld.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Cartesia Voices $0.015/minute",
+      "id": "retell/cartesia-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "cartesia-voices",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "ElevenLabs Flash $0.040/minute",
+      "id": "retell/elevenlabs-flash/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.040",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "elevenlabs-flash",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "ElevenLabs Multilingual v2 $0.06/minute",
+      "id": "retell/elevenlabs-multilingual-v2/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.06",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "elevenlabs-multilingual-v2",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "ElevenLabs v3 Conversational $0.08/minute",
+      "id": "retell/elevenlabs-v3-conversational/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.08",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "elevenlabs-v3-conversational",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "ElevenLabs v3 $0.10/minute",
+      "id": "retell/elevenlabs-v3/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.10",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "elevenlabs-v3",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "ElevenLabs v4 Turbo $0.08/minute",
+      "id": "retell/elevenlabs-v4-turbo/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.08",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "elevenlabs-v4-turbo",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "ElevenLabs v4 $0.10/minute",
+      "id": "retell/elevenlabs-v4/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.10",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "elevenlabs-v4",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Fish Voices $0.015/minute",
+      "id": "retell/fish-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "fish-voices",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Inworld Voices $0.015/minute",
+      "id": "retell/inworld-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "inworld-voices",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Minimax Voices $0.015/minute",
+      "id": "retell/minimax-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "minimax-voices",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "OpenAI Voices $0.015/minute",
+      "id": "retell/openai-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "openai-voices",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Retell Platform Voices $0.015/minute",
+      "id": "retell/retell-platform-voices/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.015",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "retell-platform-voices",
+      "provider": "retell",
+      "since": "2026-10-28",
+      "source_url": "https://www.retellai.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "error": "scraper failed on 2026-10-28",
+      "evidence": "Coda v2 Text to speech, most natural $0.05 / min",
+      "id": "rime/coda-v2/any/pay-as-you-go",
+      "limits": {
+        "concurrent": 10,
+        "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
+        "source_url": "https://www.rime.ai/pricing"
+      },
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.05",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "coda-v2",
+      "provider": "rime",
+      "since": "2026-10-28",
+      "source_url": "https://www.rime.ai/pricing",
+      "status": "failed",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "error": "scraper failed on 2026-10-28",
+      "evidence": "Mist v3 Text to speech, lowest latency $0.03 / min",
+      "id": "rime/mist-v3/any/pay-as-you-go",
+      "limits": {
+        "concurrent": 15,
+        "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
+        "source_url": "https://www.rime.ai/pricing"
+      },
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.03",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "mist-v3",
+      "provider": "rime",
+      "since": "2026-10-28",
+      "source_url": "https://www.rime.ai/pricing",
+      "status": "failed",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/real-time/business",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.60",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/real-time/growth",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.70",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "3.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, real-time per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/real-time/pro",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.85",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/streaming/business",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.60",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/streaming/growth",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.70",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/streaming/pay-as-you-go",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "3.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, streaming per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/streaming/pro",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.85",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/websocket/business",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.60",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/websocket/growth",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.70",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/websocket/pay-as-you-go",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "3.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V3, WebSocket per 1,000 characters ₹3.00 ₹2.85 ₹2.70 ₹2.60",
+      "id": "sarvam/bulbul-v3/websocket/pro",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.85",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v3",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/real-time/business",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.80",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/real-time/growth",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.85",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "1.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/real-time/pro",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.925",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/streaming/business",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.80",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/streaming/growth",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.85",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/streaming/pay-as-you-go",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "1.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/streaming/pro",
+      "limits": null,
+      "mode": "streaming",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.925",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/websocket/business",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.80",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/websocket/growth",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.85",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/websocket/pay-as-you-go",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "1.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "id": "sarvam/bulbul-v4-flash/websocket/pro",
+      "limits": null,
+      "mode": "websocket",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.925",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "bulbul-v4-flash",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+      "id": "sarvam/voice-cloning/real-time/business",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "business",
+      "plan_fee": {
+        "amount": "199999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "voice-cloning",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+      "id": "sarvam/voice-cloning/real-time/growth",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "growth",
+      "plan_fee": {
+        "amount": "49999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "voice-cloning",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+      "id": "sarvam/voice-cloning/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": {
+        "amount": "0",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "voice-cloning",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Voice cloning, real-time per 1,000 characters ₹2.00 ₹2.00 ₹2.00 ₹2.00",
+      "id": "sarvam/voice-cloning/real-time/pro",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pro",
+      "plan_fee": {
+        "amount": "9999",
+        "currency": "INR",
+        "period": "month"
+      },
+      "price": {
+        "amount": "2.00",
+        "currency": "INR",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "voice-cloning",
+      "provider": "sarvam",
+      "since": "2026-10-28",
+      "source_url": "https://www.sarvam.ai/api-pricing",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "tts",
+      "evidence": "Lightning V3.1 Pro ~$0.195/10K characters",
+      "id": "smallestai/lightning-v3.1-pro/any/pay-as-you-go",
+      "limits": {
+        "concurrent": 15,
+        "evidence": "Concurrency for TTS 15 concurrent streams; RPM for TTS APIs 100",
+        "requests_per_minute": 100,
+        "source_url": "https://smallest.ai/pricing/models"
+      },
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.195",
+        "currency": "USD",
+        "per": 10000,
+        "unit": "character"
+      },
+      "product": "lightning-v3.1-pro",
+      "provider": "smallestai",
+      "since": "2026-10-28",
+      "source_url": "https://smallest.ai/pricing/models",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Lightning V3.1 ~$0.175/10K characters",
+      "id": "smallestai/lightning-v3.1/any/pay-as-you-go",
+      "limits": {
+        "concurrent": 15,
+        "evidence": "Concurrency for TTS 15 concurrent streams; RPM for TTS APIs 100",
+        "requests_per_minute": 100,
+        "source_url": "https://smallest.ai/pricing/models"
+      },
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.175",
+        "currency": "USD",
+        "per": 10000,
+        "unit": "character"
+      },
+      "product": "lightning-v3.1",
+      "provider": "smallestai",
+      "since": "2026-10-28",
+      "source_url": "https://smallest.ai/pricing/models",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Input text tokens Text input to generate $4.00 per 1M tokens",
+      "id": "soniox/tts-input-text-tokens/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "4.00",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "tts-input-text-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Output audio tokens Duration of generated audio $21.50 per 1M tokens",
+      "id": "soniox/tts-output-audio-tokens/real-time/pay-as-you-go",
+      "limits": null,
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "21.50",
+        "currency": "USD",
+        "per": 1000000,
+        "unit": "token"
+      },
+      "product": "tts-output-audio-tokens",
+      "provider": "soniox",
+      "since": "2026-10-28",
+      "source_url": "https://soniox.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Text to Speech Natural, low-latency speech synthesis for Voice AI use cases. $0.011 per 1,000 characters",
+      "id": "speechmatics/text-to-speech/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.011",
+        "currency": "USD",
+        "per": 1000,
+        "unit": "character"
+      },
+      "product": "text-to-speech",
+      "provider": "speechmatics",
+      "since": "2026-10-28",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Inworld Max TTS $0.00001 per character",
+      "id": "telnyx/inworld-max-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.00001",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "inworld-max-tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Inworld Mini TTS $0.0000055 per character",
+      "id": "telnyx/inworld-mini-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0000055",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "inworld-mini-tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "MiniMax speech-2.8-turbo TTS $0.000034 per character",
+      "id": "telnyx/minimax-speech-2.8-turbo-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000034",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "minimax-speech-2.8-turbo-tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Neural Voices TTS (Amazon Polly) $0.000024 per character",
+      "id": "telnyx/neural-voices-tts-amazon-polly/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000024",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "neural-voices-tts-amazon-polly",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Qwen3TTS $0.000032 per character",
+      "id": "telnyx/qwen3tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000032",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "qwen3tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Resemble TTS $0.000008 per character",
+      "id": "telnyx/resemble-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000008",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "resemble-tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Rime TTS $0.00002 per character",
+      "id": "telnyx/rime-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.00002",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "rime-tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Standard TTS (Amazon Polly) $0.000009 per character",
+      "id": "telnyx/standard-tts-amazon-polly/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000009",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "standard-tts-amazon-polly",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Telnyx HD Voices TTS $0.000048 per character",
+      "id": "telnyx/telnyx-hd-voices-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000048",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "telnyx-hd-voices-tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Telnyx TTS $0.000003 per character",
+      "id": "telnyx/telnyx-tts/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000003",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "telnyx-tts",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Telnyx Ultra $0.000032 per character",
+      "id": "telnyx/telnyx-ultra/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.000032",
+        "currency": "USD",
+        "per": 1,
+        "unit": "character"
+      },
+      "product": "telnyx-ultra",
+      "provider": "telnyx",
+      "since": "2026-10-28",
+      "source_url": "https://telnyx.com/pricing/call-control",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Generative $0.0130 / 100 chars",
+      "id": "twilio/premium-generative/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0130",
+        "currency": "USD",
+        "per": 100,
+        "unit": "character"
+      },
+      "product": "premium-generative",
+      "provider": "twilio",
+      "since": "2026-10-28",
+      "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Neural $0.0032 / 100 chars",
+      "id": "twilio/premium-neural/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0032",
+        "currency": "USD",
+        "per": 100,
+        "unit": "character"
+      },
+      "product": "premium-neural",
+      "provider": "twilio",
+      "since": "2026-10-28",
+      "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Standard $0.0008 / 100 chars",
+      "id": "twilio/premium-standard/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.0008",
+        "currency": "USD",
+        "per": 100,
+        "unit": "character"
+      },
+      "product": "premium-standard",
+      "provider": "twilio",
+      "since": "2026-10-28",
+      "source_url": "https://www.twilio.com/en-us/voice/pricing/us",
+      "status": "ok",
+      "tax_included": null
+    }
+  ],
+  "schema_version": 1
+}

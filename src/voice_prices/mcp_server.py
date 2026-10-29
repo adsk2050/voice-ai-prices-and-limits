@@ -23,6 +23,7 @@ import httpx
 from mcp.server.mcpserver import MCPServer
 from pydantic import BaseModel
 
+from voice_prices.files import unwrap
 from voice_prices.models import Category, Checked, PriceRow
 
 DEFAULT_DATA = (
@@ -59,6 +60,7 @@ def _file(name: str) -> Any:
         data = response.json()
     else:
         data = json.loads((Path(source) / name).read_text(encoding="utf-8"))
+    data = unwrap(name, data)
     _cache[name] = (time.monotonic(), data)
     return data
 

@@ -1,144 +1,147 @@
-[
-  {
-    "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "The page is a script shell ('Loading… Please Wait') with no text.",
-    "provider": "airtel-iq",
-    "reason": "rendered-by-javascript",
-    "url": "https://www.airtel.in/business/b2b/airtel-iq/voice"
-  },
-  {
-    "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "Returns 403 Forbidden to automated fetches.",
-    "provider": "bandwidth",
-    "reason": "blocked",
-    "url": "https://www.bandwidth.com/pricing/"
-  },
-  {
-    "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "Plans page with 'Talk to Sales' and custom plans; no per-minute price in the page text.",
-    "provider": "exotel",
-    "reason": "contact-sales",
-    "url": "https://exotel.com/pricing/"
-  },
-  {
-    "categories": [
-      "stt",
-      "tts"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "The public page offers demos and custom plans only; prices are shown inside the signed-in dashboard.",
-    "provider": "gnani",
-    "reason": "sign-in-required",
-    "url": "https://www.gnani.ai/pricing"
-  },
-  {
-    "categories": [
-      "tts"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "Pricing page text has no prices.",
-    "provider": "hume",
-    "reason": "rendered-by-javascript",
-    "url": "https://www.hume.ai/pricing"
-  },
-  {
-    "categories": [
-      "tts"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "The page returns almost no text without a browser.",
-    "provider": "murf",
-    "reason": "rendered-by-javascript",
-    "url": "https://murf.ai/api/pricing"
-  },
-  {
-    "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "Times out or redirects with an empty body for automated fetches.",
-    "provider": "ozonetel",
-    "reason": "blocked",
-    "url": "https://ozonetel.com/pricing/"
-  },
-  {
-    "categories": [
-      "tts"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "The site's certificate chain is incomplete, and with that skipped the server disconnects without a response.",
-    "provider": "playht",
-    "reason": "fetch-failed",
-    "url": "https://playht.com/pricing/"
-  },
-  {
-    "categories": [
-      "tts"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "The pricing page lists only detection services; no text-to-speech price on it, and no other pricing page was searched.",
-    "provider": "resemble",
-    "reason": "pricing-page-not-found",
-    "url": "https://www.resemble.ai/pricing/"
-  },
-  {
-    "categories": [
-      "stt",
-      "tts"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "/pricing returns 404 and the homepage links to no pricing page.",
-    "provider": "reverie",
-    "reason": "pricing-page-not-found",
-    "url": "https://reverieinc.com/pricing/"
-  },
-  {
-    "categories": [
-      "agent"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "The pricing page text holds almost no prices; plans load in the browser.",
-    "provider": "synthflow",
-    "reason": "rendered-by-javascript",
-    "url": "https://synthflow.ai/pricing"
-  },
-  {
-    "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "Smartflo /pricing returns 404; the homepage links only to Microsoft 365 plan pricing.",
-    "provider": "tatatele",
-    "reason": "pricing-page-not-found",
-    "url": "https://www.tatateleservices.com/"
-  },
-  {
-    "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "The pricing data marks India {code:\"IN\", contactSalesOnly:true}; extra capacity is priced per account in the console.",
-    "provider": "vobiz",
-    "reason": "contact-sales",
-    "url": "https://www.vobiz.ai/pricing/?country=IN"
-  },
-  {
-    "categories": [
-      "telephony"
-    ],
-    "checked_at": "2026-10-28",
-    "evidence": "Per-minute prices load by country selector; not in the page text.",
-    "provider": "vonage",
-    "reason": "rendered-by-javascript",
-    "url": "https://www.vonage.com/communications-apis/voice/pricing/"
-  }
-]
+{
+  "providers": [
+    {
+      "categories": [
+        "telephony"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "The page is a script shell ('Loading… Please Wait') with no text.",
+      "provider": "airtel-iq",
+      "reason": "rendered-by-javascript",
+      "url": "https://www.airtel.in/business/b2b/airtel-iq/voice"
+    },
+    {
+      "categories": [
+        "telephony"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "Returns 403 Forbidden to automated fetches.",
+      "provider": "bandwidth",
+      "reason": "blocked",
+      "url": "https://www.bandwidth.com/pricing/"
+    },
+    {
+      "categories": [
+        "telephony"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "Plans page with 'Talk to Sales' and custom plans; no per-minute price in the page text.",
+      "provider": "exotel",
+      "reason": "contact-sales",
+      "url": "https://exotel.com/pricing/"
+    },
+    {
+      "categories": [
+        "stt",
+        "tts"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "The public page offers demos and custom plans only; prices are shown inside the signed-in dashboard.",
+      "provider": "gnani",
+      "reason": "sign-in-required",
+      "url": "https://www.gnani.ai/pricing"
+    },
+    {
+      "categories": [
+        "tts"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "Pricing page text has no prices.",
+      "provider": "hume",
+      "reason": "rendered-by-javascript",
+      "url": "https://www.hume.ai/pricing"
+    },
+    {
+      "categories": [
+        "tts"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "The page returns almost no text without a browser.",
+      "provider": "murf",
+      "reason": "rendered-by-javascript",
+      "url": "https://murf.ai/api/pricing"
+    },
+    {
+      "categories": [
+        "telephony"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "Times out or redirects with an empty body for automated fetches.",
+      "provider": "ozonetel",
+      "reason": "blocked",
+      "url": "https://ozonetel.com/pricing/"
+    },
+    {
+      "categories": [
+        "tts"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "The site's certificate chain is incomplete, and with that skipped the server disconnects without a response.",
+      "provider": "playht",
+      "reason": "fetch-failed",
+      "url": "https://playht.com/pricing/"
+    },
+    {
+      "categories": [
+        "tts"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "The pricing page lists only detection services; no text-to-speech price on it, and no other pricing page was searched.",
+      "provider": "resemble",
+      "reason": "pricing-page-not-found",
+      "url": "https://www.resemble.ai/pricing/"
+    },
+    {
+      "categories": [
+        "stt",
+        "tts"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "/pricing returns 404 and the homepage links to no pricing page.",
+      "provider": "reverie",
+      "reason": "pricing-page-not-found",
+      "url": "https://reverieinc.com/pricing/"
+    },
+    {
+      "categories": [
+        "agent"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "The pricing page text holds almost no prices; plans load in the browser.",
+      "provider": "synthflow",
+      "reason": "rendered-by-javascript",
+      "url": "https://synthflow.ai/pricing"
+    },
+    {
+      "categories": [
+        "telephony"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "Smartflo /pricing returns 404; the homepage links only to Microsoft 365 plan pricing.",
+      "provider": "tatatele",
+      "reason": "pricing-page-not-found",
+      "url": "https://www.tatateleservices.com/"
+    },
+    {
+      "categories": [
+        "telephony"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "The pricing data marks India {code:\"IN\", contactSalesOnly:true}; extra capacity is priced per account in the console.",
+      "provider": "vobiz",
+      "reason": "contact-sales",
+      "url": "https://www.vobiz.ai/pricing/?country=IN"
+    },
+    {
+      "categories": [
+        "telephony"
+      ],
+      "checked_at": "2026-10-28",
+      "evidence": "Per-minute prices load by country selector; not in the page text.",
+      "provider": "vonage",
+      "reason": "rendered-by-javascript",
+      "url": "https://www.vonage.com/communications-apis/voice/pricing/"
+    }
+  ],
+  "schema_version": 1
+}
