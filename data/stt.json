@@ -23,7 +23,7 @@
     },
     {
       "category": "stt",
-      "evidence": "Sync API New Universal-3.5 Pro accuracy delivered in a single call. Process up to 2 minutes per request, get results back in ~134 ms (p50). Includes per-word timing and confidence across 18 languages. $0.30 /hr",
+      "evidence": "Sync API New Universal-3.5 Pro accuracy delivered in a single call. Process up to 20 minutes per request, get results back in ~134 ms (p50). Includes per-word timing and confidence across 18 languages. $0.30 /hr",
       "id": "assemblyai/sync-api/batch/pay-as-you-go",
       "limits": null,
       "mode": "batch",
@@ -410,6 +410,7 @@
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no credit-to-character rate",
       "evidence": "One hour of audio is only $0.39 on the Scale plan.",
       "id": "cartesia/ink-2/any/scale",
       "limits": {
@@ -434,11 +435,12 @@
       "provider": "cartesia",
       "since": "2026-10-28",
       "source_url": "https://cartesia.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
       "id": "deepgram/flux-english/streaming/growth",
       "limits": {
@@ -459,11 +461,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
       "id": "deepgram/flux-english/streaming/pay-as-you-go",
       "limits": {
@@ -484,11 +487,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
       "id": "deepgram/flux-multilingual/streaming/growth",
       "limits": {
@@ -509,11 +513,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
       "id": "deepgram/flux-multilingual/streaming/pay-as-you-go",
       "limits": {
@@ -534,11 +539,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
       "id": "deepgram/nova-3-monolingual/batch/growth",
       "limits": {
@@ -559,11 +565,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
       "id": "deepgram/nova-3-monolingual/batch/pay-as-you-go",
       "limits": {
@@ -584,11 +591,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
       "id": "deepgram/nova-3-monolingual/streaming/growth",
       "limits": {
@@ -609,11 +617,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
       "id": "deepgram/nova-3-monolingual/streaming/pay-as-you-go",
       "limits": {
@@ -634,11 +643,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
       "id": "deepgram/nova-3-multilingual/batch/growth",
       "limits": {
@@ -659,11 +669,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
       "id": "deepgram/nova-3-multilingual/batch/pay-as-you-go",
       "limits": {
@@ -684,11 +695,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
       "id": "deepgram/nova-3-multilingual/streaming/growth",
       "limits": {
@@ -709,11 +721,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
       "id": "deepgram/nova-3-multilingual/streaming/pay-as-you-go",
       "limits": {
@@ -734,11 +747,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Whisper Large $0.0048/min $0.0048/min",
       "id": "deepgram/whisper-large/batch/growth",
       "limits": {
@@ -759,11 +773,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Whisper Large $0.0048/min $0.0048/min",
       "id": "deepgram/whisper-large/batch/pay-as-you-go",
       "limits": {
@@ -784,7 +799,7 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
@@ -1927,7 +1942,7 @@
     },
     {
       "category": "stt",
-      "error": "scraper failed on 2026-10-28",
+      "error": "PageChangedError: no pay-as-you-go plan card",
       "evidence": "Rime STT $0.002 / min from Nov 20 Free until Nov 19",
       "id": "rime/rime-stt/any/pay-as-you-go",
       "limits": {
@@ -2496,6 +2511,7 @@
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no end of pre-recorded models section",
       "evidence": "Enhanced $0.38 / hr",
       "id": "speechmatics/enhanced/batch/pay-as-you-go",
       "limits": null,
@@ -2512,11 +2528,12 @@
       "provider": "speechmatics",
       "since": "2026-10-28",
       "source_url": "https://www.speechmatics.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no end of pre-recorded models section",
       "evidence": "Melia 1 $0.12 / hr",
       "id": "speechmatics/melia-1/batch/pay-as-you-go",
       "limits": null,
@@ -2533,11 +2550,12 @@
       "provider": "speechmatics",
       "since": "2026-10-28",
       "source_url": "https://www.speechmatics.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no end of pre-recorded models section",
       "evidence": "Oak 1 Medical $0.15 / hr",
       "id": "speechmatics/oak-1-medical/batch/pay-as-you-go",
       "limits": null,
@@ -2554,11 +2572,12 @@
       "provider": "speechmatics",
       "since": "2026-10-28",
       "source_url": "https://www.speechmatics.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no end of pre-recorded models section",
       "evidence": "Standard $0.23 / hr",
       "id": "speechmatics/standard/batch/pay-as-you-go",
       "limits": null,
@@ -2575,7 +2594,7 @@
       "provider": "speechmatics",
       "since": "2026-10-28",
       "source_url": "https://www.speechmatics.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
