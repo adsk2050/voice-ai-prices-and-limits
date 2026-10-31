@@ -3,6 +3,7 @@
     {
       "category": "telephony",
       "country": "US",
+      "error": "PageChangedError: no credit-to-character rate",
       "evidence": "Telephony $0.014 per minute when using a Cartesia-provided phone number",
       "id": "cartesia/cartesia-provided-number/any/pay-as-you-go",
       "limits": null,
@@ -19,7 +20,7 @@
       "provider": "cartesia",
       "since": "2026-10-28",
       "source_url": "https://cartesia.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {

@@ -212,6 +212,7 @@
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no credit-to-character rate",
       "evidence": "At pro tier, it's $65 per 1M credits.",
       "id": "cartesia/sonic-3.6/any/pro",
       "limits": {
@@ -236,11 +237,12 @@
       "provider": "cartesia",
       "since": "2026-10-28",
       "source_url": "https://cartesia.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no credit-to-character rate",
       "evidence": "At scale tier, it's $38 per 1M credits.",
       "id": "cartesia/sonic-3.6/any/scale",
       "limits": {
@@ -265,11 +267,12 @@
       "provider": "cartesia",
       "since": "2026-10-28",
       "source_url": "https://cartesia.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no credit-to-character rate",
       "evidence": "At startup tier, it's $45 per 1M credits.",
       "id": "cartesia/sonic-3.6/any/startup",
       "limits": {
@@ -294,11 +297,12 @@
       "provider": "cartesia",
       "since": "2026-10-28",
       "source_url": "https://cartesia.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
       "id": "deepgram/aura-1/any/growth",
       "limits": null,
@@ -315,11 +319,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
       "id": "deepgram/aura-1/any/pay-as-you-go",
       "limits": null,
@@ -336,11 +341,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
       "id": "deepgram/aura-2/any/growth",
       "limits": null,
@@ -357,11 +363,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
       "id": "deepgram/aura-2/any/pay-as-you-go",
       "limits": null,
@@ -378,11 +385,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
       "id": "deepgram/flux-tts/any/growth",
       "limits": null,
@@ -399,11 +407,12 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no concurrency limits",
       "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
       "id": "deepgram/flux-tts/any/pay-as-you-go",
       "limits": null,
@@ -420,7 +429,7 @@
       "provider": "deepgram",
       "since": "2026-10-28",
       "source_url": "https://deepgram.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
@@ -1473,7 +1482,7 @@
     },
     {
       "category": "tts",
-      "error": "scraper failed on 2026-10-28",
+      "error": "PageChangedError: no pay-as-you-go plan card",
       "evidence": "Coda v2 Text to speech, most natural $0.05 / min",
       "id": "rime/coda-v2/any/pay-as-you-go",
       "limits": {
@@ -1499,7 +1508,7 @@
     },
     {
       "category": "tts",
-      "error": "scraper failed on 2026-10-28",
+      "error": "PageChangedError: no pay-as-you-go plan card",
       "evidence": "Mist v3 Text to speech, lowest latency $0.03 / min",
       "id": "rime/mist-v3/any/pay-as-you-go",
       "limits": {
@@ -2319,6 +2328,7 @@
     },
     {
       "category": "tts",
+      "error": "PageChangedError: no end of pre-recorded models section",
       "evidence": "Text to Speech Natural, low-latency speech synthesis for Voice AI use cases. $0.011 per 1,000 characters",
       "id": "speechmatics/text-to-speech/any/pay-as-you-go",
       "limits": null,
@@ -2335,7 +2345,7 @@
       "provider": "speechmatics",
       "since": "2026-10-28",
       "source_url": "https://www.speechmatics.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {

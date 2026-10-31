@@ -1,123 +1,123 @@
 {
   "providers": {
     "assemblyai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "aws": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "azure": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "bland": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "bolna": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "cartesia": {
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-10-31",
       "last_ok": "2026-10-28",
-      "status": "ok"
+      "status": "failed"
     },
     "deepgram": {
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-10-31",
       "last_ok": "2026-10-28",
-      "status": "ok"
+      "status": "failed"
     },
     "elevenlabs": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "gladia": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "google": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "inworld": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "knowlarity": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "openai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "plivo": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "retell": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "revai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "rime": {
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-10-31",
       "last_ok": "2026-10-28",
       "status": "failed"
     },
     "sarvam": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "smallestai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "soniox": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "speechmatics": {
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-10-31",
       "last_ok": "2026-10-28",
-      "status": "ok"
+      "status": "failed"
     },
     "telnyx": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "twilio": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     },
     "vapi": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-10-31",
+      "last_ok": "2026-10-31",
       "status": "ok"
     }
   },
