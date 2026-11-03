@@ -4,6 +4,8 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Started by the Update prices workflow on its own pull requests.
+  workflow_dispatch:
 
 concurrency:
   group: check-${{ github.ref }}
