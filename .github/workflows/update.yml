@@ -16,6 +16,7 @@ permissions:
   contents: write
   pull-requests: write
   issues: write
+  actions: write # to start the Check workflow on a price-change PR
 
 concurrency:
   group: update-prices
@@ -57,8 +58,10 @@ jobs:
         # Unquoted on purpose: one argument per provider name.
         run: uv run voice-prices update $PROVIDERS # shellcheck disable=SC2086
 
-      # A pull request opened with this job's token does not start the
-      # Check workflow, so the same checks run here, before it is opened.
+      # The same checks run here, before the pull request is opened. A
+      # pull request this job opens is held by GitHub for approval (the
+      # bot counts as a first-time contributor), so a price-change PR gets
+      # its Check run started by hand below.
       - name: Check
         run: |
           uv run ruff check .
@@ -94,7 +97,15 @@ jobs:
           steps.scrape.outputs.price_changed != 'true'
         run: >-
           gh pr merge ${{ steps.pr.outputs.pull-request-number }}
-          --squash --delete-branch
+          --merge --delete-branch
+
+      # A dispatched run is not held for approval, and its result shows on
+      # the pull request's head commit.
+      - name: Run the checks on a price-change PR
+        if: >-
+          steps.pr.outputs.pull-request-number != '' &&
+          steps.scrape.outputs.price_changed == 'true'
+        run: gh workflow run check.yml --ref prices/update
 
       - name: Answer the re-check issue
         if: github.event_name == 'issues'

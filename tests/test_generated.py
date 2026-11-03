@@ -19,7 +19,6 @@ MODULES = [
     "bland",
     "bolna",
     "cartesia",
-    "deepgram",
     "elevenlabs",
     "google",
     "gladia",

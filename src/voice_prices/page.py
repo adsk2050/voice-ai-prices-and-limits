@@ -20,6 +20,22 @@ def to_text(markup: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def fetch_html(url: str) -> str:
+    """Download *url* and return its markup.
+
+    Raises:
+        httpx.HTTPError: The page could not be fetched.
+    """
+    response = httpx.get(
+        url,
+        headers={"User-Agent": _USER_AGENT},
+        follow_redirects=True,
+        timeout=30,
+    )
+    response.raise_for_status()
+    return response.text
+
+
 def fetch_text(url: str, *, verify_tls: bool = True) -> str:
     """Download *url* and return its visible text.
 
