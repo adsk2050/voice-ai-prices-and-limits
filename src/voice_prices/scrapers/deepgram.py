@@ -1,16 +1,19 @@
 """Deepgram: speech-to-text and text-to-speech prices, per plan, in USD.
 
-The pricing page has two-column tables, Pay As You Go and Growth, for each
-of the streaming STT, pre-recorded STT and TTS sections. Each section also
-has a one-column copy, which is skipped. An STT row reads ``<model> i
-<description> <price> <price>``. A price is either ``$a/min`` or ``Current
-price $a/min Regular price $b/min``. For a promotion, the current price is
-used and the evidence shows both prices. A TTS row reads ``<model>
-$a/1k characters $b/1k characters``.
+The pricing page carries its whole rate card as schema.org JSON-LD: an
+``OfferCatalog`` named ``Rates by product`` with one ``Offer`` per
+product and plan. An offer's name reads ``<category>: <model>
+(<mode>) — <plan>``, for example ``Speech-to-text: Nova-3 Monolingual
+(Pre-recorded) — Growth``; TTS offers have no mode. The visible tables
+show only one STT tab at a time, so the catalog is the one place that
+has both streaming and pre-recorded prices. Each row's evidence is the
+offer as the page gives it.
 
-The overview states concurrency per plan: REST for pre-recorded audio and
-WSS for streaming. The Growth fee is given per year (``$4K+ / year``). That
-is not a monthly fee, so it is not recorded. The page says nothing on tax.
+The FAQ (also in the JSON-LD) states streaming concurrency per plan:
+``Pay as you go allows 150 concurrent streaming speech-to-text
+connections and Growth 225``. The page no longer states a pre-recorded
+limit. The Growth fee is given per year (``$4,000+ / year``). That is
+not a monthly fee, so it is not recorded. The page says nothing on tax.
 
 Skipped: STT add-ons, the Voice Agent API (agent platform) and Audio
 Intelligence (LLM tokens).
@@ -18,124 +21,132 @@ Intelligence (LLM tokens).
 
 from __future__ import annotations
 
+import json
 import re
+from decimal import Decimal
 from typing import Any
 
-from voice_prices.page import fetch_text
-from voice_prices.rows import PageChangedError, Scraped, amount, mode, slug
+from voice_prices.page import fetch_html
+from voice_prices.rows import PageChangedError, Scraped, mode, slug
 
 PRICING_URL = "https://deepgram.com/pricing"
 
-_PLANS = ["Pay As You Go", "Growth"]
-_HEAD = "Model Pay As You Go Growth "
-_NAME = r"(?P<name>[A-Z][A-Za-z0-9.-]*(?: [A-Z][A-Za-z0-9.-]*)?)"
-
-# (start marker, end marker, page's mode word)
-_STT = [
-    ("Streaming pricing " + _HEAD, "Streaming pricing , single", "streaming"),
-    (
-        "Pre-Recorded pricing " + _HEAD,
-        "Pre-Recorded pricing , single",
-        "pre-recorded",
-    ),
-]
-_TTS = ("Text to Speech ", "Calculate the Text-to-Speech")
-
-
-def _price(group: str) -> str:
-    return (
-        rf"(?:Current price )?(?P<{group}>\$[0-9]+(?:\.[0-9]+)?)/min"
-        r"(?: Regular price \$[0-9.]+/min)?"
-    )
-
-
-_STT_ROW = re.compile(rf"{_NAME}(?: i [^$]*?)? {_price('p0')} {_price('p1')}")
-_TTS_ROW = re.compile(
-    r"(?P<name>[A-Z][A-Za-z0-9.-]*(?: TTS)?) "
-    r"(?P<p0>\$[0-9.]+)/1k characters (?P<p1>\$[0-9.]+)/1k characters"
+_PLANS = ["Pay as you go", "Growth"]
+# Billed on top of transcription, not a transcription price.
+_ADD_ONS = {
+    "Redaction",
+    "Keyterm Prompting",
+    "Entity Detection",
+    "Speaker Diarization",
+    "Smart Formatting",
+}
+# Offer category -> (row category, per, unit, unitText on the page)
+_CATEGORIES = {
+    "Speech-to-text": ("stt", 1, "minute", "minute"),
+    "Text-to-speech": ("tts", 1000, "character", "1,000 characters"),
+}
+_OFFER = re.compile(
+    r"(?P<category>[^:]+): (?P<model>.+?)(?: \((?P<mode>[^)]+)\))?"
+    r" — (?P<plan>.+)"
 )
 _LIMITS = re.compile(
-    r"Up to (?P<r0>[0-9]+) for the REST API Up to (?P<r1>[0-9]+) for the "
-    r"REST API Up to (?P<w0>[0-9]+) for the WSS API Up to (?P<w1>[0-9]+) "
-    r"for the WSS API"
+    r"Pay as you go allows (?P<c0>[0-9]+) concurrent streaming "
+    r"speech-to-text connections and Growth (?P<c1>[0-9]+)"
+)
+_LD_JSON = re.compile(
+    r"<script[^>]*application/ld\+json[^>]*>(.*?)</script>", re.S
 )
 
 
-def _section(text: str, start: str, end: str) -> str:
-    begin = text.find(start)
-    if begin < 0:
-        raise PageChangedError(f"no section starting {start!r}")
-    begin += len(start)
-    stop = text.find(end, begin)
-    if stop < 0:
-        raise PageChangedError(f"no end of section {end!r}")
-    return text[begin:stop]
+def _graph(html: str) -> list[dict[str, Any]]:
+    """Every JSON-LD node on the page."""
+    nodes: list[dict[str, Any]] = []
+    for block in _LD_JSON.findall(html):
+        data = json.loads(block)
+        nodes += data.get("@graph", [data]) if isinstance(data, dict) else data
+    return nodes
 
 
-def _limits(text: str) -> dict[str, dict[str, Any]]:
-    """Concurrency per (plan index, mode word)."""
-    match = _LIMITS.search(text)
-    if match is None:
-        raise PageChangedError("no concurrency limits")
-    out: dict[str, dict[str, Any]] = {}
-    for i in range(len(_PLANS)):
-        for word, key in (("streaming", "w"), ("pre-recorded", "r")):
-            out[f"{i}/{word}"] = {
-                "concurrent": int(match.group(f"{key}{i}")),
-                "source_url": PRICING_URL,
-                "evidence": match.group(0),
-            }
-    return out
+def _offers(nodes: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    for node in nodes:
+        if node.get("@type") == "OfferCatalog" and node.get("name") == (
+            "Rates by product"
+        ):
+            return node["itemListElement"]
+    raise PageChangedError("no 'Rates by product' offer catalog")
 
 
-def _rows(
-    matches: list[re.Match[str]],
-    category: str,
-    word: str,
-    per: int,
-    unit: str,
-    limits: dict[str, dict[str, Any]],
-) -> list[Scraped]:
-    return [
-        Scraped(
-            category=category,
-            provider="deepgram",
-            product=slug(match.group("name")),
-            mode=mode(word),
-            plan=slug(plan),
-            amount=amount(match.group(f"p{i}")),
-            currency="USD",
-            per=per,
-            unit=unit,
-            source_url=PRICING_URL,
-            evidence=match.group(0),
-            limits=limits.get(f"{i}/{word}"),
-        )
-        for match in matches
-        for i, plan in enumerate(_PLANS)
-    ]
+def _limits(nodes: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Streaming concurrency per plan, from the FAQ answers."""
+    for node in nodes:
+        if node.get("@type") != "FAQPage":
+            continue
+        for question in node.get("mainEntity", []):
+            answer = question.get("acceptedAnswer", {}).get("text", "")
+            match = _LIMITS.search(answer)
+            if match:
+                return {
+                    plan: {
+                        "concurrent": int(match.group(f"c{i}")),
+                        "source_url": PRICING_URL,
+                        "evidence": match.group(0),
+                    }
+                    for i, plan in enumerate(_PLANS)
+                }
+    raise PageChangedError("no concurrency limits")
 
 
-def parse(text: str) -> list[Scraped]:
+def _product(category: str, model: str) -> str:
+    # "Flux STT English" -> "flux-english"; "Flux TTS" stays "flux-tts".
+    if category == "stt":
+        model = model.replace(" STT", "")
+    return slug(model)
+
+
+def parse(html: str) -> list[Scraped]:
     """STT prices per model, mode and plan; TTS prices per model and plan."""
-    limits = _limits(text)
+    nodes = _graph(html)
+    limits = _limits(nodes)
     rows: list[Scraped] = []
-    for start, end, word in _STT:
-        found = list(_STT_ROW.finditer(_section(text, start, end)))
-        if not found:
-            raise PageChangedError(f"no {word} STT rows")
-        rows += _rows(found, "stt", word, 1, "minute", limits)
-    tts = _section(text, *_TTS)
-    head = tts.find(_HEAD)
-    if head < 0:
-        raise PageChangedError("no TTS table header")
-    found = list(_TTS_ROW.finditer(tts[head + len(_HEAD) :]))
-    if not found:
-        raise PageChangedError("no TTS rows")
-    rows += _rows(found, "tts", "any", 1000, "character", {})
+    for offer in _offers(nodes):
+        match = _OFFER.fullmatch(offer["name"])
+        if match is None:
+            raise PageChangedError(f"unreadable offer name {offer['name']!r}")
+        if match["category"] not in _CATEGORIES or match["model"] in _ADD_ONS:
+            continue
+        category, per, unit, unit_text = _CATEGORIES[match["category"]]
+        spec = offer["priceSpecification"]
+        if spec.get("unitText") != unit_text:
+            raise PageChangedError(f"unknown unit {spec.get('unitText')!r}")
+        if match["plan"] not in _PLANS:
+            raise PageChangedError(f"unknown plan {match['plan']!r}")
+        word = match["mode"] or "any"
+        rows.append(
+            Scraped(
+                category=category,
+                provider="deepgram",
+                product=_product(category, match["model"]),
+                mode=mode(word),
+                plan=slug(match["plan"]),
+                amount=format(Decimal(str(spec["price"])).normalize(), "f"),
+                currency=spec["priceCurrency"],
+                per=per,
+                unit=unit,
+                source_url=PRICING_URL,
+                evidence=(
+                    f"{offer['name']}: {spec['price']} "
+                    f"{spec['priceCurrency']} per {unit_text}"
+                ),
+                limits=limits[match["plan"]] if word == "Streaming" else None,
+            )
+        )
+    if not any(r.category == "stt" for r in rows):
+        raise PageChangedError("no STT offers")
+    if not any(r.category == "tts" for r in rows):
+        raise PageChangedError("no TTS offers")
     return rows
 
 
 def scrape() -> list[Scraped]:
     """Fetch the page and parse it."""
-    return parse(fetch_text(PRICING_URL))
+    return parse(fetch_html(PRICING_URL))

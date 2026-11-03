@@ -2,14 +2,13 @@
 
 The pricing page sells monthly plans (Free $0, Pro $5, Startup $49,
 Scale $299) that include credits. The FAQ gives each paid plan's overage
-rate (``At pro tier, it's $65 per 1M credits.``) and says ``1 credit
-equals 1 character`` for Sonic TTS. That is a price per 1000000
-characters. For Ink STT the only plain price is ``One hour of audio is
-only $0.39 on the Scale plan.``. The compare table gives concurrent
-requests per plan for each model. Telephony is ``$0.014 per minute when
-using a Cartesia-provided phone number``. Agent call-duration prices and
-LLM prices are agent-platform prices and are skipped. The page does not
-say whether tax is included.
+rate (``Pro: $65 per 1M credits``) and says Sonic TTS costs ``1 credit
+per character``. That is a price per 1000000 characters. For Ink STT the
+only plain price is ``$0.39 per hour on the Scale plan``. The compare
+table gives concurrent requests per plan for each model. Telephony is
+``$0.014 per minute when using a Cartesia-provided phone number``. Agent
+call-duration prices and LLM prices are agent-platform prices and are
+skipped. The page does not say whether tax is included.
 """
 
 from __future__ import annotations
@@ -94,15 +93,14 @@ def _row(
 
 def parse(text: str) -> list[Scraped]:
     """TTS overage per plan, STT hourly price, telephony per minute."""
-    if "1 credit equals 1 character" not in text:
+    if "text-to-speech: 1 credit per character" not in text:
         raise PageChangedError("no credit-to-character rate")
     tts, tts_limits = _model(text, "Text to Speech", "Sonic")
     stt, stt_limits = _model(text, "Speech to Text", "Ink")
     rows: list[Scraped] = []
     for plan in _PAID:
         match = _search(
-            rf"At {plan.lower()} tier, it's (?P<price>{_MONEY}) per 1M "
-            r"credits\.",
+            rf"{plan}: (?P<price>{_MONEY}) per 1M credits",
             text,
             f"{plan} overage rate",
         )
@@ -120,7 +118,7 @@ def parse(text: str) -> list[Scraped]:
             )
         )
     match = _search(
-        rf"One hour of audio is only (?P<price>{_MONEY}) on the Scale plan\.",
+        rf"(?P<price>{_MONEY}) per hour on the Scale plan",
         text,
         "STT hourly price",
     )

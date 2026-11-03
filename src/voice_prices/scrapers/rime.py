@@ -1,12 +1,16 @@
-"""Rime: Mist v3 and Coda v2 TTS and Rime STT, pay-as-you-go, in dollars.
+"""Rime: Mist v3 and Coda v2 TTS and Rime STT, per plan, in dollars.
 
-The "Pay as you go" plan card lists each model as ``<model> <tagline>
-$a / min``. The STT price is followed by ``from Nov 20 Free until Nov
-19``: the printed price applies from November 20, and STT is free until
-then. The same card states the concurrency limits (``15 concurrent Mist,
-10 Coda, 10 STT``). TTS is also quoted per 1K characters further down. This
-module uses the per-minute card price. Enterprise is "Volume rates" with no
-number, so it is skipped. The page does not say whether tax is included.
+The page has two paid plan cards. "Flex" is pay as you go with no
+monthly fee (``Flex Billed by minute, monthly to your card``); it is
+stored as the ``pay-as-you-go`` plan. "Scale" costs ``$100 a month`` and
+takes 20% off every rate. Each card lists each model as ``<model>
+<kind> $a / min``. The STT price is followed by ``Free until Nov 19``:
+the printed price applies from November 20, and STT is free until then.
+TTS is also described per 1K characters further down; this module uses
+the per-minute card price. Enterprise is "Volume pricing" with no
+number, so it is skipped. Prism (speech to speech) has no category here
+and is skipped. The page says concurrency limits apply but gives no
+numbers. The page does not say whether tax is included.
 """
 
 from __future__ import annotations
@@ -19,67 +23,69 @@ from voice_prices.rows import PageChangedError, Scraped, amount
 PRICING_URL = "https://www.rime.ai/pricing"
 
 _MONEY = r"\$[0-9][0-9,]*(?:\.[0-9]+)?"
-_CARD = "Pay as you go For new production users"
 
-# (product, category, anchor before the price, anchor after it, limit key)
+# (plan id, card start, card end)
+_CARDS = [
+    ("pay-as-you-go", "Flex Billed by minute, monthly to your card", "Scale "),
+    ("scale", "Scale Steady usage, 20% off every rate", "Enterprise "),
+]
+_SCALE_FEE = re.compile(rf"From {_MONEY} /min (?P<fee>{_MONEY}) a month")
+
+# (product, category, anchor before the price, anchor after it)
 _MODELS = [
-    ("mist-v3", "tts", r"Mist v3 Text to speech, lowest latency", "", "mist"),
-    ("coda-v2", "tts", r"Coda v2 Text to speech, most natural", "", "coda"),
-    (
-        "rime-stt",
-        "stt",
-        r"Rime STT",
-        r" from Nov 20 Free until Nov 19",
-        "stt",
-    ),
+    ("mist-v3", "tts", r"Mist v3 Text to speech", ""),
+    ("coda-v2", "tts", r"Coda v2 Text to speech", ""),
+    ("rime-stt", "stt", r"Rime STT Speech to text", r" Free until Nov 19"),
 ]
 
-_LIMITS = re.compile(
-    r"(?P<mist>[0-9]+) concurrent Mist, (?P<coda>[0-9]+) Coda, "
-    r"(?P<stt>[0-9]+) STT"
-)
 
-
-def _card(text: str) -> str:
-    """The text of the pay-as-you-go plan card, up to the Enterprise card."""
-    start = text.find(_CARD)
-    if start < 0:
-        raise PageChangedError("no pay-as-you-go plan card")
-    end = text.find("Enterprise", start)
-    return text[start : end if end > 0 else len(text)]
+def _card(text: str, start: str, end: str) -> str:
+    begin = text.find(start)
+    if begin < 0:
+        raise PageChangedError(f"no plan card starting {start!r}")
+    stop = text.find(end, begin + len(start))
+    if stop < 0:
+        raise PageChangedError(f"no end of plan card {start!r}")
+    return text[begin:stop]
 
 
 def parse(text: str) -> list[Scraped]:
-    """One per-minute pay-as-you-go price per model, with its concurrency."""
-    card = _card(text)
-    limits = _LIMITS.search(card)
-    if limits is None:
-        raise PageChangedError("no concurrency limits on the plan card")
+    """One per-minute price per model and plan."""
     rows: list[Scraped] = []
-    for product, category, before, after, key in _MODELS:
-        match = re.search(rf"{before} (?P<price>{_MONEY}) / min{after}", card)
-        if match is None:
-            raise PageChangedError(f"no price for {product!r}")
-        rows.append(
-            Scraped(
-                category=category,
-                provider="rime",
-                product=product,
-                mode="any",
-                plan="pay-as-you-go",
-                amount=amount(match.group("price")),
-                currency="USD",
-                per=1,
-                unit="minute",
-                source_url=PRICING_URL,
-                evidence=match.group(0),
-                limits={
-                    "concurrent": int(limits.group(key)),
-                    "source_url": PRICING_URL,
-                    "evidence": limits.group(0),
-                },
+    for plan, start, end in _CARDS:
+        card = _card(text, start, end)
+        fee = None
+        if plan == "scale":
+            match = _SCALE_FEE.search(card)
+            if match is None:
+                raise PageChangedError("no Scale monthly fee")
+            fee = {
+                "amount": amount(match.group("fee")),
+                "currency": "USD",
+                "period": "month",
+            }
+        for product, category, before, after in _MODELS:
+            match = re.search(
+                rf"{before} (?P<price>{_MONEY}) / min{after}", card
             )
-        )
+            if match is None:
+                raise PageChangedError(f"no {plan} price for {product!r}")
+            rows.append(
+                Scraped(
+                    category=category,
+                    provider="rime",
+                    product=product,
+                    mode="any",
+                    plan=plan,
+                    amount=amount(match.group("price")),
+                    currency="USD",
+                    per=1,
+                    unit="minute",
+                    source_url=PRICING_URL,
+                    evidence=match.group(0),
+                    plan_fee=fee,
+                )
+            )
     return rows
 
 
