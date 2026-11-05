@@ -54,3 +54,24 @@ def test_plan_fee_and_tax() -> None:
 def test_a_changed_page_raises_instead_of_guessing() -> None:
     with pytest.raises(PageChangedError):
         sarvam.parse(PRICING.replace("Text to speech Service", "TTS"), DOCS)
+
+
+def test_an_offer_reads_the_price_paid_today() -> None:
+    """During an offer each plan shows the list price, then the offer
+    price, and the row label carries a note about when it ends."""
+    offer = (FIXTURES / "sarvam-api-pricing-offer.txt").read_text(
+        encoding="utf-8"
+    )
+    rows = {r.id: r for r in sarvam.parse(offer, DOCS)}
+    assert rows.keys() == _by_id().keys()
+    got = {
+        plan: rows[f"sarvam/bulbul-v4-flash/streaming/{plan}"].amount
+        for plan in ("pay-as-you-go", "pro", "growth", "business")
+    }
+    assert got == {
+        "pay-as-you-go": "1.00",
+        "pro": "0.925",
+        "growth": "0.85",
+        "business": "0.80",
+    }
+    assert rows["sarvam/bulbul-v3/real-time/growth"].amount == "2.70"
