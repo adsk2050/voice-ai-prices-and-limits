@@ -1,123 +1,123 @@
 {
   "providers": {
     "assemblyai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "aws": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "azure": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "bland": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "bolna": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "cartesia": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "deepgram": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "elevenlabs": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "gladia": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "google": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "inworld": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "knowlarity": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "openai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "plivo": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "retell": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "revai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
-      "status": "ok"
-    },
-    "rime": {
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-11-14",
       "last_ok": "2026-10-28",
       "status": "failed"
     },
-    "sarvam": {
-      "checked_at": "2026-10-28",
+    "aws": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "azure": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "bland": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "bolna": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "cartesia": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "deepgram": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "elevenlabs": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "gladia": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "google": {
+      "checked_at": "2026-11-14",
       "last_ok": "2026-10-28",
+      "status": "failed"
+    },
+    "inworld": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "knowlarity": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "openai": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-10-28",
+      "status": "failed"
+    },
+    "plivo": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "retell": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "revai": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "rime": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
+      "status": "ok"
+    },
+    "sarvam": {
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
       "status": "ok"
     },
     "smallestai": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
       "status": "ok"
     },
     "soniox": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
       "status": "ok"
     },
     "speechmatics": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
       "status": "ok"
     },
     "telnyx": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
       "status": "ok"
     },
     "twilio": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
       "status": "ok"
     },
     "vapi": {
-      "checked_at": "2026-10-28",
-      "last_ok": "2026-10-28",
+      "checked_at": "2026-11-14",
+      "last_ok": "2026-11-14",
       "status": "ok"
     }
   },

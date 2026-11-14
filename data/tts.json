@@ -2,6 +2,7 @@
   "rows": [
     {
       "category": "tts",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "AssemblyAI-TTS-1 New Streaming text-to-speech with about 90 ms time to first audio, in English, Spanish, French, German, Italian, and Portuguese. Available over streaming WebSocket and HTTP APIs. $15 /1M chars",
       "id": "assemblyai/assemblyai-tts-1/any/pay-as-you-go",
       "limits": null,
@@ -18,7 +19,7 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
@@ -212,7 +213,7 @@
     },
     {
       "category": "tts",
-      "evidence": "At pro tier, it's $65 per 1M credits.",
+      "evidence": "Pro: $65 per 1M credits",
       "id": "cartesia/sonic-3.6/any/pro",
       "limits": {
         "concurrent": 3,
@@ -241,7 +242,7 @@
     },
     {
       "category": "tts",
-      "evidence": "At scale tier, it's $38 per 1M credits.",
+      "evidence": "Scale: $38 per 1M credits",
       "id": "cartesia/sonic-3.6/any/scale",
       "limits": {
         "concurrent": 15,
@@ -270,7 +271,7 @@
     },
     {
       "category": "tts",
-      "evidence": "At startup tier, it's $45 per 1M credits.",
+      "evidence": "Startup: $45 per 1M credits",
       "id": "cartesia/sonic-3.6/any/startup",
       "limits": {
         "concurrent": 5,
@@ -299,7 +300,7 @@
     },
     {
       "category": "tts",
-      "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
+      "evidence": "Text-to-speech: Aura-1 — Growth: 0.0135 USD per 1,000 characters",
       "id": "deepgram/aura-1/any/growth",
       "limits": null,
       "mode": "any",
@@ -320,28 +321,28 @@
     },
     {
       "category": "tts",
-      "evidence": "Aura-1 $0.0150/1k characters $0.0135/1k characters",
+      "evidence": "Text-to-speech: Aura-1 — Pay as you go: 0.015 USD per 1,000 characters",
       "id": "deepgram/aura-1/any/pay-as-you-go",
       "limits": null,
       "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
       "price": {
-        "amount": "0.0150",
+        "amount": "0.015",
         "currency": "USD",
         "per": 1000,
         "unit": "character"
       },
       "product": "aura-1",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "tts",
-      "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
+      "evidence": "Text-to-speech: Aura-2 — Growth: 0.027 USD per 1,000 characters",
       "id": "deepgram/aura-2/any/growth",
       "limits": null,
       "mode": "any",
@@ -362,63 +363,63 @@
     },
     {
       "category": "tts",
-      "evidence": "Aura-2 $0.030/1k characters $0.027/1k characters",
+      "evidence": "Text-to-speech: Aura-2 — Pay as you go: 0.03 USD per 1,000 characters",
       "id": "deepgram/aura-2/any/pay-as-you-go",
       "limits": null,
       "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
       "price": {
-        "amount": "0.030",
+        "amount": "0.03",
         "currency": "USD",
         "per": 1000,
         "unit": "character"
       },
       "product": "aura-2",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "tts",
-      "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
+      "evidence": "Text-to-speech: Flux TTS — Growth: 0.045 USD per 1,000 characters",
       "id": "deepgram/flux-tts/any/growth",
       "limits": null,
       "mode": "any",
       "plan": "growth",
       "plan_fee": null,
       "price": {
-        "amount": "0.0405",
+        "amount": "0.045",
         "currency": "USD",
         "per": 1000,
         "unit": "character"
       },
       "product": "flux-tts",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "tts",
-      "evidence": "Flux TTS $0.0450/1k characters $0.0405/1k characters",
+      "evidence": "Text-to-speech: Flux TTS — Pay as you go: 0.045 USD per 1,000 characters",
       "id": "deepgram/flux-tts/any/pay-as-you-go",
       "limits": null,
       "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
       "price": {
-        "amount": "0.0450",
+        "amount": "0.045",
         "currency": "USD",
         "per": 1000,
         "unit": "character"
       },
       "product": "flux-tts",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
@@ -551,6 +552,7 @@
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Chirp 3: HD voices (sku:F977-2280-6F1B) 0 to 1 million characters US$0.00003 per character (US$30 per 1 million characters)",
       "id": "google/chirp-3-hd/any/pay-as-you-go",
       "limits": null,
@@ -567,11 +569,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
       "id": "google/gemini-2.5-flash-lite-preview-tts-audio-output/any/pay-as-you-go",
       "limits": null,
@@ -588,11 +591,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
       "id": "google/gemini-2.5-flash-lite-preview-tts-text-input/any/pay-as-you-go",
       "limits": null,
@@ -609,11 +613,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
       "id": "google/gemini-2.5-flash-tts-audio-output/any/pay-as-you-go",
       "limits": null,
@@ -630,11 +635,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 2.5 Flash TTS Gemini 2.5 Flash-Lite Preview TTS Not available Input tokens: $0.50 per 1 million text tokens* (sku: 242A-EA16-C1EC) Output tokens: $10.00 per 1 million audio tokens",
       "id": "google/gemini-2.5-flash-tts-text-input/any/pay-as-you-go",
       "limits": null,
@@ -651,11 +657,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 2.5 Pro TTS Not available Input tokens: $1.00 per 1 million text tokens* (sku: 8FF1-7E5B-5BB7) Output tokens: $20.00 per 1 million audio tokens",
       "id": "google/gemini-2.5-pro-tts-audio-output/any/pay-as-you-go",
       "limits": null,
@@ -672,11 +679,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 2.5 Pro TTS Not available Input tokens: $1.00 per 1 million text tokens* (sku: 8FF1-7E5B-5BB7) Output tokens: $20.00 per 1 million audio tokens",
       "id": "google/gemini-2.5-pro-tts-text-input/any/pay-as-you-go",
       "limits": null,
@@ -693,11 +701,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 3.1 Flash TTS (Preview) Not available Input tokens: $1.00 per 1 million text tokens* (sku: EB3F-1051-05D7) Output tokens: $20.00 per 1 million audio tokens",
       "id": "google/gemini-3.1-flash-tts-preview-audio-output/any/pay-as-you-go",
       "limits": null,
@@ -714,11 +723,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 3.1 Flash TTS (Preview) Not available Input tokens: $1.00 per 1 million text tokens* (sku: EB3F-1051-05D7) Output tokens: $20.00 per 1 million audio tokens",
       "id": "google/gemini-3.1-flash-tts-preview-text-input/any/pay-as-you-go",
       "limits": null,
@@ -735,11 +745,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 3.8 Flash-Lite TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 6D6B-51EE-87C4). Output tokens: $6.00 per 1 million audio tokens",
       "id": "google/gemini-3.8-flash-lite-tts-preview-audio-output/any/pay-as-you-go",
       "limits": null,
@@ -756,11 +767,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 3.8 Flash-Lite TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 6D6B-51EE-87C4). Output tokens: $6.00 per 1 million audio tokens",
       "id": "google/gemini-3.8-flash-lite-tts-preview-text-input/any/pay-as-you-go",
       "limits": null,
@@ -777,11 +789,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 3.8 Flash TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 4CB8-5200-1246). Output tokens: $9.00 per 1 million audio tokens",
       "id": "google/gemini-3.8-flash-tts-preview-audio-output/any/pay-as-you-go",
       "limits": null,
@@ -798,11 +811,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Gemini 3.8 Flash TTS (Preview)** through December 31, 2026 Not available Input tokens: $0.50 per 1 million text tokens* (sku: 4CB8-5200-1246). Output tokens: $9.00 per 1 million audio tokens",
       "id": "google/gemini-3.8-flash-tts-preview-text-input/any/pay-as-you-go",
       "limits": null,
@@ -819,11 +833,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Instant custom voice (sku:A247-37D7-C094) Not available US$0.00006 per character (US$60 per 1 million characters)",
       "id": "google/instant-custom/any/pay-as-you-go",
       "limits": null,
@@ -840,11 +855,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Neural2 voices (sku:FEBD-04B6-769B) 0 to 1 million characters US$0.000016 per character (US$16 per 1 million characters)",
       "id": "google/neural2/any/pay-as-you-go",
       "limits": null,
@@ -861,11 +877,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Polyglot (Preview) voices (sku:FEBD-04B6-769B) 0 to 1 million characters US$0.000016 per character (US$16 per 1 million characters)",
       "id": "google/polyglot-preview/any/pay-as-you-go",
       "limits": null,
@@ -882,11 +899,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Standard voices (sku:9D01-5995-B545) 0 to 4 million characters US$0.000004 per character (US$4 per 1 million characters)",
       "id": "google/standard/any/pay-as-you-go",
       "limits": null,
@@ -903,11 +921,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "Studio voices (sku:84AB-48C0-F9C3) 0 to 1 million characters US$0.00016 per character (US$160 per 1 million characters)",
       "id": "google/studio/any/pay-as-you-go",
       "limits": null,
@@ -924,11 +943,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "tts",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "WaveNet voices (sku:9D01-5995-B545) 0 to 4 million characters US$0.000004 per character (US$4per 1 million characters)",
       "id": "google/wavenet/any/pay-as-you-go",
       "limits": null,
@@ -945,7 +965,7 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/text-to-speech/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
@@ -1473,54 +1493,94 @@
     },
     {
       "category": "tts",
-      "error": "scraper failed on 2026-10-28",
-      "evidence": "Coda v2 Text to speech, most natural $0.05 / min",
+      "evidence": "Coda v2 Text to speech $0.050 / min",
       "id": "rime/coda-v2/any/pay-as-you-go",
-      "limits": {
-        "concurrent": 10,
-        "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
-        "source_url": "https://www.rime.ai/pricing"
-      },
+      "limits": null,
       "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
       "price": {
-        "amount": "0.05",
+        "amount": "0.050",
         "currency": "USD",
         "per": 1,
         "unit": "minute"
       },
       "product": "coda-v2",
       "provider": "rime",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.rime.ai/pricing",
-      "status": "failed",
+      "status": "ok",
       "tax_included": null
     },
     {
       "category": "tts",
-      "error": "scraper failed on 2026-10-28",
-      "evidence": "Mist v3 Text to speech, lowest latency $0.03 / min",
-      "id": "rime/mist-v3/any/pay-as-you-go",
-      "limits": {
-        "concurrent": 15,
-        "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
-        "source_url": "https://www.rime.ai/pricing"
+      "evidence": "Coda v2 Text to speech $0.040 / min",
+      "id": "rime/coda-v2/any/scale",
+      "limits": null,
+      "mode": "any",
+      "plan": "scale",
+      "plan_fee": {
+        "amount": "100",
+        "currency": "USD",
+        "period": "month"
       },
+      "price": {
+        "amount": "0.040",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "coda-v2",
+      "provider": "rime",
+      "since": "2026-11-14",
+      "source_url": "https://www.rime.ai/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Mist v3 Text to speech $0.030 / min",
+      "id": "rime/mist-v3/any/pay-as-you-go",
+      "limits": null,
       "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
       "price": {
-        "amount": "0.03",
+        "amount": "0.030",
         "currency": "USD",
         "per": 1,
         "unit": "minute"
       },
       "product": "mist-v3",
       "provider": "rime",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.rime.ai/pricing",
-      "status": "failed",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "tts",
+      "evidence": "Mist v3 Text to speech $0.024 / min",
+      "id": "rime/mist-v3/any/scale",
+      "limits": null,
+      "mode": "any",
+      "plan": "scale",
+      "plan_fee": {
+        "amount": "100",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.024",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "mist-v3",
+      "provider": "rime",
+      "since": "2026-11-14",
+      "source_url": "https://www.rime.ai/pricing",
+      "status": "ok",
       "tax_included": null
     },
     {
@@ -1825,7 +1885,7 @@
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/real-time/business",
       "limits": null,
       "mode": "real-time",
@@ -1836,21 +1896,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.80",
+        "amount": "1.60",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/real-time/growth",
       "limits": null,
       "mode": "real-time",
@@ -1861,21 +1921,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.85",
+        "amount": "1.70",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/real-time/pay-as-you-go",
       "limits": null,
       "mode": "real-time",
@@ -1886,21 +1946,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "1.00",
+        "amount": "2.00",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, real-time per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/real-time/pro",
       "limits": null,
       "mode": "real-time",
@@ -1911,21 +1971,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.925",
+        "amount": "1.85",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/streaming/business",
       "limits": null,
       "mode": "streaming",
@@ -1936,21 +1996,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.80",
+        "amount": "1.60",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/streaming/growth",
       "limits": null,
       "mode": "streaming",
@@ -1961,21 +2021,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.85",
+        "amount": "1.70",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/streaming/pay-as-you-go",
       "limits": null,
       "mode": "streaming",
@@ -1986,21 +2046,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "1.00",
+        "amount": "2.00",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, streaming per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/streaming/pro",
       "limits": null,
       "mode": "streaming",
@@ -2011,21 +2071,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.925",
+        "amount": "1.85",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/websocket/business",
       "limits": null,
       "mode": "websocket",
@@ -2036,21 +2096,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.80",
+        "amount": "1.60",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/websocket/growth",
       "limits": null,
       "mode": "websocket",
@@ -2061,21 +2121,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.85",
+        "amount": "1.70",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/websocket/pay-as-you-go",
       "limits": null,
       "mode": "websocket",
@@ -2086,21 +2146,21 @@
         "period": "month"
       },
       "price": {
-        "amount": "1.00",
+        "amount": "2.00",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "tts",
-      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹1.00 ₹0.925 ₹0.85 ₹0.80",
+      "evidence": "Bulbul V4 Flash, WebSocket per 1,000 characters ₹2.00 ₹1.85 ₹1.70 ₹1.60",
       "id": "sarvam/bulbul-v4-flash/websocket/pro",
       "limits": null,
       "mode": "websocket",
@@ -2111,14 +2171,14 @@
         "period": "month"
       },
       "price": {
-        "amount": "0.925",
+        "amount": "1.85",
         "currency": "INR",
         "per": 1000,
         "unit": "character"
       },
       "product": "bulbul-v4-flash",
       "provider": "sarvam",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.sarvam.ai/api-pricing",
       "status": "ok",
       "tax_included": false
