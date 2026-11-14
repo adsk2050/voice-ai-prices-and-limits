@@ -2,6 +2,7 @@
   "rows": [
     {
       "category": "stt",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "Dictation API New Finished text from a single spoken utterance, ready to go straight into whatever your user is writing. Built on Universal-3.5 Pro across 32 languages, with clips up to 120 seconds per request. The verbatim transcript comes back alongside it. $0.62 /hr",
       "id": "assemblyai/dictation-api/batch/pay-as-you-go",
       "limits": null,
@@ -18,11 +19,12 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "Sync API New Universal-3.5 Pro accuracy delivered in a single call. Process up to 2 minutes per request, get results back in ~134 ms (p50). Includes per-word timing and confidence across 18 languages. $0.30 /hr",
       "id": "assemblyai/sync-api/batch/pay-as-you-go",
       "limits": null,
@@ -39,11 +41,12 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "Universal-2 Our highly accurate speech-to-text model trained on over 12.5 million hours of audio data. Supports 99 languages. Exceptional accuracy at a lower price. $0.15 /hr",
       "id": "assemblyai/universal-2/batch/pay-as-you-go",
       "limits": null,
@@ -60,11 +63,12 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "Universal-3.5 Pro The most accurate async speech-to-text model that transcribes every conversation exactly as it's heard – works across 18 languages, with native code switching and our most accurate speaker diarization yet. $0.21 /hr",
       "id": "assemblyai/universal-3.5-pro/batch/pay-as-you-go",
       "limits": null,
@@ -81,11 +85,12 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "Universal-3.6 Pro Realtime New The most accurate realtime model for high-quality voice agents with built-in context carryover and conversation memory. Supports 32 languages with self-correcting speaker labels, voice isolation, and keyterm prompting. $0.45 /hr",
       "id": "assemblyai/universal-3.6-pro-realtime/real-time/pay-as-you-go",
       "limits": null,
@@ -102,11 +107,12 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "Universal-Streaming Multilingual Multilingual transcription at the speed and cost of Universal-Streaming. Supports English, Spanish, German, French, Portuguese, and Italian. $0.15 /hr",
       "id": "assemblyai/universal-streaming-multilingual/real-time/pay-as-you-go",
       "limits": null,
@@ -123,11 +129,12 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no price for 'Universal-3.6 Pro Realtime'",
       "evidence": "Universal-Streaming High-quality realtime model for English only transcription. Purpose-built for production voice applications with reliable accuracy, low latency, and cost-effectiveness. $0.15 /hr",
       "id": "assemblyai/universal-streaming/real-time/pay-as-you-go",
       "limits": null,
@@ -144,7 +151,7 @@
       "provider": "assemblyai",
       "since": "2026-10-28",
       "source_url": "https://www.assemblyai.com/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
@@ -410,7 +417,7 @@
     },
     {
       "category": "stt",
-      "evidence": "One hour of audio is only $0.39 on the Scale plan.",
+      "evidence": "$0.39 per hour on the Scale plan",
       "id": "cartesia/ink-2/any/scale",
       "limits": {
         "concurrent": 60,
@@ -439,11 +446,11 @@
     },
     {
       "category": "stt",
-      "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
+      "evidence": "Speech-to-text: Flux STT English (Streaming) — Growth: 0.0057 USD per minute",
       "id": "deepgram/flux-english/streaming/growth",
       "limits": {
         "concurrent": 225,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
@@ -457,18 +464,18 @@
       },
       "product": "flux-english",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Flux English i Conversational speech recognition for real-time voice agents with built-in turn detection, natural interruption handling, and ultra-low latency. Current price $0.0065/min Regular price $0.0077/min Current price $0.0057/min Regular price $0.0065/min",
+      "evidence": "Speech-to-text: Flux STT English (Streaming) — Pay as you go: 0.0065 USD per minute",
       "id": "deepgram/flux-english/streaming/pay-as-you-go",
       "limits": {
         "concurrent": 150,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
@@ -482,18 +489,18 @@
       },
       "product": "flux-english",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
+      "evidence": "Speech-to-text: Flux STT Multilingual (Streaming) — Growth: 0.0068 USD per minute",
       "id": "deepgram/flux-multilingual/streaming/growth",
       "limits": {
         "concurrent": 225,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
@@ -507,18 +514,18 @@
       },
       "product": "flux-multilingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Flux Multilingual i Conversational speech recognition for real-time voice agents that handle multiple languages within a single conversation, with built-in turn detection, natural interruption handling, and ultra-low latency. $0.0078/min $0.0068/min",
+      "evidence": "Speech-to-text: Flux STT Multilingual (Streaming) — Pay as you go: 0.0078 USD per minute",
       "id": "deepgram/flux-multilingual/streaming/pay-as-you-go",
       "limits": {
         "concurrent": 150,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
@@ -532,20 +539,16 @@
       },
       "product": "flux-multilingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
+      "evidence": "Speech-to-text: Nova-3 Monolingual (Pre-recorded) — Growth: 0.0036 USD per minute",
       "id": "deepgram/nova-3-monolingual/batch/growth",
-      "limits": {
-        "concurrent": 50,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-        "source_url": "https://deepgram.com/pricing"
-      },
+      "limits": null,
       "mode": "batch",
       "plan": "growth",
       "plan_fee": null,
@@ -557,20 +560,16 @@
       },
       "product": "nova-3-monolingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0043/min $0.0036/min",
+      "evidence": "Speech-to-text: Nova-3 Monolingual (Pre-recorded) — Pay as you go: 0.0043 USD per minute",
       "id": "deepgram/nova-3-monolingual/batch/pay-as-you-go",
-      "limits": {
-        "concurrent": 50,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-        "source_url": "https://deepgram.com/pricing"
-      },
+      "limits": null,
       "mode": "batch",
       "plan": "pay-as-you-go",
       "plan_fee": null,
@@ -582,18 +581,18 @@
       },
       "product": "nova-3-monolingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
+      "evidence": "Speech-to-text: Nova-3 Monolingual (Streaming) — Growth: 0.0042 USD per minute",
       "id": "deepgram/nova-3-monolingual/streaming/growth",
       "limits": {
         "concurrent": 225,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
@@ -607,18 +606,18 @@
       },
       "product": "nova-3-monolingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Monolingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. Current price $0.0048/min Regular price $0.0077/min Current price $0.0042/min Regular price $0.0065/min",
+      "evidence": "Speech-to-text: Nova-3 Monolingual (Streaming) — Pay as you go: 0.0048 USD per minute",
       "id": "deepgram/nova-3-monolingual/streaming/pay-as-you-go",
       "limits": {
         "concurrent": 150,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
@@ -632,20 +631,16 @@
       },
       "product": "nova-3-monolingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
+      "evidence": "Speech-to-text: Nova-3 Multilingual (Pre-recorded) — Growth: 0.0043 USD per minute",
       "id": "deepgram/nova-3-multilingual/batch/growth",
-      "limits": {
-        "concurrent": 50,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-        "source_url": "https://deepgram.com/pricing"
-      },
+      "limits": null,
       "mode": "batch",
       "plan": "growth",
       "plan_fee": null,
@@ -657,20 +652,16 @@
       },
       "product": "nova-3-multilingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Multilingual i Our highest performing model. Recommended for most use cases, especially audio with multiple languages, background noise, crosstalk and far field audio. $0.0052/min $0.0043/min",
+      "evidence": "Speech-to-text: Nova-3 Multilingual (Pre-recorded) — Pay as you go: 0.0052 USD per minute",
       "id": "deepgram/nova-3-multilingual/batch/pay-as-you-go",
-      "limits": {
-        "concurrent": 50,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-        "source_url": "https://deepgram.com/pricing"
-      },
+      "limits": null,
       "mode": "batch",
       "plan": "pay-as-you-go",
       "plan_fee": null,
@@ -682,43 +673,43 @@
       },
       "product": "nova-3-multilingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
+      "evidence": "Speech-to-text: Nova-3 Multilingual (Streaming) — Growth: 0.005 USD per minute",
       "id": "deepgram/nova-3-multilingual/streaming/growth",
       "limits": {
         "concurrent": 225,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
       "plan": "growth",
       "plan_fee": null,
       "price": {
-        "amount": "0.0050",
+        "amount": "0.005",
         "currency": "USD",
         "per": 1,
         "unit": "minute"
       },
       "product": "nova-3-multilingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Nova-3 Multilingual i Our highest-accuracy multilingual model with automatic language detection. Recommended for audio with multiple languages, background noise, crosstalk, and far-field input. Current price $0.0058/min Regular price $0.0092/min Current price $0.0050/min Regular price $0.0078/min",
+      "evidence": "Speech-to-text: Nova-3 Multilingual (Streaming) — Pay as you go: 0.0058 USD per minute",
       "id": "deepgram/nova-3-multilingual/streaming/pay-as-you-go",
       "limits": {
         "concurrent": 150,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
+        "evidence": "Pay as you go allows 150 concurrent streaming speech-to-text connections and Growth 225",
         "source_url": "https://deepgram.com/pricing"
       },
       "mode": "streaming",
@@ -732,20 +723,16 @@
       },
       "product": "nova-3-multilingual",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Whisper Large $0.0048/min $0.0048/min",
+      "evidence": "Speech-to-text: Whisper Large (Pre-recorded) — Growth: 0.0048 USD per minute",
       "id": "deepgram/whisper-large/batch/growth",
-      "limits": {
-        "concurrent": 50,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-        "source_url": "https://deepgram.com/pricing"
-      },
+      "limits": null,
       "mode": "batch",
       "plan": "growth",
       "plan_fee": null,
@@ -757,20 +744,16 @@
       },
       "product": "whisper-large",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Whisper Large $0.0048/min $0.0048/min",
+      "evidence": "Speech-to-text: Whisper Large (Pre-recorded) — Pay as you go: 0.0048 USD per minute",
       "id": "deepgram/whisper-large/batch/pay-as-you-go",
-      "limits": {
-        "concurrent": 50,
-        "evidence": "Up to 50 for the REST API Up to 50 for the REST API Up to 150 for the WSS API Up to 225 for the WSS API",
-        "source_url": "https://deepgram.com/pricing"
-      },
+      "limits": null,
       "mode": "batch",
       "plan": "pay-as-you-go",
       "plan_fee": null,
@@ -782,59 +765,38 @@
       },
       "product": "whisper-large",
       "provider": "deepgram",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://deepgram.com/pricing",
       "status": "ok",
       "tax_included": null
     },
     {
       "category": "stt",
-      "evidence": "Scribe v2 Medical Speech to Text $0.22 Price per hour",
+      "evidence": "Scribe v2 Medical Speech to Text $0.20 Price per hour",
       "id": "elevenlabs/scribe-v2-medical/any/pay-as-you-go",
       "limits": null,
       "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
       "price": {
-        "amount": "0.22",
+        "amount": "0.20",
         "currency": "USD",
         "per": 1,
         "unit": "hour"
       },
       "product": "scribe-v2-medical",
       "provider": "elevenlabs",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://elevenlabs.io/pricing/api",
       "status": "ok",
       "tax_included": false
     },
     {
       "category": "stt",
-      "evidence": "Scribe v2 Realtime Speech to Text $0.39 Price per hour",
+      "evidence": "Scribe v2 Realtime Speech to Text $0.22 Price per hour",
       "id": "elevenlabs/scribe-v2-realtime/real-time/pay-as-you-go",
       "limits": null,
       "mode": "real-time",
-      "plan": "pay-as-you-go",
-      "plan_fee": null,
-      "price": {
-        "amount": "0.39",
-        "currency": "USD",
-        "per": 1,
-        "unit": "hour"
-      },
-      "product": "scribe-v2-realtime",
-      "provider": "elevenlabs",
-      "since": "2026-10-28",
-      "source_url": "https://elevenlabs.io/pricing/api",
-      "status": "ok",
-      "tax_included": false
-    },
-    {
-      "category": "stt",
-      "evidence": "Scribe v2 Speech to Text $0.22 Price per hour",
-      "id": "elevenlabs/scribe-v2/any/pay-as-you-go",
-      "limits": null,
-      "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
       "price": {
@@ -843,9 +805,30 @@
         "per": 1,
         "unit": "hour"
       },
+      "product": "scribe-v2-realtime",
+      "provider": "elevenlabs",
+      "since": "2026-11-14",
+      "source_url": "https://elevenlabs.io/pricing/api",
+      "status": "ok",
+      "tax_included": false
+    },
+    {
+      "category": "stt",
+      "evidence": "Scribe v2 Speech to Text $0.20 Price per hour",
+      "id": "elevenlabs/scribe-v2/any/pay-as-you-go",
+      "limits": null,
+      "mode": "any",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.20",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
       "product": "scribe-v2",
       "provider": "elevenlabs",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://elevenlabs.io/pricing/api",
       "status": "ok",
       "tax_included": false
@@ -1235,6 +1218,7 @@
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "$0.0027 / 1 minute, per 1 month / account",
       "id": "google/dynamic-batch-recognition/batch/gemini-enterprise-flexible-savings-plan-1-year",
       "limits": null,
@@ -1251,11 +1235,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "$0.0024 / 1 minute, per 1 month / account",
       "id": "google/dynamic-batch-recognition/batch/gemini-enterprise-flexible-savings-plan-3-year",
       "limits": null,
@@ -1272,11 +1257,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "$0.003 / 1 minute, per 1 month / account",
       "id": "google/dynamic-batch-recognition/batch/pay-as-you-go",
       "limits": null,
@@ -1293,11 +1279,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0702 / 1 minute, per 1 month / account",
       "id": "google/medical-conversation/any/gemini-enterprise-flexible-savings-plan-1-year",
       "limits": null,
@@ -1314,11 +1301,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0624 / 1 minute, per 1 month / account",
       "id": "google/medical-conversation/any/gemini-enterprise-flexible-savings-plan-3-year",
       "limits": null,
@@ -1335,11 +1323,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.078 / 1 minute, per 1 month / account",
       "id": "google/medical-conversation/any/pay-as-you-go",
       "limits": null,
@@ -1356,11 +1345,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0702 / 1 minute, per 1 month / account",
       "id": "google/medical-dictation/any/gemini-enterprise-flexible-savings-plan-1-year",
       "limits": null,
@@ -1377,11 +1367,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0624 / 1 minute, per 1 month / account",
       "id": "google/medical-dictation/any/gemini-enterprise-flexible-savings-plan-3-year",
       "limits": null,
@@ -1398,11 +1389,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.078 / 1 minute, per 1 month / account",
       "id": "google/medical-dictation/any/pay-as-you-go",
       "limits": null,
@@ -1419,11 +1411,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "0 minute to 500,000 minute $0.0144 / 1 minute, per 1 month / account",
       "id": "google/recognition/any/gemini-enterprise-flexible-savings-plan-1-year",
       "limits": null,
@@ -1440,11 +1433,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "0 minute to 500,000 minute $0.0128 / 1 minute, per 1 month / account",
       "id": "google/recognition/any/gemini-enterprise-flexible-savings-plan-3-year",
       "limits": null,
@@ -1461,11 +1455,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "0 minute to 500,000 minute $0.016 / 1 minute, per 1 month / account",
       "id": "google/recognition/any/pay-as-you-go",
       "limits": null,
@@ -1482,11 +1477,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0144 / 1 minute, per 1 month / account",
       "id": "google/speech-recognition-with-data-logging/any/gemini-enterprise-flexible-savings-plan-1-year",
       "limits": null,
@@ -1503,11 +1499,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0128 / 1 minute, per 1 month / account",
       "id": "google/speech-recognition-with-data-logging/any/gemini-enterprise-flexible-savings-plan-3-year",
       "limits": null,
@@ -1524,11 +1521,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.016 / 1 minute, per 1 month / account",
       "id": "google/speech-recognition-with-data-logging/any/pay-as-you-go",
       "limits": null,
@@ -1545,11 +1543,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0216 / 1 minute, per 1 month / account",
       "id": "google/speech-recognition-without-data-logging/any/gemini-enterprise-flexible-savings-plan-1-year",
       "limits": null,
@@ -1566,11 +1565,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.0192 / 1 minute, per 1 month / account",
       "id": "google/speech-recognition-without-data-logging/any/gemini-enterprise-flexible-savings-plan-3-year",
       "limits": null,
@@ -1587,11 +1587,12 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: expected 3 prices for tier None, found 0",
       "evidence": "60 minute and above $0.024 / 1 minute, per 1 month / account",
       "id": "google/speech-recognition-without-data-logging/any/pay-as-you-go",
       "limits": null,
@@ -1608,7 +1609,7 @@
       "provider": "google",
       "since": "2026-10-28",
       "source_url": "https://cloud.google.com/speech-to-text/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
@@ -1738,6 +1739,7 @@
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no transcription models table header",
       "evidence": "gpt-4o-mini-transcribe Transcription $1.25 $5.00 $0.003 / minute",
       "id": "openai/gpt-4o-mini-transcribe/any/pay-as-you-go",
       "limits": null,
@@ -1754,11 +1756,12 @@
       "provider": "openai",
       "since": "2026-10-28",
       "source_url": "https://platform.openai.com/docs/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no transcription models table header",
       "evidence": "gpt-4o-transcribe Transcription $2.50 $10.00 $0.006 / minute",
       "id": "openai/gpt-4o-transcribe/any/pay-as-you-go",
       "limits": null,
@@ -1775,11 +1778,12 @@
       "provider": "openai",
       "since": "2026-10-28",
       "source_url": "https://platform.openai.com/docs/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no transcription models table header",
       "evidence": "gpt-live-transcribe Live transcription - - $0.017 / minute",
       "id": "openai/gpt-live-transcribe/real-time/pay-as-you-go",
       "limits": null,
@@ -1796,11 +1800,12 @@
       "provider": "openai",
       "since": "2026-10-28",
       "source_url": "https://platform.openai.com/docs/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no transcription models table header",
       "evidence": "gpt-realtime-whisper Live transcription - - $0.017 / minute",
       "id": "openai/gpt-realtime-whisper/real-time/pay-as-you-go",
       "limits": null,
@@ -1817,11 +1822,12 @@
       "provider": "openai",
       "since": "2026-10-28",
       "source_url": "https://platform.openai.com/docs/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "stt",
+      "error": "PageChangedError: no transcription models table header",
       "evidence": "gpt-transcribe Transcription - - $0.0045 / minute",
       "id": "openai/gpt-transcribe/any/pay-as-you-go",
       "limits": null,
@@ -1838,7 +1844,7 @@
       "provider": "openai",
       "since": "2026-10-28",
       "source_url": "https://platform.openai.com/docs/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
@@ -1927,14 +1933,9 @@
     },
     {
       "category": "stt",
-      "error": "scraper failed on 2026-10-28",
-      "evidence": "Rime STT $0.002 / min from Nov 20 Free until Nov 19",
+      "evidence": "Rime STT Speech to text $0.002 / min Free until Nov 19",
       "id": "rime/rime-stt/any/pay-as-you-go",
-      "limits": {
-        "concurrent": 10,
-        "evidence": "15 concurrent Mist, 10 Coda, 10 STT",
-        "source_url": "https://www.rime.ai/pricing"
-      },
+      "limits": null,
       "mode": "any",
       "plan": "pay-as-you-go",
       "plan_fee": null,
@@ -1946,9 +1947,34 @@
       },
       "product": "rime-stt",
       "provider": "rime",
-      "since": "2026-10-28",
+      "since": "2026-11-14",
       "source_url": "https://www.rime.ai/pricing",
-      "status": "failed",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Rime STT Speech to text $0.0016 / min Free until Nov 19",
+      "id": "rime/rime-stt/any/scale",
+      "limits": null,
+      "mode": "any",
+      "plan": "scale",
+      "plan_fee": {
+        "amount": "100",
+        "currency": "USD",
+        "period": "month"
+      },
+      "price": {
+        "amount": "0.0016",
+        "currency": "USD",
+        "per": 1,
+        "unit": "minute"
+      },
+      "product": "rime-stt",
+      "provider": "rime",
+      "since": "2026-11-14",
+      "source_url": "https://www.rime.ai/pricing",
+      "status": "ok",
       "tax_included": null
     },
     {
@@ -2496,7 +2522,7 @@
     },
     {
       "category": "stt",
-      "evidence": "Enhanced $0.38 / hr",
+      "evidence": "Enhanced Feature-rich $0.38 / hr",
       "id": "speechmatics/enhanced/batch/pay-as-you-go",
       "limits": null,
       "mode": "batch",
@@ -2517,7 +2543,57 @@
     },
     {
       "category": "stt",
-      "evidence": "Melia 1 $0.12 / hr",
+      "evidence": "Enhanced Feature-rich $0.40 / hr",
+      "id": "speechmatics/enhanced/real-time/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Concurrent sessions (Real-time) 50",
+        "source_url": "https://www.speechmatics.com/pricing"
+      },
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.40",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "enhanced",
+      "provider": "speechmatics",
+      "since": "2026-11-14",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Linden 1 Responsive $0.20 $0.15 / hr",
+      "id": "speechmatics/linden-1/real-time/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Concurrent sessions (Real-time) 50",
+        "source_url": "https://www.speechmatics.com/pricing"
+      },
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.15",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "linden-1",
+      "provider": "speechmatics",
+      "since": "2026-11-14",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Melia 1 New New Multilingual $0.12 / hr",
       "id": "speechmatics/melia-1/batch/pay-as-you-go",
       "limits": null,
       "mode": "batch",
@@ -2538,7 +2614,32 @@
     },
     {
       "category": "stt",
-      "evidence": "Oak 1 Medical $0.15 / hr",
+      "evidence": "Melia 1 New New Multilingual $0.20 / hr",
+      "id": "speechmatics/melia-1/real-time/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Concurrent sessions (Real-time) 50",
+        "source_url": "https://www.speechmatics.com/pricing"
+      },
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.20",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "melia-1",
+      "provider": "speechmatics",
+      "since": "2026-11-14",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Oak 1 Medical specific $0.15 / hr",
       "id": "speechmatics/oak-1-medical/batch/pay-as-you-go",
       "limits": null,
       "mode": "batch",
@@ -2559,7 +2660,32 @@
     },
     {
       "category": "stt",
-      "evidence": "Standard $0.23 / hr",
+      "evidence": "Oak 1 New New Medical specific $0.23 / hr",
+      "id": "speechmatics/oak-1-medical/real-time/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Concurrent sessions (Real-time) 50",
+        "source_url": "https://www.speechmatics.com/pricing"
+      },
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.23",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "oak-1-medical",
+      "provider": "speechmatics",
+      "since": "2026-11-14",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Standard Cost-effective $0.23 / hr",
       "id": "speechmatics/standard/batch/pay-as-you-go",
       "limits": null,
       "mode": "batch",
@@ -2574,6 +2700,31 @@
       "product": "standard",
       "provider": "speechmatics",
       "since": "2026-10-28",
+      "source_url": "https://www.speechmatics.com/pricing",
+      "status": "ok",
+      "tax_included": null
+    },
+    {
+      "category": "stt",
+      "evidence": "Standard Cost-effective $0.23 / hr",
+      "id": "speechmatics/standard/real-time/pay-as-you-go",
+      "limits": {
+        "concurrent": 50,
+        "evidence": "Concurrent sessions (Real-time) 50",
+        "source_url": "https://www.speechmatics.com/pricing"
+      },
+      "mode": "real-time",
+      "plan": "pay-as-you-go",
+      "plan_fee": null,
+      "price": {
+        "amount": "0.23",
+        "currency": "USD",
+        "per": 1,
+        "unit": "hour"
+      },
+      "product": "standard",
+      "provider": "speechmatics",
+      "since": "2026-11-14",
       "source_url": "https://www.speechmatics.com/pricing",
       "status": "ok",
       "tax_included": null
