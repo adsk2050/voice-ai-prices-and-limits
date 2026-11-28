@@ -118,6 +118,7 @@
     },
     {
       "category": "agent",
+      "error": "PageChangedError: no pay-as-you-go 'starts at' price",
       "evidence": "Bolna AI starts at $0.06 per minute (about ₹5.52) on pay-as-you-go",
       "id": "bolna/bolna-ai/any/pay-as-you-go",
       "limits": null,
@@ -134,11 +135,12 @@
       "provider": "bolna",
       "since": "2026-10-28",
       "source_url": "https://www.bolna.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "agent",
+      "error": "PageChangedError: no pay-as-you-go 'starts at' price",
       "evidence": "$300 for 6,500 minutes (~4.6¢/min)",
       "id": "bolna/bolna-ai/any/pilot-300",
       "limits": {
@@ -159,11 +161,12 @@
       "provider": "bolna",
       "since": "2026-10-28",
       "source_url": "https://www.bolna.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
       "category": "agent",
+      "error": "PageChangedError: no pay-as-you-go 'starts at' price",
       "evidence": "$500 for 12,000 minutes (~4.2¢/min)",
       "id": "bolna/bolna-ai/any/pilot-500",
       "limits": {
@@ -184,7 +187,7 @@
       "provider": "bolna",
       "since": "2026-10-28",
       "source_url": "https://www.bolna.ai/pricing",
-      "status": "ok",
+      "status": "failed",
       "tax_included": null
     },
     {
